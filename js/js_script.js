@@ -17,6 +17,7 @@ function checkCookie () {
         var requestSet = new XMLHttpRequest();
         requestSet.open("POST","js/setUser.php");
         //requestSet.setRequestHeader("pseudonym",psdnym);
+        //TODO check wenn abbrechen
 
         requestSet.addEventListener('load', function(event) {
             if (requestSet.status >= 200 && requestSet.status < 300) {
