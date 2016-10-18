@@ -1,0 +1,159 @@
+
+// at first check the cookie
+var cookie = document.cookie;
+
+var psdnym = '';
+var user = null;
+
+checkCookie();
+
+setBreadcrumps();
+
+function checkCookie () {
+
+    if (cookie == undefined || cookie == '') {
+
+        psdnym = prompt('Bitte geb dein Kürzel ein', 'Erster Buchstabe Name zweiter Nachname und Geburtsjahr');
+        var requestSet = new XMLHttpRequest();
+        requestSet.open("POST","js/setUser.php");
+        //requestSet.setRequestHeader("pseudonym",psdnym);
+
+        requestSet.addEventListener('load', function(event) {
+            if (requestSet.status >= 200 && requestSet.status < 300) {
+                console.log(requestSet.responseText);
+            } else {
+                console.warn(requestSet.statusText, requestSet.responseText);
+            }
+        });
+        requestSet.send(psdnym);
+
+        // Set cookie
+        setFirstCookie(psdnym);
+    } else {
+        psdnym = getCookie("beercrate_routing_pseudonym");
+    }
+}
+
+function setBreadcrumps () {
+    // Ajax call to server to collect user data
+    var request = new XMLHttpRequest();
+    request.open("POST","js/getUser.php");
+    request.setRequestHeader("pseudonym",psdnym);
+
+    request.addEventListener('load', function(event) {
+        if (request.status >= 200 && request.status < 300) {
+            user = JSON.parse(request.responseText);
+
+            //deleteCookies();
+            //setCookie(user.pseudonym, user.progress, user.version);
+
+            console.info(user);
+
+            for (var i = 0; i <= user.progress; i++) {
+
+                var classes = document.getElementById("breadcrump" + i).classList;
+
+                if (classes.contains("unfinished")) {
+
+                    classes.remove("unfinished");
+                    classes.add("active");
+
+                }
+
+                classes.add("finished");
+
+            }
+
+
+            var classesSurvey = document.getElementById("survey").classList;
+            var classesPara = document.getElementById("paragraph_code").classList;
+            var classesCode = document.getElementById("code").classList;
+
+            var classesDownload = document.getElementById("button_download").classList;
+            var buttonDownload = document.getElementById("button_download");
+
+            switch (user.progress) {
+                case 0:
+                    //first survey
+                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    classesSurvey.remove("hidden");
+                    break;
+                case 1:
+                    classesSurvey.add("hidden");
+                    classesDownload.remove("hidden"); //TODO link tauschen und version checken
+                    buttonDownload.innerHTML = '<a href="download/readme.txt" class="button" id="button_download">Download Spiel 1</a>';
+                    break;
+                case 2:
+                    classesSurvey.remove("hidden");
+                    classesDownload.add("hidden");
+                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    break;
+                case 3:
+                    classesSurvey.add("hidden");
+                    classesDownload.remove("hidden");//TODO link tauschen und version checken
+                    buttonDownload.innerHTML = '<a href="download/readme.txt" class="button" id="button_download">Download Spiel 2</a>';
+                    break;
+                case 4:
+                    classesSurvey.remove("hidden");
+                    classesDownload.add("hidden");
+                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    break;
+                case 5:
+                    classesSurvey.add("hidden");
+                    classesDownload.add("hidden");
+                    classesPara.remove("hidden");
+                    classesCode.remove("hidden");
+                    document.getElementById("code").innerHTML = "<h2>" + user.code + "</h2>"; // TODO richtiger code
+                    break;
+
+            }
+        } else {
+            console.warn(request.statusText, request.responseText);
+        }
+    });
+    request.send(psdnym);
+}
+
+function setFirstCookie (psdnym) {
+    var rand = Math.random() >= 0.5;
+    setCookie(psdnym);
+}
+
+function setCookie (psdnym) {
+
+    var name = "beercrate_routing_";
+
+    date = new Date();
+    date.setTime(date.getTime()+(7*24*60*60*1000));
+
+    document.cookie = name + "pseudonym=" + psdnym + ";expires=" + date.toGMTString();
+}
+
+function getCookie (cname) {
+
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function deleteCookie (name) {
+    document.cookie = name; // TODO Datum
+}
+
+function deleteCookies () {
+    deleteCookie("beercrate_routing_pseudonym");
+}
+
+
+
+
