@@ -18,29 +18,26 @@ if(!isset($request_body)) {
 } else {
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    $sqlPrepared = $conn->prepare("SELECT * FROM subject WHERE pseudonym = :pseudonym");
+    $sqlPrepared->bindParam(":pseudonym", $request_body);
 
-    $sql = "SELECT * FROM subject WHERE pseudonym = '" . $request_body . "'";
+    $sqlPrepared->execute();
+    $results = $sqlPrepared->fetchAll();
 
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
+    if (count($results) == 1) {
         // output data of each row
-        while($row = $result->fetch_assoc()) {
+        foreach ($results as $result) {
             //echo "id: " . $row["pseudonym"]. " - Progress: " . $row["progress"]. " - Version:" . $row["version"];
-            $user = '{"pseudonym":"' . $row["pseudonym"] . '","progress":' . $row["progress"] . ',"version":' . $row["version"] . ',"code":"' . $row["code"] . '"' . "}";
+            $user = '{"pseudonym":"' . $result["pseudonym"] . '","progress":' . $result["progress"] . ',"version":' . $result["version"] . ',"code":"' . $result["code"] . '"' . "}";
             echo $user;
         }
     } else {
-        echo "0 results";
+        echo count($results) . " results";
     }
-
-    $conn->close();
 
 }
 
