@@ -43,7 +43,7 @@ $sql = "UPDATE subject SET progress=" . $progress . " WHERE pseudonym='" . $pseu
 if ($progress == 5) {
 
     // add random string
-    $hash = cryptography::wrapProgress($progress, $pseudonym);
+    $hash = cryptography::wrapProgress($progress, $pseudonym, true);
     $insert = "UPDATE subject SET code='" . $hash . "' WHERE pseudonym = '" . $pseudonym . "' AND code = null AND progress = " . ($progress - 1);
 
     if ($conn->query($insert) === TRUE) {
