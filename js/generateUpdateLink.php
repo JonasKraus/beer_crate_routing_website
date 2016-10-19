@@ -2,8 +2,8 @@
 include('cryptography.php');
 include ('consts.php');
 
-$progress = 2;
-$name = 'jonas';
+$progress = 5;
+$name = 'zwei';
 
 $test = cryptography::wrapProgress($progress, $name);
 echo "<b>Link: </b>" . $test . "<br>";

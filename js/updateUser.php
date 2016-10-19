@@ -14,58 +14,47 @@ $responseStatus = '200 OK';
 $responseText = '';
 $pseudonym = null;
 
+try {
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+// set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$progress = $_GET['pgr'];
-$getData = cryptography::unwrapProgress($progress);
-$progress = $getData["progress"];
-$getUser = $getData["pseudonym"];
+    $progress = $_GET['pgr'];
+    $getData = cryptography::unwrapProgress($progress);
+    $progress = $getData["progress"];
+    $getUser = $getData["pseudonym"];
 
 
-if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $getUser != $_COOKIE["beercrate_routing_pseudonym"]) {
-    header("Location: http://localhost:63343/untitled1/error.html");
-    exit();
-}
-
-$pseudonym = $getUser;
-
-setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/untitled1"); // Cookie for 7 days
-
-$sql = "UPDATE subject SET progress=" . $progress . " WHERE pseudonym='" . $pseudonym . "' AND progress = " . ($progress - 1);
-
-
-if ($progress == 5) {
-
-    // add random string
-    $hash = cryptography::wrapProgress($progress, $pseudonym, true);
-    $insert = "UPDATE subject SET code='" . $hash . "' WHERE pseudonym = '" . $pseudonym . "' AND code = null AND progress = " . ($progress - 1);
-
-    if ($conn->query($insert) === TRUE) {
-        echo "Saved code successfully";
-    } else {
-        echo "Error: " . $insert . "<br>" . $conn->error;
+    if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $getUser != $_COOKIE["beercrate_routing_pseudonym"]) {
+        header("Location: http://localhost:63343/untitled1/error.html");
+        exit();
     }
 
+    $pseudonym = $getUser;
+
+    setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/untitled1"); // Cookie for 7 days
+
+    $sqlPrepared = null;
+
+    $updatePart1 = "UPDATE subject SET progress = :progress";
+    $updatePart2 = ", code = :code";
+    $updateWhere = " WHERE pseudonym = :pseudonym AND progress = :whereProgress";
+
+    if ($progress < 5) {
+        $sqlPrepared = $conn->prepare($updatePart1 . $updateWhere);
+    } else if ($progress == 5) {
+        $sqlPrepared = $conn->prepare($updatePart1 . $updatePart2 . $updateWhere);
+        $code = cryptography::wrapProgress($progress, $pseudonym, true);
+        $sqlPrepared->bindParam(":code", $code);
+    }
+
+    $sqlPrepared->bindParam(":progress", $progress);
+    $whereProgress = $progress - 1;
+    $sqlPrepared->bindParam(":whereProgress", $whereProgress);
+    $sqlPrepared->bindParam(":pseudonym", $pseudonym);
+
+    $sqlPrepared->execute();
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
 }
-
-
-if ($conn->query($sql) === TRUE && $conn->affected_rows > 0) {
-    echo "Updated record successfully";
-    die;
-    exit; // TODO
-    //header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
-    //header('Content-type: text/html; charset=utf-8');
-    header("Location: http://localhost:63343/untitled1/");
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-    header("Location: http://localhost:63343/untitled1/error.html");
-    exit();
-}
-
-$conn->close();

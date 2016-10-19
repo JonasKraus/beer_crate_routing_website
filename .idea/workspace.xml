@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getUser.php" afterPath="$PROJECT_DIR$/js/getUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/generateUpdateLink.php" afterPath="$PROJECT_DIR$/js/generateUpdateLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/updateUser.php" afterPath="$PROJECT_DIR$/js/updateUser.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +27,10 @@
     <favorites_list name="untitled1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58122617">
+    <splitter split-orientation="horizontal" split-proportion="0.48804986">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="getUser.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/getUser.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="933">
@@ -62,29 +63,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/updateUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="302">
-                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state relative-caret-position="813">
+                  <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
                   <folding>
-                    <marker date="1476885394095" expanded="true" signature="983:1010" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1011" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1028" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1045" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1046" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1047" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1050" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1063" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1064" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1065" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1080" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1081" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="989:1010" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1293" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1295" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1314" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1347" ph="..." />
+                    <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
                   </folding>
                 </state>
               </provider>
@@ -93,18 +78,8 @@
           <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/generateUpdateLink.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="consts.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/consts.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+                <state relative-caret-position="120">
+                  <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -144,39 +119,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/updateUser.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="830">
-                  <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-                  <folding>
-                    <marker date="1476885394095" expanded="true" signature="983:1010" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1011" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1028" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1045" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1046" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1047" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1050" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1063" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1064" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1065" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1080" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="983:1081" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="989:1010" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1293" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1295" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1314" ph="..." />
-                    <marker date="1476885394095" expanded="true" signature="1242:1347" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="setUser.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/setUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="840">
-                  <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+                <state relative-caret-position="1083">
+                  <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="48" selection-end-column="5" />
                   <folding>
                     <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
                     <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
@@ -216,11 +163,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/consts.php" />
         <option value="$PROJECT_DIR$/js/cryptography.php" />
-        <option value="$PROJECT_DIR$/js/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/js/js_script.js" />
-        <option value="$PROJECT_DIR$/js/updateUser.php" />
         <option value="$PROJECT_DIR$/js/setUser.php" />
         <option value="$PROJECT_DIR$/js/getUser.php" />
+        <option value="$PROJECT_DIR$/js/generateUpdateLink.php" />
+        <option value="$PROJECT_DIR$/js/updateUser.php" />
       </list>
     </option>
   </component>
@@ -407,7 +354,7 @@
       <option name="presentableId" value="Default" />
       <updated>1475921069694</updated>
       <workItem from="1475921071649" duration="38680000" />
-      <workItem from="1476803081429" duration="15865000" />
+      <workItem from="1476803081429" duration="17113000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -430,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476890181966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated getUser to use prepared statements">
+      <created>1476891301290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1476891301290</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54545000" />
+    <option name="totallyTimeSpent" value="55793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1844" extended-state="6" />
@@ -475,7 +429,8 @@
     <MESSAGE value="inital commit" />
     <MESSAGE value="fixed redirect bug&#10;" />
     <MESSAGE value="changed sql statements with prepared at setUser. Added function to distribute versions even" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed sql statements with prepared at setUser. Added function to distribute versions even" />
+    <MESSAGE value="updated getUser to use prepared statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated getUser to use prepared statements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,23 +524,7 @@
         <state relative-caret-position="1080">
           <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding>
-            <marker date="1476885394095" expanded="true" signature="983:1010" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1011" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1028" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1045" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1046" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1047" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1050" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1063" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1064" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1065" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1080" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1081" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="989:1010" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1293" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1295" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1314" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1347" ph="..." />
+            <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
           </folding>
         </state>
       </provider>
@@ -648,58 +587,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/generateUpdateLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1476885394095" expanded="true" signature="983:1010" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1011" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1028" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1045" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1046" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1047" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1050" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1063" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1064" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1065" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1080" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="983:1081" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="989:1010" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1293" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1295" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1314" ph="..." />
-            <marker date="1476885394095" expanded="true" signature="1242:1347" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/js_script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
-            <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,6 +602,37 @@
           <folding>
             <marker date="1476891267371" expanded="true" signature="671:721" ph="SELECT * FRO... subject" />
             <marker date="1476891267371" expanded="true" signature="671:722" ph="SELECT * FRO... subject" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
+            <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
+            <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
+            <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/generateUpdateLink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+          <folding>
+            <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
           </folding>
         </state>
       </provider>
