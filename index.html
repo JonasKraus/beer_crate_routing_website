@@ -10,7 +10,7 @@
 <body>
 
     <h1>Dijkstra Studie</h1>
-    <img id="logo" src="pix/logoWebsite.png">
+    <img id="logo" src="pix/logoWebsiteNeutral.png">
     <p>Hier wirst du Schritt für Schritt durch die Übung begleitet</p>
 
     <!--
@@ -61,11 +61,25 @@
         <a href="download/readme.txt" class="button hidden" id="button_download">Download</a>
         <p class="hidden" id="paragraph_code"><b>Gratulation</b>, du hast die Studie erfolgreich durchgeführt. Lade folgenden <b>Code</b> nun in deinen <b><a target="_blank" href="https://moodle.uni-ulm.de/login/index.php">Moodle-Account</a></b>:</p>
         <h2 class="hidden" id="code">####</h2>
-        <iframe id="survey" class="survey" title="My Survey"  src="https://www.limesurvey.org/de/"></iframe>
+        <iframe id="survey" class="survey hidden" title="My Survey"  src="https://www.limesurvey.org/de/"></iframe>
     </div>
 
-
-
+    <div class="center hidden" id="forms">
+        <p id="para_forms" class="hidden">Bitte sende uns auch (sobald feststehend) deine Punkte aus der Papierübung und von der Klausur-Aufgabe zu.</p>
+        <form action="js/setUserExam.php" method="get" class="hidden" id="form_exercise">
+            Punkte (Übungsblatt):
+            <input type="text" name="exercise" value="0"/>
+            <input type="submit" value="Abschicken" class="button submit"/>
+        </form>
+        <br>
+        <form action="js/setUserExam.php" method="get" class="hidden" id="form_exam">
+            Punkte (Klausur):
+            <input type="text" name="exam" value="0"/>
+            <input type="submit" value="Abschicken" class="button submit"/>
+        </form>
+        <br>
+        <h2>Danke!</h2>
+    </div>
 
 
 </body>

@@ -15,12 +15,13 @@ html, body {min-height: 100%;}
 body {
     text-align: center;
     padding-top: 100px;
+    color: #0D4D4D;
     background: #eee;
     //background: linear-gradient(#689976, #ACDACC);
     font-family: 'Merriweather Sans', arial, verdana;
 }
 
-h1, h2, p {
+h1, p {
     color: #0D4D4D;
     margin-bottom: 30px;
 }
@@ -83,6 +84,23 @@ a#button_download {
 
 }
 
+.button.submit {
+    width: 7em;
+    height: 2em;
+    font-size: 1.2em;
+}
+
+input {
+    padding: .1em;
+    font-size: 1.5em;
+    width: 2em;
+}
+
+div.form {
+    text-align: left;
+
+}
+
 .survey {
     margin: auto;
     width: 100%;
@@ -91,7 +109,8 @@ a#button_download {
 
 .hidden {
     visibility: hidden;
-    height: 0px;
+    height: 0em;
+    display: none;
 }
 
 img#logo {

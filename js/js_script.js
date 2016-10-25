@@ -69,6 +69,10 @@ function setBreadcrumps () {
             var classesSurvey = document.getElementById("survey").classList;
             var classesPara = document.getElementById("paragraph_code").classList;
             var classesCode = document.getElementById("code").classList;
+            var classesForms = document.getElementById("forms").classList;
+            var classesExam = document.getElementById("form_exam").classList;
+            var classesExercise = document.getElementById("form_exercise").classList;
+            var classesParaForms = document.getElementById("para_forms").classList;
 
             var classesDownload = document.getElementById("button_download").classList;
             var buttonDownload = document.getElementById("button_download");
@@ -104,6 +108,22 @@ function setBreadcrumps () {
                     classesDownload.add("hidden");
                     classesPara.remove("hidden");
                     classesCode.remove("hidden");
+                    classesForms.remove("hidden");
+                    if (user.exam != null && user.exam != '') {
+                        classesExam.add("hidden");
+                    } else {
+                        classesExam.remove("hidden");
+                    }
+                    if (user.exercise != null && user.exercise != '') {
+                        classesExercise.add("hidden");
+                    } else {
+                        classesExercise.remove("hidden");
+                    }
+                    if (user.exercise != null && user.exam != '') {
+                        classesParaForms.add("hidden");
+                    } else {
+                        classesParaForms.remove("hidden");
+                    }
                     document.getElementById("code").innerHTML = "<h2>" + user.code + "</h2>"; // TODO richtiger code
                     break;
 

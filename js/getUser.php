@@ -32,7 +32,7 @@ if(!isset($request_body)) {
         // output data of each row
         foreach ($results as $result) {
             //echo "id: " . $row["pseudonym"]. " - Progress: " . $row["progress"]. " - Version:" . $row["version"];
-            $user = '{"pseudonym":"' . $result["pseudonym"] . '","progress":' . $result["progress"] . ',"version":' . $result["version"] . ',"code":"' . $result["code"] . '"' . "}";
+            $user = '{"pseudonym":"' . $result["pseudonym"] . '","progress":' . $result["progress"] . ',"version":' . $result["version"] . ',"code":"' . $result["code"] . '"' . ',"exam":"' . $result["exam"] . '"' . ',"exercise":"' . $result["exercise"] . '"' .  "}";
             echo $user;
         }
     } else {
