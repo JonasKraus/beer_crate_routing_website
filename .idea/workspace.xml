@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/js/setUser.php" line="19" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/js/setUser.php" line="13" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/createDB.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/databaseManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getUser.php" afterPath="$PROJECT_DIR$/js/getUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setUser.php" afterPath="$PROJECT_DIR$/js/setUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setUserExam.php" afterPath="$PROJECT_DIR$/js/setUserExam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/updateUser.php" afterPath="$PROJECT_DIR$/js/updateUser.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,29 +41,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.48804986">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/getUser.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="34" column="250" selection-start-line="34" selection-start-column="250" selection-end-line="34" selection-end-column="250" />
-                  <folding>
-                    <marker date="1477423252769" expanded="true" signature="671:721" ph="SELECT * FRO... subject" />
-                    <marker date="1477423252769" expanded="true" signature="671:722" ph="SELECT * FRO... subject" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/styles.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
-                  <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="js_script.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/js_script.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +51,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="true">
+          <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
@@ -81,14 +61,40 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/databaseManager.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+                  <folding>
+                    <marker date="1477652283319" expanded="true" signature="887:958" ph="INSERT INTO progress... " />
+                    <marker date="1477652283319" expanded="true" signature="1418:1457" ph="UPDATE subje... " />
+                    <marker date="1477652283319" expanded="true" signature="2520:2571" ph="INSERT INTO subject... " />
+                    <marker date="1477652283319" expanded="true" signature="2728:2769" ph="SELECT COUNT... subject" />
+                    <marker date="1477652283319" expanded="true" signature="2918:2984" ph="UPDATE subje... " />
+                    <marker date="1477652283319" expanded="true" signature="3533:3583" ph="SELECT * FRO... subject" />
+                    <marker date="1477652283319" expanded="true" signature="4485:4575" ph="UPDATE subje... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="consts.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/consts.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="176">
+                  <caret line="11" column="31" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/updateUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="675">
-                  <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-                  <folding>
-                    <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
-                  </folding>
+                <state relative-caret-position="160">
+                  <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -106,7 +112,7 @@
           <file leaf-file-name="cryptography.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/cryptography.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
+                <state relative-caret-position="407">
                   <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
                   <folding />
                 </state>
@@ -137,31 +143,32 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="setUserExam.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/setUserExam.php">
+          <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/getUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="768">
-                  <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-                  <folding>
-                    <marker date="1477423165098" expanded="true" signature="899:966" ph="UPDATE subje... " />
-                    <marker date="1477423165098" expanded="true" signature="899:995" ph="UPDATE subje... " />
-                    <marker date="1477423165098" expanded="true" signature="905:966" ph="INSERT INTO subject... " />
-                  </folding>
+                <state relative-caret-position="464">
+                  <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="setUser.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="setUserExam.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/setUserExam.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="32">
+                  <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="setUser.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/setUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="688">
-                  <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-                  <folding>
-                    <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
-                    <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
-                    <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
-                    <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
-                  </folding>
+                <state relative-caret-position="304">
+                  <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -193,16 +200,19 @@
         <option value="$PROJECT_DIR$/error.html" />
         <option value="$PROJECT_DIR$/js/consts.php" />
         <option value="$PROJECT_DIR$/js/cryptography.php" />
-        <option value="$PROJECT_DIR$/js/setUser.php" />
         <option value="$PROJECT_DIR$/js/generateUpdateLink.php" />
-        <option value="$PROJECT_DIR$/js/updateUser.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/yourFileName.php" />
-        <option value="$PROJECT_DIR$/js/setUserExam.php" />
-        <option value="$PROJECT_DIR$/js/getUser.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/js_script.js" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
+        <option value="$PROJECT_DIR$/js/setTimestamp.php" />
+        <option value="$PROJECT_DIR$/js/updateUser.php" />
+        <option value="$PROJECT_DIR$/js/setUser.php" />
+        <option value="$PROJECT_DIR$/js/getUser.php" />
+        <option value="$PROJECT_DIR$/js/setUserExam.php" />
+        <option value="$PROJECT_DIR$/js/Database_progress_timestamp.php" />
+        <option value="$PROJECT_DIR$/js/databaseManager.php" />
       </list>
     </option>
   </component>
@@ -217,8 +227,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="2194" />
-    <option name="height" value="1205" />
+    <option name="x" value="959" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -420,7 +432,7 @@
       <updated>1475921069694</updated>
       <workItem from="1475921071649" duration="38680000" />
       <workItem from="1476803081429" duration="17735000" />
-      <workItem from="1477378049359" duration="9558000" />
+      <workItem from="1477378049359" duration="15835000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -464,21 +476,29 @@
       <option name="project" value="LOCAL" />
       <updated>1477424760040</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added mysql database createion file">
+      <created>1477645687085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1477645687085</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65973000" />
+    <option name="totallyTimeSpent" value="72250000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2194" height="1205" extended-state="0" />
+    <frame x="959" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10684161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12258065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -490,7 +510,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -512,7 +531,8 @@
     <MESSAGE value="updated getUser to use prepared statements" />
     <MESSAGE value="updated updateUser to use prepared statements" />
     <MESSAGE value="added forms for submitting the exam points and the exercise points. updated db" />
-    <option name="LAST_COMMIT_MESSAGE" value="added forms for submitting the exam points and the exercise points. updated db" />
+    <MESSAGE value="added mysql database createion file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mysql database createion file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,10 +545,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <marker date="1477423252769" expanded="true" signature="671:721" ph="SELECT * FRO... subject" />
-            <marker date="1477423252769" expanded="true" signature="671:722" ph="SELECT * FRO... subject" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -552,9 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
-          <folding>
-            <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,12 +609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
-            <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,10 +617,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <marker date="1477423252769" expanded="true" signature="671:721" ph="SELECT * FRO... subject" />
-            <marker date="1477423252769" expanded="true" signature="671:722" ph="SELECT * FRO... subject" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,12 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
-            <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,9 +689,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding>
-            <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,26 +710,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/getCode.php" />
-    <entry file="file://$PROJECT_DIR$/js/cryptography.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/consts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -750,57 +734,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="250" selection-start-line="34" selection-start-column="250" selection-end-line="34" selection-end-column="250" />
-          <folding>
-            <marker date="1477423252769" expanded="true" signature="671:721" ph="SELECT * FRO... subject" />
-            <marker date="1477423252769" expanded="true" signature="671:722" ph="SELECT * FRO... subject" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/generateUpdateLink.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setUserExam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <marker date="1477423165098" expanded="true" signature="899:966" ph="UPDATE subje... " />
-            <marker date="1477423165098" expanded="true" signature="899:995" ph="UPDATE subje... " />
-            <marker date="1477423165098" expanded="true" signature="905:966" ph="INSERT INTO subject... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1113" ph="SELECT COUNT... " />
-            <marker date="1476890179557" expanded="true" signature="1098:1139" ph="SELECT COUNT... subject" />
-            <marker date="1476890179557" expanded="true" signature="1270:1336" ph="UPDATE subje... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-          <folding>
-            <marker date="1476892484406" expanded="true" signature="1088:1127" ph="UPDATE subje... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,6 +771,78 @@
         <state relative-caret-position="0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cryptography.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/consts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setUserExam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/databaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <marker date="1477652283319" expanded="true" signature="887:958" ph="INSERT INTO progress... " />
+            <marker date="1477652283319" expanded="true" signature="1418:1457" ph="UPDATE subje... " />
+            <marker date="1477652283319" expanded="true" signature="2520:2571" ph="INSERT INTO subject... " />
+            <marker date="1477652283319" expanded="true" signature="2728:2769" ph="SELECT COUNT... subject" />
+            <marker date="1477652283319" expanded="true" signature="2918:2984" ph="UPDATE subje... " />
+            <marker date="1477652283319" expanded="true" signature="3533:3583" ph="SELECT * FRO... subject" />
+            <marker date="1477652283319" expanded="true" signature="4485:4575" ph="UPDATE subje... " />
+          </folding>
         </state>
       </provider>
     </entry>

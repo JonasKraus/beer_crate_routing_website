@@ -1,42 +1,26 @@
 <?php
-include ("consts.php");
-
-$servername = consts::getSERVERNAME();
-$username = consts::getUSERNAME();
-$password = consts::getPASSWORD();
-$dbname = consts::getDATABASENAME();
+include("databaseManager.php");
 
 
 $responseStatus = '200 OK';
 $responseText = '';
 
-$request_body = file_get_contents('php://input');
+$pseudonym = file_get_contents('php://input');
 
-if(!isset($request_body)) {
+if(!isset($pseudonym)) {
     $responseStatus = '400 Bad Request';
     $responseText = 'Anfrage erhält keinen Nutzernamen';
 } else {
 
-    // Create connection
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    try {
 
-    $sqlPrepared = $conn->prepare("SELECT * FROM subject WHERE pseudonym = :pseudonym");
-    $sqlPrepared->bindParam(":pseudonym", $request_body);
+        $database = new databaseManager();
+        $user = $database->getUser($pseudonym);
 
-    $sqlPrepared->execute();
-    $results = $sqlPrepared->fetchAll();
+        echo $user;
 
-    if (count($results) == 1) {
-        // output data of each row
-        foreach ($results as $result) {
-            //echo "id: " . $row["pseudonym"]. " - Progress: " . $row["progress"]. " - Version:" . $row["version"];
-            $user = '{"pseudonym":"' . $result["pseudonym"] . '","progress":' . $result["progress"] . ',"version":' . $result["version"] . ',"code":"' . $result["code"] . '"' . ',"exam":"' . $result["exam"] . '"' . ',"exercise":"' . $result["exercise"] . '"' .  "}";
-            echo $user;
-        }
-    } else {
-        echo count($results) . " results";
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
     }
 
 }

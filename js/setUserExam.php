@@ -1,12 +1,6 @@
 <?php
 
-include ("consts.php");
-
-$servername = consts::getSERVERNAME();
-$username = consts::getUSERNAME();
-$password = consts::getPASSWORD();
-$dbname = consts::getDATABASENAME();
-
+include("databaseManager.php");
 
 $responseStatus = '200 OK';
 $responseText = '';
@@ -24,25 +18,13 @@ if(isset($_GET['exam']) != ""){
 
 if($updateVarName == '') {
     $responseStatus = '400 Bad Request';
-    $responseText = 'Anfrage erhält keinen Nutzernamen';
+    $responseText = 'Anfrage erhält keinen gültigen Daten';
 } else {
 
     try {
-        // Create connection
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        $sqlPrepared = $conn->prepare("UPDATE subject SET " . $updateVarName . " = :" . $updateVarName . " WHERE pseudonym = :pseudonym");
-        $sqlPrepared->bindParam(":" . $updateVarName, str_replace(",", ".", $updateVar));
-        $sqlPrepared->bindParam(":pseudonym", $_COOKIE["beercrate_routing_pseudonym"]);
-
-        if ($sqlPrepared->execute() === TRUE) {
-            echo "Updated successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-
+        $pseudonym = $_COOKIE["beercrate_routing_pseudonym"];
+        $database = new databaseManager();
+        $database->setUserCredit($pseudonym, $updateVarName, $updateVar);
 
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
