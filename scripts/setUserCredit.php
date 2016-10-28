@@ -27,7 +27,7 @@ if($updateVarName == '') {
         $database->setUserCredit($pseudonym, $updateVarName, $updateVar);
 
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+        //echo "Error: " . $e->getMessage();
     }
 
 }

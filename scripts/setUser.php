@@ -22,6 +22,8 @@ if(!isset($pseudonym)) {
 
     } catch (PDOException $e) {
         //echo "Error: " . $e->getMessage();
+        header("Location: http://localhost:63343/dijkstra-studie/error.html");
+        exit();
     }
 
 }

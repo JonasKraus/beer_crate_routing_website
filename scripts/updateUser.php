@@ -26,12 +26,11 @@ try {
 
     if ($database->updateUser($pseudonym, $progress) ){
         $database->setProgressTimestamp($pseudonym, $progress);
-        echo "successfull";
-    } else {
-        echo "error";
     }
 
 } catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
+    //echo "Error: " . $e->getMessage();
+    header("Location: http://localhost:63343/dijkstra-studie/error.html");
+    exit();
 }
 
