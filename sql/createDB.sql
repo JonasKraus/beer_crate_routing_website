@@ -11,13 +11,12 @@ CREATE TABLE `beercrate_routing`.`progress` (
 */
 
 CREATE DATABASE `beercrate_routing`;
-
 -- phpMyAdmin SQL Dump
 -- version 4.6.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 28. Okt 2016 um 10:56
+-- Erstellungszeit: 28. Okt 2016 um 14:01
 -- Server-Version: 10.1.13-MariaDB
 -- PHP-Version: 5.6.21
 
@@ -43,7 +42,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `progress` (
   `pseudonym` varchar(6) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
   `progress` int(11) NOT NULL,
-  `dateCreated` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
+  `dateCreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -69,7 +68,7 @@ CREATE TABLE `subject` (
 -- Indizes für die Tabelle `progress`
 --
 ALTER TABLE `progress`
-  ADD PRIMARY KEY (`pseudonym`);
+  ADD UNIQUE KEY `prime` (`pseudonym`,`progress`);
 
 --
 -- Indizes für die Tabelle `subject`
