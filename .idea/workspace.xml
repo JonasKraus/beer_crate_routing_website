@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pix/logoWebsiteBrief.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pix/logoWebsiteNeutral.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/setUserExam.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/createDB.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getUser.php" afterPath="$PROJECT_DIR$/js/getUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js_script.js" afterPath="$PROJECT_DIR$/js/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +21,14 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -58,11 +61,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="js_script.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="js_script.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/js_script.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="638">
                   <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -141,7 +154,7 @@
           <file leaf-file-name="setUser.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/setUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
+                <state relative-caret-position="688">
                   <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding>
                     <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
@@ -189,6 +202,7 @@
         <option value="$PROJECT_DIR$/js/getUser.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/js_script.js" />
+        <option value="$PROJECT_DIR$/sql/createDB.sql" />
       </list>
     </option>
   </component>
@@ -203,10 +217,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="2194" />
+    <option name="height" value="1205" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -249,6 +261,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="untitled1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,7 +420,7 @@
       <updated>1475921069694</updated>
       <workItem from="1475921071649" duration="38680000" />
       <workItem from="1476803081429" duration="17735000" />
-      <workItem from="1477378049359" duration="8234000" />
+      <workItem from="1477378049359" duration="9558000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -431,17 +457,24 @@
       <option name="project" value="LOCAL" />
       <updated>1476892551852</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added forms for submitting the exam points and the exercise points. updated db">
+      <created>1477424760040</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1477424760040</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64649000" />
+    <option name="totallyTimeSpent" value="65973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="951" y="-1088" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="2194" height="1205" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10684161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -478,7 +511,8 @@
     <MESSAGE value="changed sql statements with prepared at setUser. Added function to distribute versions even" />
     <MESSAGE value="updated getUser to use prepared statements" />
     <MESSAGE value="updated updateUser to use prepared statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated updateUser to use prepared statements" />
+    <MESSAGE value="added forms for submitting the exam points and the exercise points. updated db" />
+    <option name="LAST_COMMIT_MESSAGE" value="added forms for submitting the exam points and the exercise points. updated db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/setUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="688">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <marker date="1476890179557" expanded="true" signature="701:752" ph="INSERT INTO subject... " />
@@ -790,6 +824,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
       </provider>
