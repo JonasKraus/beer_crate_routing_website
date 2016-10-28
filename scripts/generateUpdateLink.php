@@ -1,9 +1,9 @@
 <?php
-include('cryptography.php');
-include ('consts.php');
+include('../php/cryptography.php');
+include('../php/databaseConstants.php');
 
-$progress = 5;
-$name = 'zwei';
+$progress = 1;
+$name = 'jonas';
 
 $test = cryptography::wrapProgress($progress, $name);
 echo "<b>Link: </b>" . $test . "<br>";

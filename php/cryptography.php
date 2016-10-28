@@ -80,7 +80,7 @@ class cryptography
 
         $link = $head . $progress . $middle . strlen($pseudonym) . $pseudonym . $tail;
 
-        $encrypted = cryptography::encrypt($link, consts::getKEY());
+        $encrypted = cryptography::encrypt($link, databaseConstants::getKEY());
 
         if ($base64Encoded) {
             $encrypted = base64_encode($encrypted);
@@ -112,7 +112,7 @@ class cryptography
             $link = base64_decode($link);
         }
 
-        $decrypt = cryptography::decrypt($link, consts::getKEY());
+        $decrypt = cryptography::decrypt($link, databaseConstants::getKEY());
         $progress = substr($decrypt, 5,1);
         $length = substr($decrypt, 8,1);
         $pseudonym = substr($decrypt, 9, $length); // TODO check länge vom kürzl

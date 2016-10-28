@@ -15,7 +15,7 @@ function checkCookie () {
 
         psdnym = prompt('Bitte geb dein Kürzel ein', 'Erster Buchstabe Name zweiter Nachname und Geburtsjahr');
         var requestSet = new XMLHttpRequest();
-        requestSet.open("POST","js/setUser.php");
+        requestSet.open("POST","scripts/setUser.php");
         //requestSet.setRequestHeader("pseudonym",psdnym);
         //TODO check wenn abbrechen
 
@@ -38,7 +38,7 @@ function checkCookie () {
 function setBreadcrumps () {
     // Ajax call to server to collect user data
     var request = new XMLHttpRequest();
-    request.open("POST","js/getUser.php");
+    request.open("POST","scripts/getUser.php");
     request.setRequestHeader("pseudonym",psdnym);
 
     request.addEventListener('load', function(event) {

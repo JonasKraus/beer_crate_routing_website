@@ -1,7 +1,7 @@
 <?php
 
-include("databaseManager.php");
-include("cryptography.php");
+include("../php/databaseManager.php");
+include("../php/cryptography.php");
 
 $responseStatus = '200 OK';
 $responseText = '';
@@ -14,11 +14,11 @@ $pseudonym = $getData["pseudonym"];
 
 
 if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $pseudonym != $_COOKIE["beercrate_routing_pseudonym"]) {
-    header("Location: http://localhost:63343/untitled1/error.html");
+    header("Location: http://localhost:63343/dijkstra-studie/error.html");
     exit();
 }
 
-setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/untitled1"); // Cookie for 7 days
+setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/dijkstra-studie"); // Cookie for 7 days
 
 try {
 

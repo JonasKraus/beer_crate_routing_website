@@ -1,7 +1,7 @@
 <?php
-include ("consts.php");
+include("databaseConstants.php");
 
-class databaseManager extends consts {
+class databaseManager extends databaseConstants {
 
     /* @var $conn PDO */
     private $conn;
@@ -12,10 +12,10 @@ class databaseManager extends consts {
      */
     public function __construct()
     {
-        $servername = consts::getSERVERNAME();
-        $username = consts::getUSERNAME();
-        $password = consts::getPASSWORD();
-        $dbname = consts::getDATABASENAME();
+        $servername = databaseConstants::getSERVERNAME();
+        $username = databaseConstants::getUSERNAME();
+        $password = databaseConstants::getPASSWORD();
+        $dbname = databaseConstants::getDATABASENAME();
 
         // Create connection
         $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

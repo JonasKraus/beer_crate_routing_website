@@ -1,6 +1,5 @@
 <?php
-include("databaseManager.php");
-
+include("../php/databaseManager.php");
 
 $responseStatus = '200 OK';
 $responseText = '';
@@ -15,16 +14,17 @@ if(!isset($pseudonym)) {
     try {
 
         $database = new databaseManager();
-        $user = $database->getUser($pseudonym);
-
-        echo $user;
+        if (!$database->setUser($pseudonym)) {
+            $responseText = 'Error while creating User';
+        } else {
+            $database->setProgressTimestamp($pseudonym, 0);
+        }
 
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+        //echo "Error: " . $e->getMessage();
     }
 
 }
 
 header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
 header('Content-type: text/html; charset=utf-8');
-echo $responseText;

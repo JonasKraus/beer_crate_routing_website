@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dijkstra - Studie</title>
-    <script src="js/js_script.js"></script>
+    <script src="scripts/js_script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
 </head>
@@ -12,40 +12,6 @@
     <h1>Dijkstra Studie</h1>
     <img id="logo" src="pix/logoWebsiteNeutral.png">
     <p>Hier wirst du Schritt für Schritt durch die Übung begleitet</p>
-
-    <!--
-    <div>
-        <div id="breadcrump0" class="unfinished">
-            <a>Fragebogen</a>
-        </div>
-        <div id="breadcrump1" class="unfinished">
-            <a>Spiel Variante 1</a>
-        </div>
-        <div id="breadcrump2" class="unfinished">
-            <a>Fragebogen</a>
-        </div>
-        <div id="breadcrump3" class="unfinished">
-            <a>Spiel Variante 2</a>
-        </div>
-        <div id="breadcrump4" class="unfinished">
-            <a>Fragebogen</a>
-        </div>
-        <div id="breadcrump5" class="unfinished">
-            <a>Code</a>
-        </div>
-    </div>
-
-
-    <ul class="breadcrumb">
-        <li><a id="breadcrump0" class="unfinished" href="#">Fragebogen</a></li>
-        <li><a id="breadcrump1" class="unfinished" href="#">Spiel Variante 1</a></li>
-        <li><a id="breadcrump2" class="unfinished" href="#">Fragebogen</a></li>
-        <li><a id="breadcrump3" class="unfinished" href="#">Spiel Variante 2</a></li>
-        <li><a id="breadcrump4" class="unfinished" href="#">Fragebogen</a></li>
-        <li><a id="breadcrump5" class="unfinished" href="#">code</a></li>
-    </ul>
-
-    -->
 
     <div class="breadcrumb flat">
         <a id="breadcrump0" class="unfinished" href="#">Fragebogen</a>
@@ -66,13 +32,13 @@
 
     <div class="center hidden" id="forms">
         <p id="para_forms" class="hidden">Bitte sende uns auch (sobald feststehend) deine Punkte aus der Papierübung und von der Klausur-Aufgabe zu.</p>
-        <form action="js/setUserExam.php" method="get" class="hidden" id="form_exercise">
+        <form action="scripts/setUserCredit.php" method="get" class="hidden" id="form_exercise">
             Punkte (Übungsblatt):
             <input type="text" name="exercise" value="0"/>
             <input type="submit" value="Abschicken" class="button submit"/>
         </form>
         <br>
-        <form action="js/setUserExam.php" method="get" class="hidden" id="form_exam">
+        <form action="scripts/setUserCredit.php" method="get" class="hidden" id="form_exam">
             Punkte (Klausur):
             <input type="text" name="exam" value="0"/>
             <input type="submit" value="Abschicken" class="button submit"/>

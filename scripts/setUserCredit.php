@@ -1,6 +1,6 @@
 <?php
 
-include("databaseManager.php");
+include("../php/databaseManager.php");
 
 $responseStatus = '200 OK';
 $responseText = '';

@@ -1,13 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: jonas-uni
- * Date: 15.10.2016
- * Time: 13:01
- */
-class consts
-{
+class databaseConstants {
 
     private static $SERVER_NAME = "127.0.0.1";
     private static $USER_NAME = "root";
