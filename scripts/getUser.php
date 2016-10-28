@@ -27,4 +27,3 @@ if(!isset($pseudonym)) {
 
 header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
 header('Content-type: text/html; charset=utf-8');
-echo $responseText;

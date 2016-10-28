@@ -2,7 +2,7 @@
 include('../php/cryptography.php');
 include('../php/databaseConstants.php');
 
-$progress = 1;
+$progress = 5;
 $name = 'jonas';
 
 $test = cryptography::wrapProgress($progress, $name);

@@ -14,7 +14,7 @@ $pseudonym = $getData["pseudonym"];
 
 
 if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $pseudonym != $_COOKIE["beercrate_routing_pseudonym"]) {
-    header("Location: http://localhost:63343/dijkstra-studie/error.html");
+    header("Location: ../error.html");
     exit();
 }
 
@@ -29,8 +29,12 @@ try {
     }
 
 } catch (PDOException $e) {
-    //echo "Error: " . $e->getMessage();
-    header("Location: http://localhost:63343/dijkstra-studie/error.html");
+    echo "Error: " . $e->getMessage();
+    header("Location: ../error.html");
     exit();
 }
+
+header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+header('Content-type: text/html; charset=utf-8');
+header("Location: ../index.html");
 
