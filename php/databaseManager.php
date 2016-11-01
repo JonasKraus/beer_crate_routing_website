@@ -159,4 +159,161 @@ class databaseManager extends databaseConstants {
         }
     }
 
+    public function getProgressData ($progress = null, $onlyData = false) {
+
+        $sqlPrepared = null;
+        $chartLabel = "Fortschritt: " . $sqlPrepared;
+        $query = "SELECT * FROM progress ";
+        $orderBy = " ORDER BY dateCreated";
+        if (isset($progress)) {
+            $query .= " WHERE progress = :progress";
+            $sqlPrepared = $this->conn->prepare($query . $orderBy);
+            $sqlPrepared->bindParam(":progress", $progress);
+        } else {
+
+            $sqlPrepared = $this->conn->prepare($query . $orderBy);
+        }
+
+        $sqlPrepared->execute();
+
+        $data = $sqlPrepared->fetchAll();
+
+        //return $result;
+
+
+        if (count($data) < 2 ) {
+            array(
+                "success" => false,
+                "message" => "Zu wenig Daten vorhanen"
+            );
+        } else {
+
+            $res = explode("x", $_COOKIE["res"]);
+            $width = $res[0] + 0;
+            $height = $res[1] + 0;
+            $chartRes = 10;
+
+            $dateStart = strtotime($data[0]["dateCreated"]);
+            $dateEnd = strtotime($data[count($data)-1]["dateCreated"]);
+            $totalTime = $dateEnd - $dateStart;
+
+            $timeInterval = $totalTime / $chartRes;
+
+            //echo $timeInterval;
+
+            $lineData = array();
+            $tmpTime = $dateStart;
+            $dataCounter = 0;
+            $lastValue = 0;
+            $labels = array();
+            $values = array();
+            $labels[] = $data[0]['dateCreated'];
+
+            foreach ($data as $key=>$dataPoint) {
+
+                /*echo "muss kleiner sein " . strtotime($dataPoint['dateCreated']) . "<br>";
+                echo "als " . ($tmpTime + $timeInterval) . "<br>";
+                echo $dataCounter . "<br>";
+                */
+
+                if (strtotime($dataPoint['dateCreated']) < ($tmpTime + $timeInterval)) {
+                    //echo "weiter <br>" ;
+                    $dataCounter ++;
+                } else {
+                    //echo "neues interval<br>";
+                    $lineData[] = array(
+                        "time" => $dataPoint['dateCreated'],
+                        "value" => $dataCounter
+                    );
+                    $labels[] = $dataPoint['dateCreated'];
+                    $values[] = $dataCounter;
+                    $dataCounter = 0;
+                    $tmpTime = strtotime($dataPoint['dateCreated']);
+                }
+
+                if ($key == count($data)- 1) {
+                    $lineData[] = array(
+                        "time" => $dataPoint['dateCreated'],
+                        "value" => $dataCounter
+                    );
+                    $values[] = $dataCounter;
+                    $dataCounter = 0;
+                    $tmpTime = strtotime($dataPoint['dateCreated']);
+                }
+
+
+
+                //echo strtotime($dataPoint['dateCreated']) . "<br>";
+                //echo $dataCounter . "<br>";
+            }
+
+            if (!$onlyData) {
+                return self::buildProgressDataResponse($labels, $values, $chartLabel);
+            }
+
+        }
+        return null;
+    }
+
+    public function getAllProgressData () {
+        $values = array();
+        for ($i = 0; $i < 6; $i++) {
+
+            $values[] = self::getProgressData($i, true);
+        }
+
+        //self::buildProgressDataResponse()
+    }
+
+    private function buildProgressDataResponse ($labels, $values, $chartLabel) {
+
+        $debug = false;
+        if (!$debug) {
+            $response = '{
+                "labels": ' . json_encode($labels) . ',
+                "datasets": [
+                  {
+                    "label": "' . $chartLabel . '",
+                    "fill":true,
+                    "backgroundColor":"#0c4d4d",
+                    "hoverBackgroundColor": "#FF6384",
+                    "data": ' . json_encode($values) . '
+                  }
+                ]
+              }';
+
+        } else {
+            $response = array(
+                "labels" => $labels,
+                "data" => $values
+            );
+            $response = json_encode($response);
+        }
+
+        header('Content-Type: application/json');
+        return $response;
+        //echo json_encode($lineData);
+    }
+
+    public function getProgress($pseudonym) {
+
+        $sqlPrepared = $this->conn->prepare("SELECT progress FROM subject WHERE pseudonym = :pseudonym");
+        $sqlPrepared->bindParam(":pseudonym", $pseudonym);
+
+        $sqlPrepared->execute();
+        $results = $sqlPrepared->fetchAll();
+
+        $progress = null;
+
+
+        if (count($results) == 1) {
+            // output data of each row
+            foreach ($results as $result) {
+                $progress = '{"progress":' . $result["progress"]."}";
+            }
+        }
+
+        return $progress;
+    }
+
 }

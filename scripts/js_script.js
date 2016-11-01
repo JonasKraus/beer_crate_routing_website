@@ -6,8 +6,15 @@ var psdnym = '';
 var user = null;
 
 checkCookie();
-
+setScreenResCookie();
 setBreadcrumps();
+
+
+function setScreenResCookie () {
+    date = new Date();
+    date.setTime(date.getTime()+(7*24*60*60*1000));
+    document.cookie = "res=" + window.innerWidth + "x" + window.innerHeight + ";expires=" + date.toGMTString();
+}
 
 function checkCookie () {
 
@@ -148,6 +155,7 @@ function setCookie (psdnym) {
     date.setTime(date.getTime()+(7*24*60*60*1000));
 
     document.cookie = name + "pseudonym=" + psdnym + ";expires=" + date.toGMTString();
+    document.cookie = "res=" + screen.width + "x" + screen.height + ";expires=" + date.toGMTString();
 }
 
 function getCookie (cname) {

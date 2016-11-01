@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+</head>
+<body>
+
+<canvas id="myChart" width="740" height="200"></canvas>
+
+<script>
+
+    date = new Date();
+    date.setTime(date.getTime()+(7*24*60*60*1000));
+    document.cookie = "res=" + window.innerWidth + "x" + window.innerHeight + ";expires=" + date.toGMTString();
+
+
+    var request = new XMLHttpRequest();
+    request.open("POST","../chart.php");
+    //requestSet.setRequestHeader("pseudonym",psdnym);
+    //TODO check wenn abbrechen
+
+    request.addEventListener('load', function(event) {
+        if (request.status >= 200 && request.status < 300) {
+
+            var  data = JSON.parse(request.responseText);
+
+            var debug = false;
+            // Get the context of the canvas element we want to select
+            var ctx = document.getElementById("myChart").getContext("2d");
+
+            // Instantiate a new chart using 'data' (defined below)
+
+            var myChart;
+            if (!debug) {
+                myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: data
+                });
+            } else {
+                myChart = new Chart(ctx, {
+                    type: 'line',
+                    labels: data.labels,
+                    data: {
+                        datasets: [{
+                            label: 'test',
+                            data:[data.data]
+                        }]
+
+
+                    },
+
+                    borderWidth: 1,
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        },
+                        legend: {
+                            display: true,
+                            labels: {
+                                fontColor: '#0c4d4d'
+                            }
+                        }
+                    }
+                });
+            }
+
+        }
+    });
+    request.send();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
