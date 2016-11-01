@@ -316,4 +316,17 @@ class databaseManager extends databaseConstants {
         return $progress;
     }
 
+    public function getProgressUpdate($pseudonym) {
+
+        $progress = $this->getProgress($pseudonym);
+
+        $progress = json_decode($progress);
+
+        var_dump($progress->progress);
+
+        $link = cryptography::wrapProgress(($progress->progress +1), $pseudonym);
+
+        return $link;
+    }
+
 }
