@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -494,7 +492,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="12221000" />
+      <workItem from="1477760100973" duration="13297000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -580,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478005573252</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added method to get next update link">
+      <created>1478007020939</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1478007020939</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103337000" />
+    <option name="totallyTimeSpent" value="104413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -634,7 +639,8 @@
     <MESSAGE value="commented echos and added redirects to error page&#10;" />
     <MESSAGE value="fixed headers and redirects" />
     <MESSAGE value="added chart&#10;added method to get progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chart&#10;added method to get progress" />
+    <MESSAGE value="added method to get next update link" />
+    <option name="LAST_COMMIT_MESSAGE" value="added method to get next update link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
