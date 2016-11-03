@@ -11,7 +11,7 @@ $versionFromRequest = null;
 $method = null;
 
 
-if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGENT']) && $_SERVER ['HTTP_USER_AGENT'] == 'User-Agent: UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
+if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGENT']) && $_SERVER ['HTTP_USER_AGENT'] == 'UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
     $method = "POST";
     $versionFromRequest = strtolower($_POST['vr']) == databaseConstants::getVERSIONSIMNAME()
         ? databaseConstants::getVERSIONSIM()
@@ -22,7 +22,7 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
     writeLog("request: version->" . $versionFromRequest . " pseudonym->" . $pseudonym . " user-agent->" . $_SERVER ['User-Agent-x']);
 } else {
 
-    writeLog("request: version->" . isset($_POST['vr']) . " pseudonym->" . isset($_POST['ps']) . " user-agent->" . isset($_SERVER ['User-Agent-x']));
+    writeLog("request: version->" . isset($_POST['vr']) . " pseudonym->" . isset($_POST['ps']) . " user-agent->" . isset($_SERVER ['HTTP_USER_AGENT']));
     $responseStatus = '200';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
     header('Content-type: text/html; charset=utf-8');
