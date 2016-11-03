@@ -88,7 +88,7 @@
             <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="520">
-                  <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+                  <caret line="13" column="115" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="115" />
                   <folding />
                 </state>
               </provider>
@@ -494,7 +494,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="23412000" />
+      <workItem from="1477760100973" duration="23490000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -636,11 +636,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478182886737</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="chnaged header">
+      <created>1478182960353</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1478182960353</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114528000" />
+    <option name="totallyTimeSpent" value="114606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -698,7 +705,8 @@
     <MESSAGE value="added logging" />
     <MESSAGE value="added shmod for logging file" />
     <MESSAGE value="now echoing the log" />
-    <option name="LAST_COMMIT_MESSAGE" value="now echoing the log" />
+    <MESSAGE value="chnaged header" />
+    <option name="LAST_COMMIT_MESSAGE" value="chnaged header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1050,7 +1058,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+          <caret line="13" column="115" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="115" />
           <folding />
         </state>
       </provider>
