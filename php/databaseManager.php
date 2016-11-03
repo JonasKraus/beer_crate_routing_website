@@ -378,7 +378,7 @@ class databaseManager extends databaseConstants {
         if ($fileLogging) {
             $file = '../log/request_log.txt';
             $current = file_get_contents($file);
-            $current .= $message;
+            $current .= "\n" . $message;
             file_put_contents($file, $current);
         } else {
             echo $message;
