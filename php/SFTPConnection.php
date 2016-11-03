@@ -8,7 +8,7 @@ class SFTPConnection
     public function __construct($host, $port=22)
     {
         $this->writeLog("construct $host on port $port.");
-        $this->connection = @ssh2_connect($host, $port);
+        $this->connection = ssh2_connect($host, $port);
         $this->writeLog("construct connection: " . $this->connection);
         if (! $this->connection) {
             $this->writeLog("Could not connect to $host on port $port.");
@@ -19,12 +19,12 @@ class SFTPConnection
     public function login($username, $password)
     {
         $this->writeLog("start Login with $username and $password");
-        if (! @ssh2_auth_password($this->connection, $username, $password)) {
+        if (! ssh2_auth_password($this->connection, $username, $password)) {
             self::writeLog("Could not authenticate with username $username " . "and password $password.");
             throw new Exception("Could not authenticate with username $username " . "and password $password.");
 
         }
-        $this->sftp = @ssh2_sftp($this->connection);
+        $this->sftp = ssh2_sftp($this->connection);
 
         if (! $this->sftp)
             $this->writeLog("Could not initialize SFTP subsystem.");
@@ -34,17 +34,17 @@ class SFTPConnection
     public function uploadFile($local_file, $remote_file)
     {
         $sftp = $this->sftp;
-        $stream = @fopen("ssh2.sftp://$sftp$remote_file", 'w');
+        $stream = fopen("ssh2.sftp://$sftp$remote_file", 'w');
         if (! $stream)
             throw new Exception("Could not open file: $remote_file");
-        $data_to_send = @file_get_contents($local_file);
+        $data_to_send = file_get_contents($local_file);
         if ($data_to_send === false) {
             $this->writeLog("Could not open local file: $local_file.");
             throw new Exception("Could not open local file: $local_file.");
         }
-        if (@fwrite($stream, $data_to_send) === false)
+        if (fwrite($stream, $data_to_send) === false)
             throw new Exception("Could not send data from file: $local_file.");
-        @fclose($stream);
+        fclose($stream);
     }
 
     function scanFilesystem($remote_file) {
@@ -73,12 +73,12 @@ class SFTPConnection
     public function receiveFile($remote_file, $local_file)
     {
         $sftp = $this->sftp;
-        $stream = @fopen("ssh2.sftp://$sftp$remote_file", 'r');
+        $stream = fopen("ssh2.sftp://$sftp$remote_file", 'r');
         if (! $stream)
             throw new Exception("Could not open file: $remote_file");
         $contents = fread($stream, filesize("ssh2.sftp://$sftp$remote_file"));
         file_put_contents ($local_file, $contents);
-        @fclose($stream);
+        fclose($stream);
     }
 
     public function deleteFile($remote_file){
