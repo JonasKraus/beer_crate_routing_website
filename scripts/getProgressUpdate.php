@@ -57,15 +57,14 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 }
 
 
-function writeLog ($message) {
+function writeLog ($message, $fileLogging = true) {
 
-    //echo json_decode($message);
+    if ($fileLogging) {
+        chmod("request_log.txt", 0777);
+        $myfile = fopen("request_log.txt", "w+") or die("Unable to open file!");
+        fwrite($myfile, $message);
+    } else {
+        echo $message;
+    }
 
-    /*
-
-    chmod("../log/request_log.txt", 0777);
-    $myfile = fopen("../log/request_log.txt", "w") or die("Unable to open file!");
-
-    fwrite($myfile, $message);
-    */
 }
