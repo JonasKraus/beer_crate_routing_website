@@ -7,7 +7,7 @@ class SFTPConnection
 
     public function __construct($host, $port=22)
     {
-        $this->writeLog("construct $host on port $port.");
+        $this->writeLog("construct $host on port $port. "  . ssh2_connect($host, $port));
         $this->connection = ssh2_connect($host, $port);
         $this->writeLog("construct connection: " . $this->connection);
         if (! $this->connection) {
