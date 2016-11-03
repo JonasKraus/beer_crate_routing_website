@@ -9,6 +9,7 @@ class SFTPConnection
     {
         $this->connection = @ssh2_connect($host, $port);
         if (! $this->connection)
+            $this->writeLog("Could not connect to $host on port $port.");
             throw new Exception("Could not connect to $host on port $port.");
     }
 
@@ -18,6 +19,7 @@ class SFTPConnection
             throw new Exception("Could not authenticate with username $username " . "and password $password.");
         $this->sftp = @ssh2_sftp($this->connection);
         if (! $this->sftp)
+            $this->writeLog("Could not initialize SFTP subsystem.");
             throw new Exception("Could not initialize SFTP subsystem.");
     }
 
@@ -36,8 +38,12 @@ class SFTPConnection
     }
 
     function scanFilesystem($remote_file) {
+
         $sftp = $this->sftp;
         $dir = "ssh2.sftp://$sftp$remote_file";
+
+        $this->writeLog("scan started... " . $dir);
+
         $tempArray = array();
         $handle = opendir($dir);
         // List all the files
@@ -68,5 +74,18 @@ class SFTPConnection
     public function deleteFile($remote_file){
         $sftp = $this->sftp;
         unlink("ssh2.sftp://$sftp$remote_file");
+    }
+
+    public function writeLog ($message, $fileLogging = true) {
+
+        if ($fileLogging) {
+            $file = '../log/request_log.txt';
+            $current = file_get_contents($file);
+            $current .= "\n" . $message;
+            file_put_contents($file, $current);
+        } else {
+            echo $message;
+        }
+
     }
 }
