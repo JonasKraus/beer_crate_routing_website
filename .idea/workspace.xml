@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getProgressUpdate.php" afterPath="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
     </list>
     <ignored path="untitled1.iws" />
@@ -32,7 +31,7 @@
     <favorites_list name="untitled1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6381835">
+    <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
           <file leaf-file-name="js_script.js" pinned="false" current-in-tab="false">
@@ -88,8 +87,8 @@
           <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1463">
-                  <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+                <state relative-caret-position="520">
+                  <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -495,7 +494,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="23336000" />
+      <workItem from="1477760100973" duration="23412000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -630,11 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478182607366</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="now echoing the log">
+      <created>1478182886737</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1478182886737</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114452000" />
+    <option name="totallyTimeSpent" value="114528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -691,7 +697,8 @@
     <MESSAGE value="canged return code to always be 200 ok" />
     <MESSAGE value="added logging" />
     <MESSAGE value="added shmod for logging file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added shmod for logging file" />
+    <MESSAGE value="now echoing the log" />
+    <option name="LAST_COMMIT_MESSAGE" value="now echoing the log" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,8 +1049,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        <state relative-caret-position="520">
+          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
           <folding />
         </state>
       </provider>
