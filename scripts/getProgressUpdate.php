@@ -22,7 +22,7 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
     writeLog("request: version->" . $versionFromRequest . " pseudonym->" . $pseudonym . " user-agent->" . $_SERVER ['User-Agent-x']);
 } else {
 
-    writeLog("request: version->" . isset($_POST['vr']) . " pseudonym->" . isset($_POST['ps']) . " user-agent->" . isset($_SERVER ['HTTP_USER_AGENT']));
+    writeLog("request: version->" . $_POST['vr'] . " pseudonym->" . $_POST['ps'] . " user-agent->" . $_SERVER ['HTTP_USER_AGENT']);
     $responseStatus = '200';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
     header('Content-type: text/html; charset=utf-8');
