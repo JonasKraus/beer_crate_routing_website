@@ -375,7 +375,7 @@ class databaseManager extends databaseConstants {
 
     public function writeLog ($message) {
 
-        echo json_decode($message);
+        //echo json_decode($message);
         /*
         chmod("../log/request_log.txt", 0777);
         $myfile = fopen("../log/request_log.txt", "w") or die("Unable to open file!");

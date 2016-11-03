@@ -59,7 +59,7 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 
 function writeLog ($message) {
 
-    echo json_decode($message);
+    //echo json_decode($message);
 
     /*
 
