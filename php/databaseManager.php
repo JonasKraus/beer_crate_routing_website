@@ -335,19 +335,19 @@ class databaseManager extends databaseConstants {
         try {
             $sft = new SFTPConnection("chernobog.dd-dns.de");
             self::writeLog("databaseManager ->start login");
-            $sft->login("beerrouting", "WaTaX5NF");
+            $sft->login("beerrouting", "WaTrX5NF");
             $versionName = $version == databaseConstants::getVERSIONCOMIC()
                 ? databaseConstants::getVERSIONCOMICNAME()
                 : databaseConstants::getVERSIONSIMNAME();
 
-            $dirlist = $sft->scanFilesystem('/survey_log/' . $pseudonym . '/' . $versionName);
+            $dirlist = $sft->scanFilesystem($pseudonym, $versionName);
 
-            self::writeLog("getProgressUpdate dirList length: " . count($dirlist));
+            self::writeLog("getProgressUpdate dirList: " . count($dirlist));
 
             $containsTut = false;
             $containsLevel = false;
 
-            foreach ($dirlist as $fileName) {
+            foreach ($dirlist['surveylog'] as $fileName) {
 
                 if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
                     $containsLevel = true;
