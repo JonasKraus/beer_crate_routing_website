@@ -334,6 +334,7 @@ class databaseManager extends databaseConstants {
 
         try {
             $sft = new SFTPConnection("chernobog.dd-dns.de");
+            self::writeLog("databaseManager ->start login");
             $sft->login("beerrouting", "WaTaX5NF");
             $versionName = $version == databaseConstants::getVERSIONCOMIC()
                 ? databaseConstants::getVERSIONCOMICNAME()

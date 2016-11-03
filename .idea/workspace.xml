@@ -4,6 +4,7 @@
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/SFTPConnection.php" afterPath="$PROJECT_DIR$/php/SFTPConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,18 +48,18 @@
           <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
+                <state relative-caret-position="425">
+                  <caret line="336" column="60" selection-start-line="336" selection-start-column="60" selection-end-line="336" selection-end-column="60" />
                   <folding>
-                    <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
-                    <marker date="1478185964976" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
-                    <marker date="1478185964976" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
-                    <marker date="1478185964976" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
-                    <marker date="1478185964976" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
-                    <marker date="1478185964976" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
-                    <marker date="1478185964976" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
-                    <marker date="1478185964976" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
-                    <marker date="1478185964976" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
+                    <marker date="1478187314695" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
+                    <marker date="1478187314695" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
+                    <marker date="1478187314695" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
+                    <marker date="1478187314695" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
+                    <marker date="1478187314695" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
+                    <marker date="1478187314695" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
+                    <marker date="1478187314695" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
+                    <marker date="1478187314695" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
+                    <marker date="1478187314695" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
                   </folding>
                 </state>
               </provider>
@@ -67,8 +68,8 @@
           <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1520">
-                  <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+                <state relative-caret-position="560">
+                  <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -484,7 +485,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="27428000" />
+      <workItem from="1477760100973" duration="27800000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -724,11 +725,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478186533785</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="chended log">
+      <created>1478186982242</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1478186982242</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118544000" />
+    <option name="totallyTimeSpent" value="118916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -766,7 +774,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mysql database createion file" />
     <MESSAGE value="added database manager class" />
     <MESSAGE value="refactored names and dirs" />
     <MESSAGE value="commented echos and added redirects to error page&#10;" />
@@ -791,7 +798,8 @@
     <MESSAGE value="changed logging append with new line" />
     <MESSAGE value="added try catch to sft login" />
     <MESSAGE value="added more logginf in sftp" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more logginf in sftp" />
+    <MESSAGE value="chended log" />
+    <option name="LAST_COMMIT_MESSAGE" value="chended log" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1125,26 +1133,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="336" column="60" selection-start-line="336" selection-start-column="60" selection-end-line="336" selection-end-column="60" />
           <folding>
-            <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
-            <marker date="1478185964976" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
-            <marker date="1478185964976" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
-            <marker date="1478185964976" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
-            <marker date="1478185964976" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
-            <marker date="1478185964976" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
-            <marker date="1478185964976" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
-            <marker date="1478185964976" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
-            <marker date="1478185964976" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
+            <marker date="1478187314695" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
+            <marker date="1478187314695" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
+            <marker date="1478187314695" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
+            <marker date="1478187314695" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
+            <marker date="1478187314695" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
+            <marker date="1478187314695" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
+            <marker date="1478187314695" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
+            <marker date="1478187314695" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
+            <marker date="1478187314695" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="560">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
       </provider>

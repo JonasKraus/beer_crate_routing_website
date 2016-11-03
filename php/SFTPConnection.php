@@ -9,9 +9,10 @@ class SFTPConnection
     {
         $this->writeLog("construct $host on port $port.");
         $this->connection = @ssh2_connect($host, $port);
-        if (! $this->connection)
+        if (! $this->connection) {
             $this->writeLog("Could not connect to $host on port $port.");
             throw new Exception("Could not connect to $host on port $port.");
+        }
     }
 
     public function login($username, $password)
