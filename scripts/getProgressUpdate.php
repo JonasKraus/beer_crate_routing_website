@@ -56,6 +56,7 @@ header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
 header('Content-type: text/html; charset=utf-8');
 
 function writeLog ($message) {
+    chmod("../log/request_log.txt", 0777);
     $myfile = fopen("../log/request_log.txt", "w") or die("Unable to open file!");
 
     fwrite($myfile, $message);
