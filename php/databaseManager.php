@@ -59,6 +59,8 @@ class databaseManager extends databaseConstants {
         $updatePart2 = ", code = :code";
         $updateWhere = " WHERE pseudonym = :pseudonym AND progress = :whereProgress";
 
+        self::writeLog("updateUser progress: " .$progress);
+
         if ($progress < 5) {
             $sqlPrepared = $this->conn->prepare($updatePart1 . $updateWhere);
         } else if ($progress == 5) {
@@ -73,8 +75,12 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->bindParam(":pseudonym", $pseudonym);
 
         if ($sqlPrepared->execute() === TRUE) {
+
+            self::writeLog("updateUser execution: true ");
             return true;
         } else {
+
+            self::writeLog("updateUser execution: failed ");
             return false;
         }
     }
@@ -133,7 +139,11 @@ class databaseManager extends databaseConstants {
             foreach ($results as $result) {
                 $user = '{"pseudonym":"' . $result["pseudonym"] . '","progress":' . $result["progress"] . ',"version":' . $result["version"] . ',"code":"' . $result["code"] . '"' . ',"exam":"' . $result["exam"] . '"' . ',"exercise":"' . $result["exercise"] . '"' .  "}";
             }
+        } else {
+            self::writeLog("getUser resultset length: " . count($results));
         }
+
+        self::writeLog("getUser user found: " . $user);
 
         return $user;
     }
@@ -328,6 +338,8 @@ class databaseManager extends databaseConstants {
 
         $dirlist = $sft->scanFilesystem('/survey_log/' . $pseudonym . '/' . $versionName);
 
+        self::writeLog("getProgressUpdate dirList length: " . count($dirlist));
+
         $containsTut = false;
         $containsLevel = false;
 
@@ -341,9 +353,15 @@ class databaseManager extends databaseConstants {
             }
         }
 
+
+
+
         if (!$containsTut || !$containsLevel) {
+            self::writeLog("getProgressUpdate logs available: false");
             return false;
         }
+
+        self::writeLog("getProgressUpdate logs available: true");
 
         if ($version == $versionFromRequest) {
             $nextProgress = 2;
@@ -353,6 +371,12 @@ class databaseManager extends databaseConstants {
 
         return $this->updateUser($pseudonym, $nextProgress);
 
+    }
+
+    public function writeLog ($message) {
+        $myfile = fopen("../log/request_log.txt", "w") or die("Unable to open file!");
+
+        fwrite($myfile, $message);
     }
 
 }

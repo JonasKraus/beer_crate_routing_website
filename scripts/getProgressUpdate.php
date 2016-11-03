@@ -10,11 +10,19 @@ $pseudonym = null;
 $versionFromRequest = null;
 $method = null;
 
+
 if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['User-Agent-x']) && $_SERVER ['User-Agent-x'] == 'User-Agent: UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
     $method = "POST";
-    $versionFromRequest = $_POST['vr'] == 'sim' ? databaseConstants::getVERSIONSIM() : databaseConstants::getVERSIONCOMIC();
+    $versionFromRequest = strtolower($_POST['vr']) == databaseConstants::getVERSIONSIMNAME()
+        ? databaseConstants::getVERSIONSIM()
+        : databaseConstants::getVERSIONCOMIC();
     $pseudonym = $_POST['ps'];
+
+
+    writeLog("request: version->" . $versionFromRequest . " pseudonym->" . $pseudonym . " user-agent->" . $_SERVER ['User-Agent-x']);
 } else {
+
+    writeLog("request: version->" . isset($_POST['vr']) . " pseudonym->" . isset($_POST['ps']) . " user-agent->" . isset($_SERVER ['User-Agent-x']));
     $responseStatus = '200';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
     header('Content-type: text/html; charset=utf-8');
@@ -47,3 +55,8 @@ try {
 header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
 header('Content-type: text/html; charset=utf-8');
 
+function writeLog ($message) {
+    $myfile = fopen("../log/request_log.txt", "w") or die("Unable to open file!");
+
+    fwrite($myfile, $message);
+}
