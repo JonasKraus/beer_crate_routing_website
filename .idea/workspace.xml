@@ -4,7 +4,6 @@
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getProgressUpdate.php" afterPath="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,18 +47,18 @@
           <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1210">
-                  <caret line="380" column="31" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
+                <state relative-caret-position="585">
+                  <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
                   <folding>
-                    <marker date="1478185558162" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
-                    <marker date="1478185558162" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
-                    <marker date="1478185558162" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
-                    <marker date="1478185558162" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
-                    <marker date="1478185558162" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
-                    <marker date="1478185558162" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
-                    <marker date="1478185558162" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
-                    <marker date="1478185558162" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
-                    <marker date="1478185558162" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
+                    <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
+                    <marker date="1478185964976" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
+                    <marker date="1478185964976" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
+                    <marker date="1478185964976" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
+                    <marker date="1478185964976" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
+                    <marker date="1478185964976" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
+                    <marker date="1478185964976" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
+                    <marker date="1478185964976" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
+                    <marker date="1478185964976" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
                   </folding>
                 </state>
               </provider>
@@ -88,8 +87,8 @@
           <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1288">
-                  <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+                <state relative-caret-position="465">
+                  <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -485,7 +484,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="26024000" />
+      <workItem from="1477760100973" duration="26425000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -697,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478185425921</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed logging append with new line">
+      <created>1478185575319</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1478185575319</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117140000" />
+    <option name="totallyTimeSpent" value="117541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -739,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated getUser to use prepared statements" />
     <MESSAGE value="updated updateUser to use prepared statements" />
     <MESSAGE value="added forms for submitting the exam points and the exercise points. updated db" />
     <MESSAGE value="added mysql database createion file" />
@@ -764,7 +769,8 @@
     <MESSAGE value="disabled log" />
     <MESSAGE value="changed logging" />
     <MESSAGE value="changed logging append" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed logging append" />
+    <MESSAGE value="changed logging append with new line" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed logging append with new line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,26 +1104,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        <state relative-caret-position="465">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="380" column="31" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
+        <state relative-caret-position="585">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
           <folding>
-            <marker date="1478185558162" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
-            <marker date="1478185558162" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
-            <marker date="1478185558162" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
-            <marker date="1478185558162" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
-            <marker date="1478185558162" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
-            <marker date="1478185558162" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
-            <marker date="1478185558162" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
-            <marker date="1478185558162" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
-            <marker date="1478185558162" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
+            <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
+            <marker date="1478185964976" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
+            <marker date="1478185964976" expanded="true" signature="2799:2850" ph="INSERT INTO subject... " />
+            <marker date="1478185964976" expanded="true" signature="3007:3048" ph="SELECT COUNT... subject" />
+            <marker date="1478185964976" expanded="true" signature="3197:3263" ph="UPDATE subje... " />
+            <marker date="1478185964976" expanded="true" signature="3812:3862" ph="SELECT * FRO... subject" />
+            <marker date="1478185964976" expanded="true" signature="4914:5004" ph="UPDATE subje... " />
+            <marker date="1478185964976" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
+            <marker date="1478185964976" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
           </folding>
         </state>
       </provider>

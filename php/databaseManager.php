@@ -330,46 +330,50 @@ class databaseManager extends databaseConstants {
 
         $nextProgress = null;
 
-        $sft = new SFTPConnection("chernobog.dd-dns.de");
-        $sft->login("beerrouting", "WaTaX5NF");
-        $versionName = $version == databaseConstants::getVERSIONCOMIC()
-            ? databaseConstants::getVERSIONCOMICNAME()
-            : databaseConstants::getVERSIONSIMNAME();
+        self::writeLog("start sftp");
 
-        $dirlist = $sft->scanFilesystem('/survey_log/' . $pseudonym . '/' . $versionName);
+        try {
+            $sft = new SFTPConnection("chernobog.dd-dns.de");
+            $sft->login("beerrouting", "WaTaX5NF");
+            $versionName = $version == databaseConstants::getVERSIONCOMIC()
+                ? databaseConstants::getVERSIONCOMICNAME()
+                : databaseConstants::getVERSIONSIMNAME();
 
-        self::writeLog("getProgressUpdate dirList length: " . count($dirlist));
+            $dirlist = $sft->scanFilesystem('/survey_log/' . $pseudonym . '/' . $versionName);
 
-        $containsTut = false;
-        $containsLevel = false;
+            self::writeLog("getProgressUpdate dirList length: " . count($dirlist));
 
-        foreach ($dirlist as $fileName) {
+            $containsTut = false;
+            $containsLevel = false;
 
-            if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
-                $containsLevel = true;
+            foreach ($dirlist as $fileName) {
 
-            } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
-                $containsTut = true;
+                if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
+                    $containsLevel = true;
+
+                } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
+                    $containsTut = true;
+                }
             }
+
+            if (!$containsTut || !$containsLevel) {
+                self::writeLog("getProgressUpdate logs available: false");
+                return false;
+            }
+
+            self::writeLog("getProgressUpdate logs available: true");
+
+            if ($version == $versionFromRequest) {
+                $nextProgress = 2;
+            } else {
+                $nextProgress = 4;
+            }
+
+            return $this->updateUser($pseudonym, $nextProgress);
+        } catch (Exception $exception) {
+            self::writeLog("getProgreeUpdate error sftp: " . $exception->getMessage());
         }
-
-
-
-
-        if (!$containsTut || !$containsLevel) {
-            self::writeLog("getProgressUpdate logs available: false");
-            return false;
-        }
-
-        self::writeLog("getProgressUpdate logs available: true");
-
-        if ($version == $versionFromRequest) {
-            $nextProgress = 2;
-        } else {
-            $nextProgress = 4;
-        }
-
-        return $this->updateUser($pseudonym, $nextProgress);
+        return false;
 
     }
 
