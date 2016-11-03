@@ -17,10 +17,13 @@ class SFTPConnection
     public function login($username, $password)
     {
         $this->writeLog("start Login with $username and $password");
-        if (! @ssh2_auth_password($this->connection, $username, $password))
+        if (! @ssh2_auth_password($this->connection, $username, $password)) {
             self::writeLog("Could not authenticate with username $username " . "and password $password.");
             throw new Exception("Could not authenticate with username $username " . "and password $password.");
+
+        }
         $this->sftp = @ssh2_sftp($this->connection);
+
         if (! $this->sftp)
             $this->writeLog("Could not initialize SFTP subsystem.");
             throw new Exception("Could not initialize SFTP subsystem.");
@@ -33,8 +36,10 @@ class SFTPConnection
         if (! $stream)
             throw new Exception("Could not open file: $remote_file");
         $data_to_send = @file_get_contents($local_file);
-        if ($data_to_send === false)
+        if ($data_to_send === false) {
+            $this->writeLog("Could not open local file: $local_file.");
             throw new Exception("Could not open local file: $local_file.");
+        }
         if (@fwrite($stream, $data_to_send) === false)
             throw new Exception("Could not send data from file: $local_file.");
         @fclose($stream);
