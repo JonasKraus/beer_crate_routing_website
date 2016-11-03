@@ -47,7 +47,7 @@
           <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-375">
+                <state relative-caret-position="345">
                   <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
                   <folding>
                     <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
@@ -67,8 +67,8 @@
           <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+                <state relative-caret-position="760">
+                  <caret line="20" column="106" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
                   <folding />
                 </state>
               </provider>
@@ -484,7 +484,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="26763000" />
+      <workItem from="1477760100973" duration="26983000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -710,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478185982872</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added more logginf in sftp">
+      <created>1478186318296</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1478186318296</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117879000" />
+    <option name="totallyTimeSpent" value="118099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -752,7 +759,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added forms for submitting the exam points and the exercise points. updated db" />
     <MESSAGE value="added mysql database createion file" />
     <MESSAGE value="added database manager class" />
     <MESSAGE value="refactored names and dirs" />
@@ -777,7 +783,8 @@
     <MESSAGE value="changed logging append" />
     <MESSAGE value="changed logging append with new line" />
     <MESSAGE value="added try catch to sft login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added try catch to sft login" />
+    <MESSAGE value="added more logginf in sftp" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more logginf in sftp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1109,9 +1108,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
+        <state relative-caret-position="345">
           <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
           <folding>
             <marker date="1478185964976" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
@@ -1129,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="760">
+          <caret line="20" column="106" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
           <folding />
         </state>
       </provider>

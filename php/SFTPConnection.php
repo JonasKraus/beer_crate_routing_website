@@ -7,6 +7,7 @@ class SFTPConnection
 
     public function __construct($host, $port=22)
     {
+        $this->writeLog("construct $host on port $port.");
         $this->connection = @ssh2_connect($host, $port);
         if (! $this->connection)
             $this->writeLog("Could not connect to $host on port $port.");
@@ -15,7 +16,9 @@ class SFTPConnection
 
     public function login($username, $password)
     {
+        $this->writeLog("start Login with $username and $password");
         if (! @ssh2_auth_password($this->connection, $username, $password))
+            self::writeLog("Could not authenticate with username $username " . "and password $password.");
             throw new Exception("Could not authenticate with username $username " . "and password $password.");
         $this->sftp = @ssh2_sftp($this->connection);
         if (! $this->sftp)
