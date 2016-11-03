@@ -1,5 +1,6 @@
 <?php
 include("databaseConstants.php");
+include("SFTPConnection.php");
 
 class databaseManager extends databaseConstants {
 
@@ -305,7 +306,6 @@ class databaseManager extends databaseConstants {
 
         $progress = null;
 
-
         if (count($results) == 1) {
             // output data of each row
             foreach ($results as $result) {
@@ -316,15 +316,41 @@ class databaseManager extends databaseConstants {
         return $progress;
     }
 
-    public function getProgressUpdate($pseudonym) {
+    public function getProgressUpdate($pseudonym, $version, $versionFromRequest) {
 
-        $progress = $this->getProgress($pseudonym);
+        $nextProgress = null;
 
-        $progress = json_decode($progress);
+        $sft = new SFTPConnection("chernobog.dd-dns.de");
+        $versionName = $version == databaseConstants::getVERSIONCOMIC()
+            ? databaseConstants::getVERSIONCOMICNAME()
+            : databaseConstants::getVERSIONSIMNAME();
 
-        var_dump($progress->progress);
+        $dirlist = $sft->scanFilesystem('/survey_log/' . $pseudonym . '/' . $versionName);
 
-        $link = cryptography::wrapProgress(($progress->progress +1), $pseudonym);
+        $containsTut = false;
+        $containsLevel = false;
+
+        foreach ($dirlist as $fileName) {
+
+            if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
+                $containsLevel = true;
+
+            } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
+                $containsTut = true;
+            }
+        }
+
+        if (!$containsTut || !$containsLevel) {
+            return false;
+        }
+
+        if ($version == $versionFromRequest) {
+            $nextProgress = 2;
+        } else {
+            $nextProgress = 4;
+        }
+
+        $link = cryptography::wrapProgress($nextProgress, $pseudonym);
 
         return $link;
     }

@@ -7,16 +7,16 @@ $responseStatus = '200 OK';
 $responseText = '';
 
 $pseudonym = null;
+$versionFromRequest = null;
+$method = null;
 
-if (isset($_GET['pgr'])) {
-    $pseudonym = $_GET['ps'];
-} else if (isset($_POST['ps'])) {
+if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['User-Agent-x']) && $_SERVER ['User-Agent-x'] == 'User-Agent: UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
+    $method = "POST";
+    $versionFromRequest = $_POST['vr'] == 'sim' ? databaseConstants::getVERSIONSIM() : databaseConstants::getVERSIONCOMIC();
     $pseudonym = $_POST['ps'];
-} else if (isset($_COOKIE["beercrate_routing_pseudonym"])) {
-    $pseudonym = $_COOKIE["beercrate_routing_pseudonym"];
+} else {
+    showErrorPage();
 }
-
-// TODO check sft files
 
 setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/dijkstra-studie"); // Cookie for 7 days
 
@@ -26,15 +26,27 @@ try {
 
     $database = new databaseManager();
 
-    $link = $database->getProgressUpdate($pseudonym);
+    $user = $database->getUser($pseudonym);
+    $user = json_decode($user);
 
+    $link = $database->getProgressUpdate($pseudonym, $user->version, $versionFromRequest);
+
+    if (!$link) {
+        showErrorPage();
+    }
+
+    echo $method . "<br>";
     echo $link;
 
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
+    showErrorPage();
+}
+
+//header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+header('Content-type: text/html; charset=utf-8');
+
+function showErrorPage () {
     header("Location: ../error.html");
     exit();
 }
-
-header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
-header('Content-type: text/html; charset=utf-8');

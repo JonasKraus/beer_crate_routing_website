@@ -8,6 +8,45 @@ class databaseConstants {
     private static $DATABASE_NAME = "beercrate_routing";
     private static $KEY = "Testverschlüsselung";
 
+    private static $VERSION_SIM = 0;
+    private static $VERSION_COMIC = 1;
+    private static $VERSION_SIM_NAME = 'sim';
+    private static $VERSION_COMIC_NAME = 'comic';
+
+    /**
+     * @return string
+     */
+    public static function getVERSIONSIMNAME()
+    {
+        return self::$VERSION_SIM_NAME;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getVERSIONCOMICNAME()
+    {
+        return self::$VERSION_COMIC_NAME;
+    }
+
+
+    /**
+     * @return int
+     */
+    public static function getVERSIONSIM()
+    {
+        return self::$VERSION_SIM;
+    }
+
+    /**
+     * @return int
+     */
+    public static function getVERSIONCOMIC()
+    {
+        return self::$VERSION_COMIC;
+    }
+
+
     /**
      * @return string
      */
