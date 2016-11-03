@@ -15,7 +15,10 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['User-Agent-x'
     $versionFromRequest = $_POST['vr'] == 'sim' ? databaseConstants::getVERSIONSIM() : databaseConstants::getVERSIONCOMIC();
     $pseudonym = $_POST['ps'];
 } else {
-    showErrorPage();
+    $responseStatus = '500';
+    header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+    header('Content-type: text/html; charset=utf-8');
+    exit();
 }
 
 setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/dijkstra-studie"); // Cookie for 7 days
@@ -29,24 +32,18 @@ try {
     $user = $database->getUser($pseudonym);
     $user = json_decode($user);
 
-    $link = $database->getProgressUpdate($pseudonym, $user->version, $versionFromRequest);
+    $success = $database->getProgressUpdate($pseudonym, $user->version, $versionFromRequest);
 
-    if (!$link) {
-        showErrorPage();
+    if (!$success) {
+        $responseStatus = '500';
     }
 
-    echo $method . "<br>";
-    echo $link;
-
 } catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
-    showErrorPage();
-}
-
-//header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
-header('Content-type: text/html; charset=utf-8');
-
-function showErrorPage () {
-    header("Location: ../error.html");
+    header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+    header('Content-type: text/html; charset=utf-8');
     exit();
 }
+
+header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+header('Content-type: text/html; charset=utf-8');
+

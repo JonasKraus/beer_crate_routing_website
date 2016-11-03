@@ -351,9 +351,8 @@ class databaseManager extends databaseConstants {
             $nextProgress = 4;
         }
 
-        $link = cryptography::wrapProgress($nextProgress, $pseudonym);
+        return $this->updateUser($pseudonym, $nextProgress);
 
-        return $link;
     }
 
 }
