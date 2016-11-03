@@ -15,7 +15,7 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['User-Agent-x'
     $versionFromRequest = $_POST['vr'] == 'sim' ? databaseConstants::getVERSIONSIM() : databaseConstants::getVERSIONCOMIC();
     $pseudonym = $_POST['ps'];
 } else {
-    $responseStatus = '500';
+    $responseStatus = '200';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
     header('Content-type: text/html; charset=utf-8');
     exit();
@@ -35,7 +35,7 @@ try {
     $success = $database->getProgressUpdate($pseudonym, $user->version, $versionFromRequest);
 
     if (!$success) {
-        $responseStatus = '500';
+        $responseStatus = '200';
     }
 
 } catch (PDOException $e) {
