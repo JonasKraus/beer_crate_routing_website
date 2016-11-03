@@ -10,6 +10,8 @@ $pseudonym = null;
 $versionFromRequest = null;
 $method = null;
 
+writeLog("hallo world");
+
 
 if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGENT']) && $_SERVER ['HTTP_USER_AGENT'] == 'UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
 
@@ -60,8 +62,8 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 function writeLog ($message, $fileLogging = true) {
 
     if ($fileLogging) {
-        chmod("request_log.txt", 0777);
-        $myfile = fopen("request_log.txt", "w+") or die("Unable to open file!");
+        //chmod("../log/request_log.txt", 0777);
+        $myfile = fopen("../log/request_log.txt", "w+") or die("Unable to open file!");
         fwrite($myfile, $message);
     } else {
         echo $message;

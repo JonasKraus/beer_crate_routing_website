@@ -376,8 +376,8 @@ class databaseManager extends databaseConstants {
     public function writeLog ($message, $fileLogging = true) {
 
         if ($fileLogging) {
-            chmod("request_log.txt", 0777);
-            $myfile = fopen("request_log.txt", "w+") or die("Unable to open file!");
+            //chmod("../log/request_log.txt", 0777);
+            $myfile = fopen("../log/request_log.txt", "w+") or die("Unable to open file!");
             fwrite($myfile, $message);
         } else {
             echo $message;
