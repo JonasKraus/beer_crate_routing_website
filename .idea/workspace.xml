@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/AES.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Blowfish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/DES.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Hash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/RC2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/RC4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/RSA.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Random.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Rijndael.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/TripleDES.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Crypt/Twofish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/File/ANSI.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/File/ASN1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/File/X509.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Math/BigInteger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Net/SCP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Net/SFTP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Net/SFTP/Stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Net/SSH1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/Net/SSH2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/System/SSH/Agent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/System/SSH_Agent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpseclib/openssl.cnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/testSftp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/SFTPConnection.php" afterPath="$PROJECT_DIR$/php/SFTPConnection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +34,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="545">
-                  <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
+                <state relative-caret-position="930">
+                  <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="391" selection-end-column="5" />
                   <folding>
                     <marker date="1478191085840" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
                     <marker date="1478191085840" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
@@ -80,11 +54,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1280">
-                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                <state relative-caret-position="1115">
+                  <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -254,8 +228,8 @@
         <option value="$PROJECT_DIR$/scripts/getProgress.php" />
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
-        <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/testSftp.php" />
+        <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
       </list>
     </option>
@@ -525,7 +499,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="31944000" />
+      <workItem from="1477760100973" duration="32726000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -800,11 +774,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478187638970</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="imported sftp lib and implemented dir check">
+      <created>1478191517933</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1478191517933</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123060000" />
+    <option name="totallyTimeSpent" value="123842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -842,7 +823,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commented echos and added redirects to error page&#10;" />
     <MESSAGE value="fixed headers and redirects" />
     <MESSAGE value="added chart&#10;added method to get progress" />
     <MESSAGE value="added method to get next update link" />
@@ -867,7 +847,8 @@
     <MESSAGE value="chended log" />
     <MESSAGE value="deleted @" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="imported sftp lib and implemented dir check" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported sftp lib and implemented dir check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1128,14 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1200,18 +1173,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
+    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="1680">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
+        <state relative-caret-position="930">
+          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="391" selection-end-column="5" />
           <folding>
             <marker date="1478191085840" expanded="true" signature="983:1054" ph="INSERT INTO progress... " />
             <marker date="1478191085840" expanded="true" signature="1514:1553" ph="UPDATE subje... " />
@@ -1223,6 +1196,14 @@
             <marker date="1478191085840" expanded="true" signature="5492:5514" ph="SELECT * FRO... progress" />
             <marker date="1478191085840" expanded="true" signature="9627:9684" ph="SELECT progr... subject" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1115">
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
