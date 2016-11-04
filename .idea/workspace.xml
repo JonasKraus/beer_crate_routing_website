@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getProgressUpdate.php" afterPath="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +34,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+                <state relative-caret-position="1082">
+                  <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
                   <folding>
                     <marker date="1478255969341" expanded="true" signature="1112:1183" ph="INSERT INTO progress... " />
                     <marker date="1478255969341" expanded="true" signature="1689:1728" ph="UPDATE subje... " />
@@ -84,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1160">
-                  <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+                <state relative-caret-position="320">
+                  <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
                   <folding />
                 </state>
               </provider>
@@ -229,8 +229,8 @@
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/scripts/testSftp.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
-        <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
+        <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
       </list>
     </option>
   </component>
@@ -499,7 +499,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="35614000" />
+      <workItem from="1477760100973" duration="35995000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -809,11 +809,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478255593234</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="more logging">
+      <created>1478255987010</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1478255987010</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126730000" />
+    <option name="totallyTimeSpent" value="127111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2532" width="4504" height="2544" extended-state="6" />
@@ -851,7 +858,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added sft login" />
     <MESSAGE value="changed rturntype to response code and directly update the user" />
     <MESSAGE value="canged return code to always be 200 ok" />
     <MESSAGE value="added logging" />
@@ -876,7 +882,8 @@
     <MESSAGE value="new check for user-agent" />
     <MESSAGE value="debug" />
     <MESSAGE value="new error log" />
-    <option name="LAST_COMMIT_MESSAGE" value="new error log" />
+    <MESSAGE value="more logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="more logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1209,18 +1216,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="1082">
+          <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
           <folding>
             <marker date="1478255969341" expanded="true" signature="1112:1183" ph="INSERT INTO progress... " />
             <marker date="1478255969341" expanded="true" signature="1689:1728" ph="UPDATE subje... " />
@@ -1232,6 +1231,14 @@
             <marker date="1478255969341" expanded="true" signature="5710:5732" ph="SELECT * FRO... progress" />
             <marker date="1478255969341" expanded="true" signature="9845:9902" ph="SELECT progr... subject" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
