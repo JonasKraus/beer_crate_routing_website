@@ -360,7 +360,9 @@ class databaseManager extends databaseConstants {
             $containsTut = false;
             $containsLevel = false;
 
-            foreach ($dirlist['surveylog'] as $fileName) {
+            foreach ($dirlist as $fileName) {
+
+                $this->writeLog($fileName);
 
                 if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
                     $containsLevel = true;
