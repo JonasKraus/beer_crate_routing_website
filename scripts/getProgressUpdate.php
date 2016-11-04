@@ -34,6 +34,8 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 
     try {
 
+        writeLog("try to get database");
+
         $database = new databaseManager();
 
         $user = $database->getUser($pseudonym);
@@ -42,7 +44,7 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
         $success = $database->getProgressUpdate($pseudonym, $user->version, $versionFromRequest);
 
         if (!$success) {
-            $responseStatus = '200';
+            $responseStatus = '500';
         }
 
     } catch (PDOException $e) {
