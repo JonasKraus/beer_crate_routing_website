@@ -12,9 +12,11 @@ class SFTPConnection
     {
         $this->writeLog("construct sftp");
         $this->sftp = new Net_SFTP('chernobog.dd-dns.de');
+        $this->writeLog("construct connection");
     }
 
     public function login ($username, $password) {
+        $this->writeLog("start login");
         if (!$this->sftp->login($username, $password)) {
             $this->writeLog('Login Failed');
         }
