@@ -379,6 +379,7 @@ class databaseManager extends databaseConstants {
 
             self::writeLog("getProgressUpdate logs available: true");
 
+            self::writeLog("version db: " . $version . " version request: " . $versionFromRequest);
             if ($version == $versionFromRequest) {
                 $nextProgress = 2;
             } else {

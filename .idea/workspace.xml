@@ -36,21 +36,21 @@
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-              <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="802">
-                      <caret line="366" column="57" selection-start-line="366" selection-start-column="57" selection-end-line="366" selection-end-column="57" />
+                    <state relative-caret-position="782">
+                      <caret line="340" column="31" selection-start-line="340" selection-start-column="31" selection-end-line="340" selection-end-column="31" />
                       <folding>
-                        <marker date="1478258282753" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
-                        <marker date="1478258282753" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
-                        <marker date="1478258282753" expanded="true" signature="3088:3139" ph="INSERT INTO subject... " />
-                        <marker date="1478258282753" expanded="true" signature="3296:3337" ph="SELECT COUNT... subject" />
-                        <marker date="1478258282753" expanded="true" signature="3486:3552" ph="UPDATE subje... " />
-                        <marker date="1478258282753" expanded="true" signature="4144:4194" ph="SELECT * FRO... subject" />
-                        <marker date="1478258282753" expanded="true" signature="5246:5336" ph="UPDATE subje... " />
-                        <marker date="1478258282753" expanded="true" signature="5824:5846" ph="SELECT * FRO... progress" />
-                        <marker date="1478258282753" expanded="true" signature="9959:10016" ph="SELECT progr... subject" />
+                        <marker date="1478258828632" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
+                        <marker date="1478258828632" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
+                        <marker date="1478258828632" expanded="true" signature="3088:3139" ph="INSERT INTO subject... " />
+                        <marker date="1478258828632" expanded="true" signature="3296:3337" ph="SELECT COUNT... subject" />
+                        <marker date="1478258828632" expanded="true" signature="3486:3552" ph="UPDATE subje... " />
+                        <marker date="1478258828632" expanded="true" signature="4144:4194" ph="SELECT * FRO... subject" />
+                        <marker date="1478258828632" expanded="true" signature="5246:5336" ph="UPDATE subje... " />
+                        <marker date="1478258828632" expanded="true" signature="5824:5846" ph="SELECT * FRO... progress" />
+                        <marker date="1478258828632" expanded="true" signature="9959:10016" ph="SELECT progr... subject" />
                       </folding>
                     </state>
                   </provider>
@@ -89,18 +89,18 @@
               <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1040">
-                      <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+                    <state relative-caret-position="509">
+                      <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="databaseConstants.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="databaseConstants.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="600">
-                      <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+                    <state relative-caret-position="400">
+                      <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
                       <folding />
                     </state>
                   </provider>
@@ -497,14 +497,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="37924000" />
-    </task>
-    <task id="LOCAL-00003" summary="changed sql statements with prepared at setUser. Added function to distribute versions even">
-      <created>1476890181966</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1476890181966</updated>
+      <workItem from="1477760100973" duration="38556000" />
     </task>
     <task id="LOCAL-00004" summary="updated getUser to use prepared statements">
       <created>1476891301290</created>
@@ -842,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478258169156</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="debug">
+      <created>1478258293180</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1478258293180</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129040000" />
+    <option name="totallyTimeSpent" value="129672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2532" width="4504" height="2544" extended-state="6" />
@@ -857,7 +857,7 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1218,22 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1252,19 +1236,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="366" column="57" selection-start-line="366" selection-start-column="57" selection-end-line="366" selection-end-column="57" />
+        <state relative-caret-position="782">
+          <caret line="340" column="31" selection-start-line="340" selection-start-column="31" selection-end-line="340" selection-end-column="31" />
           <folding>
-            <marker date="1478258282753" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
-            <marker date="1478258282753" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
-            <marker date="1478258282753" expanded="true" signature="3088:3139" ph="INSERT INTO subject... " />
-            <marker date="1478258282753" expanded="true" signature="3296:3337" ph="SELECT COUNT... subject" />
-            <marker date="1478258282753" expanded="true" signature="3486:3552" ph="UPDATE subje... " />
-            <marker date="1478258282753" expanded="true" signature="4144:4194" ph="SELECT * FRO... subject" />
-            <marker date="1478258282753" expanded="true" signature="5246:5336" ph="UPDATE subje... " />
-            <marker date="1478258282753" expanded="true" signature="5824:5846" ph="SELECT * FRO... progress" />
-            <marker date="1478258282753" expanded="true" signature="9959:10016" ph="SELECT progr... subject" />
+            <marker date="1478258828632" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
+            <marker date="1478258828632" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
+            <marker date="1478258828632" expanded="true" signature="3088:3139" ph="INSERT INTO subject... " />
+            <marker date="1478258828632" expanded="true" signature="3296:3337" ph="SELECT COUNT... subject" />
+            <marker date="1478258828632" expanded="true" signature="3486:3552" ph="UPDATE subje... " />
+            <marker date="1478258828632" expanded="true" signature="4144:4194" ph="SELECT * FRO... subject" />
+            <marker date="1478258828632" expanded="true" signature="5246:5336" ph="UPDATE subje... " />
+            <marker date="1478258828632" expanded="true" signature="5824:5846" ph="SELECT * FRO... progress" />
+            <marker date="1478258828632" expanded="true" signature="9959:10016" ph="SELECT progr... subject" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
