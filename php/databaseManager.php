@@ -59,6 +59,8 @@ class databaseManager extends databaseConstants {
      * @param $progress
      */
     public function updateUser($pseudonym, $progress) {
+
+        $this->writeLog("start updateUser");
         $sqlPrepared = null;
 
         $updatePart1 = "UPDATE subject SET progress = :progress";
@@ -131,6 +133,8 @@ class databaseManager extends databaseConstants {
      * @return null|string
      */
     public function getUser($pseudonym) {
+
+        $this->writeLog("strat getUser");
 
         $sqlPrepared = $this->conn->prepare("SELECT * FROM subject WHERE pseudonym = :pseudonym");
         $sqlPrepared->bindParam(":pseudonym", $pseudonym);
@@ -334,6 +338,7 @@ class databaseManager extends databaseConstants {
 
     public function getProgressUpdate($pseudonym, $version, $versionFromRequest) {
 
+        $this->writeLog("strat getProgressUpdate");
         $nextProgress = null;
 
         self::writeLog("start sftp");
