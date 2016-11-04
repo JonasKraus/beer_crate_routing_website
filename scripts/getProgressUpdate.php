@@ -12,8 +12,8 @@ $method = null;
 
 writeLog("hallo world");
 
-
-if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGENT']) && $_SERVER ['HTTP_USER_AGENT'] == 'UnityPlayer/5.3.4f1 (UnityWebRequest/1.0, libcurl/7.38.0-DEV)') {
+// UnityWebRequest/1.0, libcurl/7.38.0-DEV
+if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGENT']) && strpos($_SERVER ['HTTP_USER_AGENT'], "Unity") !== false) {
 
     $versionFromRequest = strtolower($_POST['vr']) == databaseConstants::getVERSIONSIMNAME()
         ? databaseConstants::getVERSIONSIM()
