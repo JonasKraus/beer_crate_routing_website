@@ -3,6 +3,11 @@
 include("../php/databaseManager.php");
 include("../php/cryptography.php");
 
+error_reporting(E_ALL);
+ini_set("log_errors", 1);
+ini_set("error_log", "../log/php-error.log");
+error_log( "Hello, errors!" );
+
 $responseStatus = '200 OK';
 $responseText = '';
 
@@ -54,7 +59,6 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
     writeLog("request failed: version->" . $_POST['vr'] . " pseudonym->" . $_POST['ps'] . " user-agent->" . $_SERVER ['HTTP_USER_AGENT']);
     $responseStatus = '500';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
-    header('Content-type: text/html; charset=utf-8');
     exit();
 }
 
