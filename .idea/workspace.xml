@@ -39,8 +39,8 @@
               <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="702">
-                      <caret line="350" column="21" selection-start-line="350" selection-start-column="21" selection-end-line="350" selection-end-column="21" />
+                    <state relative-caret-position="622">
+                      <caret line="348" column="28" selection-start-line="348" selection-start-column="28" selection-end-line="348" selection-end-column="28" />
                       <folding>
                         <marker date="1478257036785" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
                         <marker date="1478257036785" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
@@ -59,8 +59,8 @@
               <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="560">
-                      <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+                    <state relative-caret-position="120">
+                      <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
                       <folding />
                     </state>
                   </provider>
@@ -123,8 +123,8 @@
               <file leaf-file-name="testSftp.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="240">
-                      <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                    <state relative-caret-position="40">
+                      <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
                       <folding />
                     </state>
                   </provider>
@@ -497,7 +497,7 @@
       <workItem from="1476803081429" duration="17735000" />
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
-      <workItem from="1477760100973" duration="37350000" />
+      <workItem from="1477760100973" duration="37576000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1476809706854</created>
@@ -835,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478257044532</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="debug">
+      <created>1478257717652</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1478257717652</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128466000" />
+    <option name="totallyTimeSpent" value="128692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2532" width="4504" height="2544" extended-state="6" />
@@ -1227,18 +1234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="350" column="21" selection-start-line="350" selection-start-column="21" selection-end-line="350" selection-end-column="21" />
+        <state relative-caret-position="622">
+          <caret line="348" column="28" selection-start-line="348" selection-start-column="28" selection-end-line="348" selection-end-column="28" />
           <folding>
             <marker date="1478257036785" expanded="true" signature="1226:1297" ph="INSERT INTO progress... " />
             <marker date="1478257036785" expanded="true" signature="1803:1842" ph="UPDATE subje... " />
@@ -1253,10 +1252,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="120">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding />
         </state>
       </provider>

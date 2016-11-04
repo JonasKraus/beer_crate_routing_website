@@ -1,5 +1,8 @@
 <?php
+set_include_path('../phpseclib');
 
+include('../phpseclib/Net/SSH2.php');
+include('../phpseclib/Net/SFTP.php');
 class SFTPConnection
 {
 
