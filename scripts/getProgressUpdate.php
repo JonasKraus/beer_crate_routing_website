@@ -51,8 +51,8 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 
 } else {
 
-    writeLog("request: version->" . $_POST['vr'] . " pseudonym->" . $_POST['ps'] . " user-agent->" . $_SERVER ['HTTP_USER_AGENT']);
-    $responseStatus = '200';
+    writeLog("request failed: version->" . $_POST['vr'] . " pseudonym->" . $_POST['ps'] . " user-agent->" . $_SERVER ['HTTP_USER_AGENT']);
+    $responseStatus = '500';
     header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
     header('Content-type: text/html; charset=utf-8');
     exit();
