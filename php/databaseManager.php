@@ -364,7 +364,7 @@ class databaseManager extends databaseConstants {
 
                 $this->writeLog($fileName);
 
-                if (strpos(strtoupper($fileName), 'LEVEL1') !== false) {
+                if (strpos(strtoupper($fileName), 'LEVEL 1') !== false) {
                     $containsLevel = true;
 
                 } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
