@@ -50,9 +50,11 @@ class cryptography
      */
     public static function decrypt($message, $key, $encoded = false)
     {
+        var_dump("start decrypt");
         if ($encoded) {
             $message = base64_decode($message, true);
             if ($message === false) {
+                var_dump("encryption failed1");
                 throw new Exception('Encryption failure');
             }
         }
@@ -68,6 +70,8 @@ class cryptography
             OPENSSL_RAW_DATA,
             $nonce
         );
+
+        var_dump("encryption ", $plaintext);
 
         return $plaintext;
     }
