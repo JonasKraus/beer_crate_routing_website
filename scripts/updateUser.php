@@ -10,7 +10,7 @@ $responseText = '';
 $progress = urlencode($_GET['pgr']);
 
 $getData = cryptography::unwrapProgress($progress);
-var_dump($getData);
+
 $progress = $getData["progress"];
 $pseudonym = $getData["pseudonym"];
 

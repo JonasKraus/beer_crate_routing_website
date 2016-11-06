@@ -22,7 +22,6 @@ $ary[] = "EUC-JP";
 
 
 echo "<b>Link: </b>" . $test . "<br>";
-echo urlencode($_GET['pgr']);
-$test = cryptography::unwrapProgress($_GET['pgr']);
+$test = cryptography::unwrapProgress($test);
 echo "<b>Progress: </b>" . $test["progress"] . "</br>";
 echo "<b>Pseudonym: </b>" . $test["pseudonym"] . "</br>";
