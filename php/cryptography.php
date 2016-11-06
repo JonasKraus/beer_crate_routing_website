@@ -113,6 +113,7 @@ class cryptography
         }
 
         $decrypt = cryptography::decrypt($link, databaseConstants::getKEY());
+        var_dump($decrypt);
         $progress = substr($decrypt, 5,1);
         $length = substr($decrypt, 8,1);
         $pseudonym = substr($decrypt, 9, $length); // TODO check länge vom kürzl
