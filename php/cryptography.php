@@ -50,11 +50,9 @@ class cryptography
      */
     public static function decrypt($message, $key, $encoded = false)
     {
-        var_dump("start decrypt");
         if ($encoded) {
             $message = base64_decode($message, true);
             if ($message === false) {
-                var_dump("encryption failed1");
                 throw new Exception('Encryption failure');
             }
         }
@@ -70,8 +68,6 @@ class cryptography
             OPENSSL_RAW_DATA,
             $nonce
         );
-
-        var_dump("encryption ", $plaintext);
 
         return $plaintext;
     }
@@ -108,10 +104,8 @@ class cryptography
     }
 
     public static function unwrapProgress($link, $base64Encoded = false) {
-        var_dump("start unwrapping");
         $link = urldecode($link);
 
-        var_dump("url decoded: " , $link);
         if ($base64Encoded) {
             $link = str_replace("-", "=", $link);
             $link = str_replace("_", "/", $link);
@@ -119,7 +113,6 @@ class cryptography
         }
 
         $decrypt = cryptography::decrypt($link, databaseConstants::getKEY());
-        var_dump("decrypted: ",$decrypt);
         $progress = substr($decrypt, 5,1);
         $length = substr($decrypt, 8,1);
         $pseudonym = substr($decrypt, 9, $length); // TODO check länge vom kürzl

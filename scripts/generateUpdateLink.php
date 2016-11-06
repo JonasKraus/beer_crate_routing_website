@@ -10,9 +10,10 @@ $name = 'FW';
 $progress = $_POST['pr'];
 $name = $_POST['ps'];
 
-$test = cryptography::wrapProgress($progress, $name);
+$link = cryptography::wrapProgress($progress, $name);
 
-echo $test;
+
+echo $link;
 
 /*
 echo "<b>Link: </b>" . $test . "<br>";
