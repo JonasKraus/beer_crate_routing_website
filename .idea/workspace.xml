@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" afterPath="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
     </list>
     <ignored path="untitled1.iws" />
@@ -33,7 +34,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
+        <splitter split-orientation="horizontal" split-proportion="0.72264713">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
               <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
@@ -86,11 +87,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="920">
-                      <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+                    <state relative-caret-position="280">
+                      <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/index.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="903">
+                      <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
                       <folding />
                     </state>
                   </provider>
@@ -133,8 +144,8 @@
               <file leaf-file-name="updateLinkFromLimesurvey.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="320">
-                      <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+                    <state relative-caret-position="280">
+                      <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -229,7 +240,6 @@
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/getUser.php" />
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/php/locationConstants.php" />
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
@@ -250,6 +260,7 @@
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -519,14 +530,7 @@
       <workItem from="1477378049359" duration="19704000" />
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
-      <workItem from="1478438017070" duration="2280000" />
-    </task>
-    <task id="LOCAL-00006" summary="added forms for submitting the exam points and the exercise points. updated db">
-      <created>1477424760040</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1477424760040</updated>
+      <workItem from="1478438017070" duration="3923000" />
     </task>
     <task id="LOCAL-00007" summary="added mysql database createion file">
       <created>1477645687085</created>
@@ -864,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478440524448</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added check for ip">
+      <created>1478441202473</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1478441202473</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132648000" />
+    <option name="totallyTimeSpent" value="134291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -906,7 +917,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added logging" />
     <MESSAGE value="added shmod for logging file" />
     <MESSAGE value="now echoing the log" />
     <MESSAGE value="chnaged header" />
@@ -931,7 +941,8 @@
     <MESSAGE value="check without user agent" />
     <MESSAGE value="debug" />
     <MESSAGE value="test script for checking the referrers and cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="test script for checking the referrers and cookies" />
+    <MESSAGE value="added check for ip" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check for ip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,6 +963,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1830">
           <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,6 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1830">
           <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,13 +1139,6 @@
     <entry file="file://$PROJECT_DIR$/chart/morris.js-0.5.1/lib/morris.coffee" />
     <entry file="file://$PROJECT_DIR$/chart/morris.js-0.5.1/examples/timestamps.html" />
     <entry file="file://$PROJECT_DIR$/chart.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -1254,26 +1260,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="280">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
           <folding />
         </state>
       </provider>

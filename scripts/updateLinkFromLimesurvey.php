@@ -6,7 +6,17 @@ if (!isset($_SERVER['HTTP_REFERER'])) {
     echo "nicht gesetzt";
 }
 
-echo "---------------<br>";
+$version = null;
+
+if (!isset($_GET['vr'])) {
+    showErrorPage("500");
+} else {
+    $version = $_GET['vr'];
+}
+
+
+
+echo "---------------";
 var_dump(get_client_ip());
 
 function get_client_ip() {
@@ -26,4 +36,10 @@ function get_client_ip() {
     else
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
+}
+
+function showErrorPage($responseStatus) {
+    header($_SERVER['SERVER_PROTOCOL'].' '.$responseStatus);
+    header('Content-type: text/html; charset=utf-8');
+    exit();
 }
