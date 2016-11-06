@@ -88,7 +88,11 @@ function setBreadcrumps () {
             switch (user.progress) {
                 case 0:
                     //first survey
-                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
+                    document.getElementById("survey").href =
+                        firstSurveyURL
+                        + "?ps=" + user.pseudonym
+                        + "&pr=" + user.progress
+                        + "&vr=" + user.version;
                     classesSurvey.remove("hidden");
                     break;
                 case 1:
@@ -99,7 +103,11 @@ function setBreadcrumps () {
                 case 2:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
+                    document.getElementById("survey").href =
+                        firstSurveyURL
+                        + "?ps=" + user.pseudonym
+                        + "&pr=" + user.progress
+                        + "&vr=" + user.version;
                     break;
                 case 3:
                     classesSurvey.add("hidden");
@@ -109,7 +117,11 @@ function setBreadcrumps () {
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
+                    document.getElementById("survey").href =
+                        firstSurveyURL
+                        + "?ps=" + user.pseudonym
+                        + "&pr=" + user.progress
+                        + "&vr=" + user.version;
                     break;
                 case 5:
                     classesSurvey.add("hidden");

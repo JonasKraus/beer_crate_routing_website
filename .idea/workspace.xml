@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
@@ -110,8 +109,8 @@
               <file leaf-file-name="js_script.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="794">
-                      <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+                    <state relative-caret-position="674">
+                      <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
                       <folding />
                     </state>
                   </provider>
@@ -541,14 +540,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="2577000" />
-    </task>
-    <task id="LOCAL-00009" summary="refactored names and dirs">
-      <created>1477653606629</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1477653606629</updated>
+      <workItem from="1478443991867" duration="3130000" />
     </task>
     <task id="LOCAL-00010" summary="commented echos and added redirects to error page&#10;">
       <created>1477653829932</created>
@@ -886,11 +878,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478444934909</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="chnaged link of the survey to pass new params">
+      <created>1478447925298</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1478447925298</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136947000" />
+    <option name="totallyTimeSpent" value="137500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -928,7 +927,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chnaged header" />
     <MESSAGE value="server var" />
     <MESSAGE value="fixed wrong user agent" />
     <MESSAGE value="chnaged log" />
@@ -953,7 +951,8 @@
     <MESSAGE value="added check for ip" />
     <MESSAGE value="test survey passthrough values" />
     <MESSAGE value="added passthrough values" />
-    <option name="LAST_COMMIT_MESSAGE" value="added passthrough values" />
+    <MESSAGE value="chnaged link of the survey to pass new params" />
+    <option name="LAST_COMMIT_MESSAGE" value="chnaged link of the survey to pass new params" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1295,8 +1294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+        <state relative-caret-position="674">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
           <folding />
         </state>
       </provider>
