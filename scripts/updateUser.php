@@ -10,7 +10,7 @@ $responseText = '';
 
 
 $progress = $_GET['pgr'];
-var_dump("from get<br>");
+echo $progress;
 var_dump($_GET['pgr']);
 $getData = cryptography::unwrapProgress($progress);
 $progress = $getData["progress"];
