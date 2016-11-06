@@ -4,6 +4,7 @@ var cookie = document.cookie;
 
 var psdnym = '';
 var user = null;
+var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829";
 
 checkCookie();
 setScreenResCookie();
@@ -87,7 +88,7 @@ function setBreadcrumps () {
             switch (user.progress) {
                 case 0:
                     //first survey
-                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
                     classesSurvey.remove("hidden");
                     break;
                 case 1:
@@ -98,7 +99,7 @@ function setBreadcrumps () {
                 case 2:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
                     break;
                 case 3:
                     classesSurvey.add("hidden");
@@ -108,7 +109,7 @@ function setBreadcrumps () {
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    document.getElementById("survey").src = "https://www.limesurvey.org/de/"; // TODO richtiger link
+                    document.getElementById("survey").href = firstSurveyURL + "?passthru" + user; // TODO richtiger link
                     break;
                 case 5:
                     classesSurvey.add("hidden");

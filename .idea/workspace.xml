@@ -4,6 +4,7 @@
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +34,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.72264713">
+        <splitter split-orientation="horizontal" split-proportion="0.7217044">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
               <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
@@ -96,11 +97,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+              <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="706">
-                      <caret line="29" column="118" selection-start-line="29" selection-start-column="118" selection-end-line="29" selection-end-column="118" />
+                      <caret line="29" column="144" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="144" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="js_script.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="794">
+                      <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
                       <folding />
                     </state>
                   </provider>
@@ -247,7 +258,6 @@
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/chart/morris.js-0.5.1/lib/morris.coffee" />
         <option value="$PROJECT_DIR$/chart.html" />
-        <option value="$PROJECT_DIR$/scripts/js_script.js" />
         <option value="$PROJECT_DIR$/chart.php" />
         <option value="$PROJECT_DIR$/chart/chart.html" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
@@ -260,6 +270,7 @@
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scripts/js_script.js" />
       </list>
     </option>
   </component>
@@ -530,14 +541,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="922000" />
-    </task>
-    <task id="LOCAL-00008" summary="added database manager class">
-      <created>1477652297439</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1477652297439</updated>
+      <workItem from="1478443991867" duration="2577000" />
     </task>
     <task id="LOCAL-00009" summary="refactored names and dirs">
       <created>1477653606629</created>
@@ -875,11 +879,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478443506568</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="added passthrough values">
+      <created>1478444934908</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1478444934909</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135292000" />
+    <option name="totallyTimeSpent" value="136947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -917,7 +928,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="now echoing the log" />
     <MESSAGE value="chnaged header" />
     <MESSAGE value="server var" />
     <MESSAGE value="fixed wrong user agent" />
@@ -942,7 +952,8 @@
     <MESSAGE value="test script for checking the referrers and cookies" />
     <MESSAGE value="added check for ip" />
     <MESSAGE value="test survey passthrough values" />
-    <option name="LAST_COMMIT_MESSAGE" value="test survey passthrough values" />
+    <MESSAGE value="added passthrough values" />
+    <option name="LAST_COMMIT_MESSAGE" value="added passthrough values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1146,13 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="52" column="52" selection-start-line="51" selection-start-column="7" selection-end-line="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chart.js-master/src/core/core.js" />
     <entry file="file://$PROJECT_DIR$/Chart.js-master/src/chart.js" />
     <entry file="file://$PROJECT_DIR$/chart/chart.html">
@@ -1284,7 +1288,15 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="706">
-          <caret line="29" column="118" selection-start-line="29" selection-start-column="118" selection-end-line="29" selection-end-column="118" />
+          <caret line="29" column="144" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
           <folding />
         </state>
       </provider>
