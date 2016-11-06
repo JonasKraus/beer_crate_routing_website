@@ -88,12 +88,15 @@ function setBreadcrumps () {
             switch (user.progress) {
                 case 0:
                     //first survey
+                    var link = getUpdateLink(user.pseudonym, (user.progress + 1));
                     document.getElementById("survey").href =
                         firstSurveyURL
                         + "?ps=" + user.pseudonym
                         + "&pr=" + user.progress
-                        + "&vr=" + user.version;
+                        + "&vr=" + user.version
+                        + "&ul=" + link;
                     classesSurvey.remove("hidden");
+
                     break;
                 case 1:
                     classesSurvey.add("hidden");
@@ -103,11 +106,13 @@ function setBreadcrumps () {
                 case 2:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
+                    var link1 = getUpdateLink(user.pseudonym, (user.progress + 1));
                     document.getElementById("survey").href =
                         firstSurveyURL
                         + "?ps=" + user.pseudonym
                         + "&pr=" + user.progress
-                        + "&vr=" + user.version;
+                        + "&vr=" + user.version
+                        + "&ul=" + link1;
                     break;
                 case 3:
                     classesSurvey.add("hidden");
@@ -117,11 +122,13 @@ function setBreadcrumps () {
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
+                    var link2 = getUpdateLink(user.pseudonym, (user.progress + 1));
                     document.getElementById("survey").href =
                         firstSurveyURL
                         + "?ps=" + user.pseudonym
                         + "&pr=" + user.progress
-                        + "&vr=" + user.version;
+                        + "&vr=" + user.version
+                        + "&ul=" + link2;
                     break;
                 case 5:
                     classesSurvey.add("hidden");
@@ -194,6 +201,25 @@ function deleteCookie (name) {
 
 function deleteCookies () {
     deleteCookie("beercrate_routing_pseudonym");
+}
+
+function getUpdateLink (pseudonym, progress) {
+    var http = new XMLHttpRequest();
+    var url = "/generateUpdateLink.php";
+    var params =
+        "ps=" + pseudonym +
+        "&pr=" + progress;
+    http.open("POST", url, true);
+
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    http.onreadystatechange = function() {
+
+        if(http.readyState == 4 && http.status == 200) {
+            return http.responseText;
+        }
+    };
+    http.send(params);
 }
 
 
