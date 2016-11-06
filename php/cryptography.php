@@ -107,6 +107,7 @@ class cryptography
         var_dump("start unwrapping");
         $link = urldecode($link);
 
+        var_dump("url decoded: " , $link);
         if ($base64Encoded) {
             $link = str_replace("-", "=", $link);
             $link = str_replace("_", "/", $link);
@@ -114,7 +115,7 @@ class cryptography
         }
 
         $decrypt = cryptography::decrypt($link, databaseConstants::getKEY());
-        var_dump($decrypt);
+        var_dump("decrypted: ",$decrypt);
         $progress = substr($decrypt, 5,1);
         $length = substr($decrypt, 8,1);
         $pseudonym = substr($decrypt, 9, $length); // TODO check länge vom kürzl
