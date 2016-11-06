@@ -205,7 +205,7 @@ function deleteCookies () {
 
 function getUpdateLink (pseudonym, progress) {
     var http = new XMLHttpRequest();
-    var url = "/generateUpdateLink.php";
+    var url = "/scripts/generateUpdateLink.php";
     var params =
         "ps=" + pseudonym +
         "&pr=" + progress;

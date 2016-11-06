@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generateUpdateLink.php" afterPath="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
@@ -87,11 +86,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="js_script.js" pinned="false" current-in-tab="false">
+              <file leaf-file-name="js_script.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-2286">
-                      <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
+                    <state relative-caret-position="819">
+                      <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
                       <folding />
                     </state>
                   </provider>
@@ -117,7 +116,7 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="440">
@@ -258,9 +257,9 @@
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
+        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/js_script.js" />
-        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
-        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
       </list>
     </option>
   </component>
@@ -531,14 +530,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="5443000" />
-    </task>
-    <task id="LOCAL-00011" summary="fixed headers and redirects">
-      <created>1477655802354</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1477655802354</updated>
+      <workItem from="1478443991867" duration="5647000" />
     </task>
     <task id="LOCAL-00012" summary="added chart&#10;added method to get progress">
       <created>1478005573252</created>
@@ -876,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478448483119</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="getting updatelink and sending it to limesurvey">
+      <created>1478450871663</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1478450871663</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139813000" />
+    <option name="totallyTimeSpent" value="140017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -918,7 +917,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed wrong user agent" />
     <MESSAGE value="chnaged log" />
     <MESSAGE value="chnaged log to echo json" />
     <MESSAGE value="disabled log" />
@@ -943,7 +941,8 @@
     <MESSAGE value="added passthrough values" />
     <MESSAGE value="chnaged link of the survey to pass new params" />
     <MESSAGE value="added params and names to survey url" />
-    <option name="LAST_COMMIT_MESSAGE" value="added params and names to survey url" />
+    <MESSAGE value="getting updatelink and sending it to limesurvey" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting updatelink and sending it to limesurvey" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1276,18 +1275,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2286">
-          <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
           <folding />
         </state>
       </provider>
