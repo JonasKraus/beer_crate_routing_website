@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/cryptography.php" afterPath="$PROJECT_DIR$/php/cryptography.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generateUpdateLink.php" afterPath="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/updateUser.php" afterPath="$PROJECT_DIR$/scripts/updateUser.php" />
     </list>
     <ignored path="untitled1.iws" />
@@ -89,11 +86,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="480">
-                      <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+                    <state relative-caret-position="210">
+                      <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
                       <folding />
                     </state>
                   </provider>
@@ -119,11 +116,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="600">
-                      <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+                    <state relative-caret-position="1080">
+                      <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -251,11 +248,11 @@
         <option value="$PROJECT_DIR$/scripts/js_script.js" />
         <option value="$PROJECT_DIR$/php/Encodings.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
       </list>
     </option>
   </component>
@@ -526,14 +523,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="10866000" />
-    </task>
-    <task id="LOCAL-00025" summary="chnaged log">
-      <created>1478183984880</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1478183984880</updated>
+      <workItem from="1478443991867" duration="10989000" />
     </task>
     <task id="LOCAL-00026" summary="chnaged log to echo json">
       <created>1478184203569</created>
@@ -871,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478453789741</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="fixed">
+      <created>1478456303197</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1478456303197</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145236000" />
+    <option name="totallyTimeSpent" value="145359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -933,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed logging" />
     <MESSAGE value="changed logging append" />
     <MESSAGE value="changed logging append with new line" />
     <MESSAGE value="added try catch to sft login" />
@@ -958,7 +954,8 @@
     <MESSAGE value="shorted method fro generation url" />
     <MESSAGE value="testing" />
     <MESSAGE value="debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,14 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/cryptography.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -1303,8 +1292,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="1080">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>

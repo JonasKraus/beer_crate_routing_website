@@ -8,7 +8,6 @@ $responseStatus = '200 OK';
 $responseText = '';
 
 $progress = urlencode($_GET['pgr']);
-echo $progress;
 
 $getData = cryptography::unwrapProgress($progress);
 $progress = $getData["progress"];
