@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 include("../php/databaseManager.php");
 include("../php/cryptography.php");
 
@@ -8,9 +10,12 @@ $responseText = '';
 
 
 $progress = $_GET['pgr'];
+var_dump($progress);
 $getData = cryptography::unwrapProgress($progress);
 $progress = $getData["progress"];
 $pseudonym = $getData["pseudonym"];
+var_dump($progress);
+var_dump($pseudonym);
 
 
 if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $pseudonym != $_COOKIE["beercrate_routing_pseudonym"]) {
@@ -22,9 +27,11 @@ setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";pat
 
 try {
 
+    var_dump("start database");
     $database = new databaseManager();
 
     if ($database->updateUser($pseudonym, $progress) ){
+        var_dump("erfolgreich geupdated");
         $database->setProgressTimestamp($pseudonym, $progress);
     }
 
