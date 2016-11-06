@@ -88,13 +88,7 @@ function setBreadcrumps () {
             switch (user.progress) {
                 case 0:
                     //first survey
-                    var link = getUpdateLink(user.pseudonym, (user.progress + 1));
-                    document.getElementById("survey").href =
-                        firstSurveyURL
-                        + "?ps=" + user.pseudonym
-                        + "&pr=" + user.progress
-                        + "&vr=" + user.version
-                        + "&ul=" + link;
+                    setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
                     classesSurvey.remove("hidden");
 
                     break;
@@ -106,13 +100,7 @@ function setBreadcrumps () {
                 case 2:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    var link1 = getUpdateLink(user.pseudonym, (user.progress + 1));
-                    document.getElementById("survey").href =
-                        firstSurveyURL
-                        + "?ps=" + user.pseudonym
-                        + "&pr=" + user.progress
-                        + "&vr=" + user.version
-                        + "&ul=" + link1;
+                    setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
                     break;
                 case 3:
                     classesSurvey.add("hidden");
@@ -122,13 +110,7 @@ function setBreadcrumps () {
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    var link2 = getUpdateLink(user.pseudonym, (user.progress + 1));
-                    document.getElementById("survey").href =
-                        firstSurveyURL
-                        + "?ps=" + user.pseudonym
-                        + "&pr=" + user.progress
-                        + "&vr=" + user.version
-                        + "&ul=" + link2;
+                    setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
                     break;
                 case 5:
                     classesSurvey.add("hidden");
@@ -203,7 +185,7 @@ function deleteCookies () {
     deleteCookie("beercrate_routing_pseudonym");
 }
 
-function getUpdateLink (pseudonym, progress) {
+function setSurveyLink (pseudonym, progress, surveyURL) {
     var http = new XMLHttpRequest();
     var url = "/scripts/generateUpdateLink.php";
     var params =
@@ -216,7 +198,13 @@ function getUpdateLink (pseudonym, progress) {
     http.onreadystatechange = function() {
 
         if(http.readyState == 4 && http.status == 200) {
-            return http.responseText;
+
+            document.getElementById("survey").href =
+                surveyURL
+                + "?ps=" + user.pseudonym
+                + "&pr=" + user.progress
+                + "&vr=" + user.version
+                + "&ul=" + http.responseText;
         }
     };
     http.send(params);
