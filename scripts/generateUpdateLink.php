@@ -10,6 +10,8 @@ $name = 'jonas';
 $progress = $_POST['pr'];
 $name = $_POST['ps'];
 
+var_dump($progress);var_dump($name);die;
+
 $test = cryptography::wrapProgress($progress, $name);
 
 echo $test;
