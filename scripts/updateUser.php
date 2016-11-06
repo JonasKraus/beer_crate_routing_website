@@ -10,13 +10,11 @@ $responseText = '';
 
 
 $progress = $_GET['pgr'];
-var_dump("before",$progress);
+var_dump("from get<br>");
+var_dump($_GET['pgr']);
 $getData = cryptography::unwrapProgress($progress);
 $progress = $getData["progress"];
 $pseudonym = $getData["pseudonym"];
-var_dump("after<br>");
-var_dump($progress);
-var_dump($pseudonym);
 
 
 if (isset($_COOKIE["beercrate_routing_pseudonym"]) && $pseudonym != $_COOKIE["beercrate_routing_pseudonym"]) {

@@ -104,6 +104,7 @@ class cryptography
     }
 
     public static function unwrapProgress($link, $base64Encoded = false) {
+        var_dump("start unwrapping");
         $link = urldecode($link);
 
         if ($base64Encoded) {
