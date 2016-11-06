@@ -89,8 +89,8 @@
               <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="210">
-                      <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+                    <state relative-caret-position="330">
+                      <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
                       <folding />
                     </state>
                   </provider>
@@ -523,14 +523,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="10989000" />
-    </task>
-    <task id="LOCAL-00026" summary="chnaged log to echo json">
-      <created>1478184203569</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1478184203569</updated>
+      <workItem from="1478443991867" duration="11081000" />
     </task>
     <task id="LOCAL-00027" summary="disabled log">
       <created>1478184433779</created>
@@ -868,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478456303197</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fixed">
+      <created>1478456421476</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1478456421476</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145359000" />
+    <option name="totallyTimeSpent" value="145451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -1300,8 +1300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="330">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
         </state>
       </provider>
