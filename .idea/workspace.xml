@@ -4,8 +4,6 @@
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/cryptography.php" afterPath="$PROJECT_DIR$/php/cryptography.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test.php" afterPath="$PROJECT_DIR$/scripts/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/updateUser.php" afterPath="$PROJECT_DIR$/scripts/updateUser.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,21 +96,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="cryptography.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="cryptography.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/php/cryptography.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="715">
-                      <caret line="105" column="74" selection-start-line="105" selection-start-column="74" selection-end-line="105" selection-end-column="74" />
+                    <state relative-caret-position="840">
+                      <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/test.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="960">
-                      <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+                    <state relative-caret-position="1080">
+                      <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -253,8 +251,8 @@
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
-        <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
+        <option value="$PROJECT_DIR$/php/cryptography.php" />
       </list>
     </option>
   </component>
@@ -525,14 +523,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="11412000" />
-    </task>
-    <task id="LOCAL-00029" summary="changed logging">
-      <created>1478185173835</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1478185173835</updated>
+      <workItem from="1478443991867" duration="11677000" />
     </task>
     <task id="LOCAL-00030" summary="changed logging append">
       <created>1478185425921</created>
@@ -870,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478456520788</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="fixed">
+      <created>1478456846403</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1478456846403</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145782000" />
+    <option name="totallyTimeSpent" value="146047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -966,14 +964,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1284,14 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/cryptography.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="105" column="74" selection-start-line="105" selection-start-column="74" selection-end-line="105" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1302,8 +1284,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="1080">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/openssl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36259">
+          <caret line="1186" column="8" selection-start-line="1186" selection-start-column="8" selection-end-line="1186" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/cryptography.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding />
         </state>
       </provider>
