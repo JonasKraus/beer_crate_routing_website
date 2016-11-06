@@ -12,7 +12,7 @@ $responseText = '';
 $progress = $_GET['pgr'];
 echo $progress;
 var_dump($_GET['pgr']);
-$getData = cryptography::unwrapProgress($progress);
+$getData = cryptography::unwrapProgress("%C0%A1%9C%DCh%F4W%C1%9F%AEd%26%E4%26%40%CAy%1B%3C%D2%CFf%23%8CXG%EC%D5%E8E8");
 $progress = $getData["progress"];
 $pseudonym = $getData["pseudonym"];
 
