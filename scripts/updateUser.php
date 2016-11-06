@@ -10,10 +10,11 @@ $responseText = '';
 
 
 $progress = $_GET['pgr'];
-var_dump($progress);
+var_dump("before",$progress);
 $getData = cryptography::unwrapProgress($progress);
 $progress = $getData["progress"];
 $pseudonym = $getData["pseudonym"];
+var_dump("after<br>");
 var_dump($progress);
 var_dump($pseudonym);
 

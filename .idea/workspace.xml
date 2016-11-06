@@ -99,8 +99,8 @@
               <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1063">
-                      <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+                    <state relative-caret-position="383">
+                      <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
                       <folding />
                     </state>
                   </provider>
@@ -530,14 +530,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="6263000" />
-    </task>
-    <task id="LOCAL-00014" summary="added sft class and check for correct updatelink">
-      <created>1478176113303</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1478176113303</updated>
+      <workItem from="1478443991867" duration="6441000" />
     </task>
     <task id="LOCAL-00015" summary="added sft login">
       <created>1478176499313</created>
@@ -875,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478451403996</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="testing">
+      <created>1478451684087</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1478451684087</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140633000" />
+    <option name="totallyTimeSpent" value="140811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -917,7 +917,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="disabled log" />
     <MESSAGE value="changed logging" />
     <MESSAGE value="changed logging append" />
     <MESSAGE value="changed logging append with new line" />
@@ -942,7 +941,8 @@
     <MESSAGE value="getting updatelink and sending it to limesurvey" />
     <MESSAGE value="fixed url" />
     <MESSAGE value="shorted method fro generation url" />
-    <option name="LAST_COMMIT_MESSAGE" value="shorted method fro generation url" />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1267,14 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1034">
@@ -1283,10 +1275,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="383">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
