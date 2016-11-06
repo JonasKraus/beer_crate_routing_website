@@ -2,15 +2,15 @@
 include('../php/cryptography.php');
 include('../php/databaseConstants.php');
 
-/*
-$progress = 5;
-$name = 'jonas';
-*/
 
+$progress = 3;
+$name = 'FW';
+
+/*
 $progress = $_POST['pr'];
 $name = $_POST['ps'];
+*/
 
-var_dump($progress);var_dump($name);die;
 
 $test = cryptography::wrapProgress($progress, $name);
 
