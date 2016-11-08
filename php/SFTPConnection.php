@@ -47,15 +47,17 @@ class SFTPConnection
     }
 
     public function writeLog ($message, $fileLogging = true) {
-
-        if ($fileLogging) {
-            $file = '../log/request_log.txt';
-            $current = file_get_contents($file);
-            $current .= "\n" . $message;
-            file_put_contents($file, $current);
-        } else {
-            echo $message;
+        if (databaseConstants::$DEBUG) {
+            if ($fileLogging) {
+                $file = '../log/request_log.txt';
+                $current = file_get_contents($file);
+                $current .= "\n" . $message;
+                file_put_contents($file, $current);
+            } else {
+                echo $message;
+            }
         }
+
 
     }
 }

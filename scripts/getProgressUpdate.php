@@ -66,16 +66,18 @@ if (isset($_POST['ps']) && isset($_POST['vr']) && isset($_SERVER ['HTTP_USER_AGE
 
 
 function writeLog ($message, $fileLogging = true) {
+    if (databaseConstants::$DEBUG) {
+        if ($fileLogging) {
+            //chmod("../log/request_log.txt", 0777);
 
-    if ($fileLogging) {
-        //chmod("../log/request_log.txt", 0777);
-
-        $file = '../log/request_log.txt';
-        $current = file_get_contents($file);
-        $current .= "\n" . $message;
-        file_put_contents($file, $current);
-    } else {
-        echo $message;
+            $file = '../log/request_log.txt';
+            $current = file_get_contents($file);
+            $current .= "\n" . $message;
+            file_put_contents($file, $current);
+        } else {
+            echo $message;
+        }
     }
+
 
 }

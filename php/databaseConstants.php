@@ -12,6 +12,8 @@ class databaseConstants {
     private static $VERSION_COMIC = 1;
     private static $VERSION_SIM_NAME = 'sim';
     private static $VERSION_COMIC_NAME = 'comic';
+    public static $DEBUG = false;
+
 
     /**
      * @return string
