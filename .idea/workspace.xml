@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/testDb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/createDB.sql" afterPath="$PROJECT_DIR$/sql/createDB.sql" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +126,7 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="testDb.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="testDb.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/testDb.php">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="200">
@@ -136,11 +136,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
+              <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="490">
-                      <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+                    <state relative-caret-position="543">
+                      <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -179,8 +179,8 @@
           <file leaf-file-name="updateLinkFromLimesurvey.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="280">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -255,8 +255,6 @@
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
-        <option value="$PROJECT_DIR$/sql/createDB.sql" />
-        <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
         <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
@@ -265,6 +263,8 @@
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/testDb.php" />
+        <option value="$PROJECT_DIR$/sql/createDB.sql" />
+        <option value="$PROJECT_DIR$/sql/createDB.sql" />
       </list>
     </option>
   </component>
@@ -535,14 +535,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="21032000" />
-    </task>
-    <task id="LOCAL-00038" summary="deleted @">
-      <created>1478187547773</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1478187547773</updated>
+      <workItem from="1478443991867" duration="21801000" />
     </task>
     <task id="LOCAL-00039" summary="changes">
       <created>1478187638970</created>
@@ -880,11 +873,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478631798612</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="added test file">
+      <created>1478632078070</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1478632078070</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155402000" />
+    <option name="totallyTimeSpent" value="156171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -960,7 +960,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changes" />
     <MESSAGE value="imported sftp lib and implemented dir check" />
     <MESSAGE value="added log to sftp class" />
     <MESSAGE value="new check for user-agent" />
@@ -985,7 +984,8 @@
     <MESSAGE value="added debug messages" />
     <MESSAGE value="added more debug messages" />
     <MESSAGE value="debugged" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugged" />
+    <MESSAGE value="added test file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1255,14 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1283,14 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="7" column="54" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1341,6 +1325,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
