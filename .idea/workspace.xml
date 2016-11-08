@@ -119,8 +119,8 @@
               <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="800">
-                      <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+                    <state relative-caret-position="360">
+                      <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
                       <folding />
                     </state>
                   </provider>
@@ -242,7 +242,6 @@
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
         <option value="$PROJECT_DIR$/scripts/setUserCredit.php" />
         <option value="$PROJECT_DIR$/scripts/getUser.php" />
-        <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/chart/morris.js-0.5.1/lib/morris.coffee" />
         <option value="$PROJECT_DIR$/chart.html" />
         <option value="$PROJECT_DIR$/chart.php" />
@@ -263,6 +262,7 @@
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
+        <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
       </list>
     </option>
@@ -534,14 +534,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="12694000" />
-    </task>
-    <task id="LOCAL-00031" summary="changed logging append with new line">
-      <created>1478185575319</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1478185575319</updated>
+      <workItem from="1478443991867" duration="13426000" />
     </task>
     <task id="LOCAL-00032" summary="added try catch to sft login">
       <created>1478185982872</created>
@@ -879,11 +872,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478457111885</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added new db creation file">
+      <created>1478623719555</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1478623719555</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147064000" />
+    <option name="totallyTimeSpent" value="147796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -941,7 +941,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed logging append" />
     <MESSAGE value="changed logging append with new line" />
     <MESSAGE value="added try catch to sft login" />
     <MESSAGE value="added more logginf in sftp" />
@@ -966,7 +965,8 @@
     <MESSAGE value="testing" />
     <MESSAGE value="fixed" />
     <MESSAGE value="debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug" />
+    <MESSAGE value="added new db creation file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new db creation file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1312,8 +1312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="360">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>

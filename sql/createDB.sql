@@ -7,6 +7,8 @@
 -- Server-Version: 10.1.13-MariaDB
 -- PHP-Version: 5.6.21
 
+USE beercrate_routing;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
