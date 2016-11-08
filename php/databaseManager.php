@@ -25,11 +25,17 @@ class databaseManager extends databaseConstants {
         $password = databaseConstants::getPASSWORD();
         $dbname = databaseConstants::getDATABASENAME();
 
-        // Create connection
-        $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        // set the PDO error mode to exception
-        $this->writeLog("conn" . $this->conn->errorInfo());
-        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        try {
+            // Create connection
+            $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            // set the PDO error mode to exception
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            $this->writeLog("connection failed");
+            $this->writeLog($e->getMessage());
+        }
+
     }
 
 
@@ -103,10 +109,13 @@ class databaseManager extends databaseConstants {
      * @return bool
      */
     public function setUser($pseudonym) {
+        $this->writeLog("start set user");
         $sqlPrepared = $this->conn->prepare("INSERT INTO subject (pseudonym) VALUES (:pseudonym)");
         $sqlPrepared->bindParam(":pseudonym", $pseudonym);
 
         if ($sqlPrepared->execute() === TRUE) {
+
+            $this->writeLog("set user execution successful");
 
             $rowCount = $this->conn->query("SELECT COUNT(*) as countRows FROM subject");
             $rowCount = $rowCount->fetch();
@@ -123,6 +132,8 @@ class databaseManager extends databaseConstants {
             }
 
         } else {
+
+            $this->writeLog("set user execution failed");
             return false;
         }
     }
