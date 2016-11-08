@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/testDb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/setUser.php" afterPath="$PROJECT_DIR$/scripts/setUser.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
         <splitter split-orientation="horizontal" split-proportion="0.7217044">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-              <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="456">
@@ -127,21 +126,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
+              <file leaf-file-name="testDb.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scripts/testDb.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="490">
-                      <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+                    <state relative-caret-position="200">
+                      <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
+              <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="360">
-                      <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                    <state relative-caret-position="490">
+                      <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
                       <folding />
                     </state>
                   </provider>
@@ -265,6 +264,7 @@
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
         <option value="$PROJECT_DIR$/scripts/setUser.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
+        <option value="$PROJECT_DIR$/scripts/testDb.php" />
       </list>
     </option>
   </component>
@@ -535,14 +535,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="20753000" />
-    </task>
-    <task id="LOCAL-00037" summary="chended log">
-      <created>1478187468784</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1478187468784</updated>
+      <workItem from="1478443991867" duration="21032000" />
     </task>
     <task id="LOCAL-00038" summary="deleted @">
       <created>1478187547773</created>
@@ -880,11 +873,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478630960702</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="debugged">
+      <created>1478631798612</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1478631798612</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155123000" />
+    <option name="totallyTimeSpent" value="155402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -960,7 +960,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="deleted @" />
     <MESSAGE value="changes" />
     <MESSAGE value="imported sftp lib and implemented dir check" />
     <MESSAGE value="added log to sftp class" />
@@ -985,7 +984,8 @@
     <MESSAGE value="added debug constant" />
     <MESSAGE value="added debug messages" />
     <MESSAGE value="added more debug messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more debug messages" />
+    <MESSAGE value="debugged" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugged" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,14 +1001,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3180">
@@ -1263,14 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/createDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -1342,6 +1326,22 @@
             <marker date="1478631781543" expanded="true" signature="6159:6181" ph="SELECT * FRO... progress" />
             <marker date="1478631781543" expanded="true" signature="10294:10351" ph="SELECT progr... subject" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/testDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
