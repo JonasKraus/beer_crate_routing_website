@@ -30,6 +30,7 @@ function checkCookie () {
         requestSet.addEventListener('load', function(event) {
             if (requestSet.status >= 200 && requestSet.status < 300) {
                 console.log(requestSet.responseText);
+                setFirstCookie(psdnym);
             } else {
                 console.warn(requestSet.statusText, requestSet.responseText);
             }
@@ -37,7 +38,7 @@ function checkCookie () {
         requestSet.send(psdnym);
 
         // Set cookie
-        setFirstCookie(psdnym);
+
     } else {
         psdnym = getCookie("beercrate_routing_pseudonym");
     }
@@ -51,7 +52,12 @@ function setBreadcrumps () {
 
     request.addEventListener('load', function(event) {
         if (request.status >= 200 && request.status < 300) {
-            user = JSON.parse(request.responseText);
+            try {
+                user = JSON.parse(request.responseText);
+            } catch (errr) {
+                console.warn("get User:" + request.responseText );
+                return;
+            }
 
             //deleteCookies();
             //setCookie(user.pseudonym, user.progress, user.version);
