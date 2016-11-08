@@ -1,22 +1,9 @@
-/*
-CREATE TABLE `beercrate_routing`.`progress` (
-  `pseudonym`   VARCHAR(6)
-                CHARACTER SET utf8mb4
-                COLLATE utf8mb4_bin                   NOT NULL,
-  `progress`    INT                                   NOT NULL,
-  `dateCreated` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,
-  PRIMARY KEY (`pseudonym`)
-)
-  ENGINE = InnoDB;
-*/
-
-CREATE DATABASE `beercrate_routing`;
 -- phpMyAdmin SQL Dump
 -- version 4.6.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 28. Okt 2016 um 14:01
+-- Erstellungszeit: 08. Nov 2016 um 17:47
 -- Server-Version: 10.1.13-MariaDB
 -- PHP-Version: 5.6.21
 
