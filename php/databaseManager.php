@@ -148,7 +148,7 @@ class databaseManager extends databaseConstants {
      */
     public function getUser($pseudonym) {
 
-        $this->writeLog("strat getUser");
+        $this->writeLog("start getUser");
 
         $sqlPrepared = $this->conn->prepare("SELECT * FROM subject WHERE pseudonym = :pseudonym");
         $sqlPrepared->bindParam(":pseudonym", $pseudonym);
