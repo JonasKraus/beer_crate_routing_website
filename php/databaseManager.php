@@ -19,7 +19,6 @@ class databaseManager extends databaseConstants {
      */
     public function __construct()
     {
-        $this->writeLog("costruckt databaseManager");
         $servername = databaseConstants::getSERVERNAME();
         $username = databaseConstants::getUSERNAME();
         $password = databaseConstants::getPASSWORD();
@@ -27,8 +26,10 @@ class databaseManager extends databaseConstants {
 
 
         try {
+            $this->writeLog("try to connect");
             // Create connection
             $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            $this->writeLog("conn " . ($this->conn == null));
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
