@@ -58,11 +58,8 @@ class cryptography
         }
 
         $nonceSize = openssl_cipher_iv_length(self::METHOD);
-        var_dump("hier1");
         $nonce = mb_substr($message, 0, $nonceSize, '8bit');
-        var_dump("hier2");
         $ciphertext = mb_substr($message, $nonceSize, null, '8bit');
-        var_dump("hier3");
 
         $plaintext = openssl_decrypt(
             $ciphertext,
@@ -71,7 +68,6 @@ class cryptography
             OPENSSL_RAW_DATA,
             $nonce
         );
-        var_dump("hier4");
 
         return $plaintext;
     }

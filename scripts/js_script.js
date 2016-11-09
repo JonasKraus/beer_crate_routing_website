@@ -209,6 +209,8 @@ function setSurveyLink (pseudonym, progress, surveyURL) {
             domainName = domainName.replace('http://', '').replace('https://', '');
             var slashPos = domainName.indexOf('/');
             domainName = domainName.substr(0,slashPos);
+            domainName = encodeURI(domainName);
+
 
             document.getElementById("survey").href =
                 surveyURL
