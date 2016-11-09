@@ -212,7 +212,7 @@ function setSurveyLink (pseudonym, progress, surveyURL) {
 
             document.getElementById("survey").href =
                 surveyURL
-                + "?dn=" + domainName.toString() +
+                + "?dn=" + domainName.toString()
                 + "&ul=" + http.responseText;
         }
     };
