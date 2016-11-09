@@ -205,11 +205,14 @@ function setSurveyLink (pseudonym, progress, surveyURL) {
 
         if(http.readyState == 4 && http.status == 200) {
 
+            var domainName = window.location.href.toString();
+            domainName = domainName.replace('http://', '').replace('https://', '');
+            var slashPos = domainName.indexOf('/');
+            domainName = domainName.substr(0,slashPos);
+
             document.getElementById("survey").href =
                 surveyURL
-                + "?ps=" + user.pseudonym
-                + "&pr=" + user.progress
-                + "&vr=" + user.version
+                + "?dn=" + domainName +
                 + "&ul=" + http.responseText;
         }
     };
