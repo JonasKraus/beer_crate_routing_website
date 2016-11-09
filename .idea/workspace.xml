@@ -4,7 +4,6 @@
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/cryptography.php" afterPath="$PROJECT_DIR$/php/cryptography.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +55,8 @@
       <file leaf-file-name="cryptography.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/cryptography.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+            <state relative-caret-position="331">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -400,14 +399,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="24429000" />
-    </task>
-    <task id="LOCAL-00043" summary="debug">
-      <created>1478255175889</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1478255175889</updated>
+      <workItem from="1478443991867" duration="24498000" />
     </task>
     <task id="LOCAL-00044" summary="new error log">
       <created>1478255593234</created>
@@ -745,11 +737,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478677759453</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="deleted var_dumps">
+      <created>1478678213891</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1478678213891</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158799000" />
+    <option name="totallyTimeSpent" value="158868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -825,7 +824,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more logging" />
     <MESSAGE value="check without user agent" />
     <MESSAGE value="test script for checking the referrers and cookies" />
     <MESSAGE value="added check for ip" />
@@ -850,7 +848,8 @@
     <MESSAGE value="added domain name param for sending to limesurvey" />
     <MESSAGE value="added to string" />
     <MESSAGE value="deleted +" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted +" />
+    <MESSAGE value="deleted var_dumps" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted var_dumps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,8 +1196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/cryptography.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+        <state relative-caret-position="331">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
         </state>
       </provider>
