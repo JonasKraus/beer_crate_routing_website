@@ -14,7 +14,7 @@ class SFTPConnection
     public function __construct($host)
     {
         $this->writeLog("construct sftp");
-        $this->sftp = new Net_SFTP('chernobog.dd-dns.de');
+        $this->sftp = new Net_SFTP('127.0.0.1');
         $this->writeLog("construct connection");
     }
 
