@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/js_script.js" />
     </list>
     <ignored path="untitled1.iws" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="js_script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="212" column="52" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+            <state relative-caret-position="1219">
+              <caret line="214" column="48" selection-start-line="214" selection-start-column="48" selection-end-line="214" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -391,14 +389,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="23539000" />
-    </task>
-    <task id="LOCAL-00040" summary="imported sftp lib and implemented dir check">
-      <created>1478191517933</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1478191517933</updated>
+      <workItem from="1478443991867" duration="23901000" />
     </task>
     <task id="LOCAL-00041" summary="added log to sftp class">
       <created>1478192283450</created>
@@ -736,11 +727,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478632861885</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="added domain name param for sending to limesurvey">
+      <created>1478677335275</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1478677335275</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157909000" />
+    <option name="totallyTimeSpent" value="158271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -816,7 +814,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added log to sftp class" />
     <MESSAGE value="new check for user-agent" />
     <MESSAGE value="new error log" />
     <MESSAGE value="more logging" />
@@ -841,7 +838,8 @@
     <MESSAGE value="debugged" />
     <MESSAGE value="added test file" />
     <MESSAGE value="added alter table in db creation file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added alter table in db creation file" />
+    <MESSAGE value="added domain name param for sending to limesurvey" />
+    <option name="LAST_COMMIT_MESSAGE" value="added domain name param for sending to limesurvey" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1188,8 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="212" column="52" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+        <state relative-caret-position="1219">
+          <caret line="214" column="48" selection-start-line="214" selection-start-column="48" selection-end-line="214" selection-end-column="48" />
           <folding />
         </state>
       </provider>
