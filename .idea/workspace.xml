@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/testSftpFileCheck.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,18 +87,18 @@
           <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/startup.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1136">
+                <state relative-caret-position="1161">
                   <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/startup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="817">
+                  <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -124,7 +124,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="testSftpFileCheck.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="testSftpFileCheck.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/testSftpFileCheck.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="768">
@@ -222,13 +222,13 @@
         <option value="$PROJECT_DIR$/scripts/js_script.js" />
         <option value="$PROJECT_DIR$/css/snackbar.css" />
         <option value="$PROJECT_DIR$/startup.html" />
-        <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/testSftpFileCheck.php" />
+        <option value="$PROJECT_DIR$/scripts/startup.js" />
       </list>
     </option>
   </component>
@@ -499,14 +499,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="51273000" />
-    </task>
-    <task id="LOCAL-00048" summary="debug">
-      <created>1478257044532</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1478257044532</updated>
+      <workItem from="1478443991867" duration="51574000" />
     </task>
     <task id="LOCAL-00049" summary="debug">
       <created>1478257717652</created>
@@ -844,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478793054136</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="added sftp file check script">
+      <created>1478793181413</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1478793181414</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185643000" />
+    <option name="totallyTimeSpent" value="185944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -924,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test survey passthrough values" />
     <MESSAGE value="added passthrough values" />
     <MESSAGE value="chnaged link of the survey to pass new params" />
     <MESSAGE value="added params and names to survey url" />
@@ -949,7 +948,8 @@
     <MESSAGE value="changed sftp host name" />
     <MESSAGE value="added startup page with consent form&#10;" />
     <MESSAGE value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
-    <option name="LAST_COMMIT_MESSAGE" value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
+    <MESSAGE value="added sftp file check script" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sftp file check script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1250,22 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -1302,6 +1286,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
           <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding />
         </state>
       </provider>
