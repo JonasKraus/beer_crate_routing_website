@@ -18,7 +18,7 @@ class SFTPConnection
     public function login ($username, $password) {
         //echo("start login<br/>");
         if (!$this->sftp->login($username, $password)) {
-            echo('Login Failed<br/>');
+            //echo('Login Failed<br/>');
         }
         //echo("logged in<br/>");
     }
@@ -54,8 +54,8 @@ class SFTPConnection
         //echo("countTutComplete=".$countTutorialCompletions."<br/>");
         //echo("countLvlComplete=".$countLevelCompletions."<br/>");
         $retval=($countTutorialCompletions+$countLevelCompletions)>=2;
-        //echo("returning retval=");
-        //var_dump($retval);
+        echo("returning retval=");
+        var_dump($retval);
         return $retval;
     }
 }
