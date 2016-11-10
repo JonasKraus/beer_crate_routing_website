@@ -2,9 +2,9 @@
 // at first check the cookie
 var cookie = document.cookie;
 
-var psdnym = '';
+var psdnym = null;
 var user = null;
-var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829";
+var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
 
 checkCookie();
 setScreenResCookie();
@@ -21,21 +21,30 @@ function checkCookie () {
 
     if (cookie == undefined || cookie == '') {
 
-        psdnym = prompt('Bitte geb dein Kürzel ein', 'Erster Buchstabe Name zweiter Nachname und Geburtsjahr');
-        var requestSet = new XMLHttpRequest();
-        requestSet.open("POST","scripts/setUser.php");
-        //requestSet.setRequestHeader("pseudonym",psdnym);
+        // Ask for name till valid name is entered
+        psdnym = prompt('Bitte geb dein Kürzel ein');
+        while (psdnym == null || psdnym == '') {
+            checkCookie();
+        }
+
+        var request = new XMLHttpRequest();
+        var url = "scripts/setUser.php";
+        var params = "pseudonym=" + psdnym;
+        request.open("POST", url, true);
+
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
         //TODO check wenn abbrechen
 
-        requestSet.addEventListener('load', function(event) {
-            if (requestSet.status >= 200 && requestSet.status < 300) {
-                console.log(requestSet.responseText);
+        request.addEventListener('load', function(event) {
+            if (request.status >= 200 && request.status < 300) {
+                console.log(request.responseText);
                 setFirstCookie(psdnym);
             } else {
-                console.warn(requestSet.statusText, requestSet.responseText);
+                console.warn(request.statusText, request.responseText);
             }
         });
-        requestSet.send(psdnym);
+        request.send(params);
 
         // Set cookie
 
@@ -47,8 +56,12 @@ function checkCookie () {
 function setBreadcrumps () {
     // Ajax call to server to collect user data
     var request = new XMLHttpRequest();
-    request.open("POST","scripts/getUser.php");
-    request.setRequestHeader("pseudonym",psdnym);
+    var url = "scripts/getUser.php";
+    //request.setRequestHeader("pseudonym",psdnym);
+    var params = "pseudonym=" + psdnym;
+    request.open("POST", url, true);
+
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     request.addEventListener('load', function(event) {
         if (request.status >= 200 && request.status < 300) {
@@ -147,7 +160,7 @@ function setBreadcrumps () {
             console.warn(request.statusText, request.responseText);
         }
     });
-    request.send(psdnym);
+    request.send(params);
 }
 
 function setFirstCookie (psdnym) {
@@ -192,18 +205,19 @@ function deleteCookies () {
 }
 
 function setSurveyLink (pseudonym, progress, surveyURL) {
-    var http = new XMLHttpRequest();
-    var url = "/scripts/generateUpdateLink.php";
-    var params =
-        "ps=" + pseudonym +
-        "&pr=" + progress;
-    http.open("POST", url, true);
 
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    var request = new XMLHttpRequest();
+    var url = "scripts/generateUpdateLink.php";
+    var data = btoa(getRandomString(7) + JSON.stringify([btoa(pseudonym), btoa(progress)]));
+    var params = "fd=" + data;
 
-    http.onreadystatechange = function() {
+    request.open("POST", url, true);
 
-        if(http.readyState == 4 && http.status == 200) {
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    request.onreadystatechange = function() {
+
+        if(request.readyState == 4 && request.status == 200) {
 
             var domainName = window.location.href.toString();
             domainName = domainName.replace('http://', '').replace('https://', '');
@@ -215,11 +229,22 @@ function setSurveyLink (pseudonym, progress, surveyURL) {
             document.getElementById("survey").href =
                 surveyURL
                 + "?dn=" + domainName.toString()
-                + "&ul=" + http.responseText;
+                + "&ul=" + request.responseText;
         }
     };
-    http.send(params);
+    request.send(params);
 }
+
+function getRandomString (length) {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < length; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
 
 
 

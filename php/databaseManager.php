@@ -127,6 +127,15 @@ class databaseManager extends databaseConstants {
             $sqlVersion->bindParam(":pseudonym", $pseudonym);
 
             if ($sqlVersion->execute() === TRUE) {
+
+                $cookieName = 'beercrate_routing_pseudonym';
+
+                if(!isset($_COOKIE[$cookieName])) {
+                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+                } else if ($_COOKIE[$cookieName] != $pseudonym){
+                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+                }
+
                 return true;
             } else {
                 return false;
@@ -168,6 +177,14 @@ class databaseManager extends databaseConstants {
         }
 
         self::writeLog("getUser user found: " . $user);
+
+        $cookieName = 'beercrate_routing_pseudonym';
+
+        if(!isset($_COOKIE[$cookieName])) {
+            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+        } else if ($_COOKIE[$cookieName] != $pseudonym){
+            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+        }
 
         return $user;
     }

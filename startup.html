@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Willkommen zur Djikstra-Studie</title>
     <link rel="stylesheet" href="css/stylesStartup.css">
+    <link rel="stylesheet" href="css/snackbar.css">
+    <script src="scripts/startup.js"></script>
 </head>
 <body>
 
@@ -63,15 +65,15 @@
 
 
         <div class="pseudonym_form">
-            <form action="scripts/setUser.php">
-                Dein Pseudonym:
-                <input type="text" name="pseudonym"><br><br>
-                <input type="checkbox" class="checkbox" name="consent">
+            <form  name="pseudonym" method="post" >
+                Deine Probanden-ID:
+                <input type="text" id="pseudonymForm" name="pseudonym"><br><br>
+                <input type="checkbox" class="checkbox" name="consent" id="checkboxConsent">
                 Ich erkläre hiermit, dass ich die Probandeninformation zur wissenschaftlichen Untersuchung von dieser Studie gelesen und verstanden habe.<br>
                 <br>
-                <input type="button" class="button" value="beginnen">
+                <input type="button"  class="button" value="beginnen" id="buttonStart">
             </form>
-
+            <div id="snackbar">Bla Bla</div>
         </div>
     </div>
 </body>

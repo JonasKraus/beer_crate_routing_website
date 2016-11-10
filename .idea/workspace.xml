@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/stylesStartup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/startup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/snackbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/startup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generateUpdateLink.php" afterPath="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getUser.php" afterPath="$PROJECT_DIR$/scripts/getUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/setUser.php" afterPath="$PROJECT_DIR$/scripts/setUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.html" afterPath="$PROJECT_DIR$/startup.html" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,25 +39,25 @@
     <favorites_list name="untitled1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8044771">
+    <splitter split-orientation="horizontal" split-proportion="0.70164394">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-          <file leaf-file-name="testSftp.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
+          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-17">
-                  <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-17">
-                  <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-                  <folding />
+                <state relative-caret-position="192">
+                  <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+                  <folding>
+                    <marker date="1478780558458" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+                    <marker date="1478780558458" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+                    <marker date="1478780558458" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+                    <marker date="1478780558458" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+                    <marker date="1478780558458" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+                    <marker date="1478780558458" expanded="true" signature="4932:4982" ph="SELECT * FRO... subject" />
+                    <marker date="1478780558458" expanded="true" signature="6438:6528" ph="UPDATE subje... " />
+                    <marker date="1478780558458" expanded="true" signature="7016:7038" ph="SELECT * FRO... progress" />
+                    <marker date="1478780558458" expanded="true" signature="11151:11208" ph="SELECT progr... subject" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -58,38 +65,68 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-91">
-                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="49" />
+                <state relative-caret-position="160">
+                  <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="js_script.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+                <state relative-caret-position="692">
+                  <caret line="211" column="30" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+          <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-17">
-                  <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+                <state relative-caret-position="384">
+                  <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="startup.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/startup.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="905">
-                  <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+                <state relative-caret-position="1136">
+                  <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="448">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="snackbar.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/snackbar.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1440">
+                  <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -98,28 +135,18 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+                <state relative-caret-position="-224">
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="stylesStartup.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
+          <file leaf-file-name="setUser.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="713">
-                  <caret line="139" column="23" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cryptography.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/cryptography.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-34">
-                  <caret line="118" column="80" selection-start-line="118" selection-start-column="80" selection-end-line="118" selection-end-column="80" />
+                <state relative-caret-position="638">
+                  <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -129,11 +156,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="13" column="70" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="70" />
+                <state relative-caret-position="1283">
+                  <caret line="51" column="58" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -146,9 +173,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -159,9 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/php/getUser.php" />
-        <option value="$PROJECT_DIR$/download/readme.txt" />
         <option value="$PROJECT_DIR$/css/breadcrumb.css" />
         <option value="$PROJECT_DIR$/js/getCode.php" />
         <option value="$PROJECT_DIR$/error.html" />
@@ -178,10 +202,8 @@
         <option value="$PROJECT_DIR$/js/Database_progress_timestamp.php" />
         <option value="$PROJECT_DIR$/js/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/setUserCredit.php" />
-        <option value="$PROJECT_DIR$/scripts/getUser.php" />
         <option value="$PROJECT_DIR$/php/locationConstants.php" />
         <option value="$PROJECT_DIR$/scripts/setUserCredit.php" />
-        <option value="$PROJECT_DIR$/scripts/getUser.php" />
         <option value="$PROJECT_DIR$/chart/morris.js-0.5.1/lib/morris.coffee" />
         <option value="$PROJECT_DIR$/chart.html" />
         <option value="$PROJECT_DIR$/chart.php" />
@@ -190,26 +212,31 @@
         <option value="$PROJECT_DIR$/scripts/testSftp.php" />
         <option value="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
         <option value="$PROJECT_DIR$/php/Encodings.php" />
-        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
-        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
-        <option value="$PROJECT_DIR$/scripts/setUser.php" />
-        <option value="$PROJECT_DIR$/scripts/setUser.php" />
-        <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/testDb.php" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scripts/js_script.js" />
         <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/php/databaseManager.php" />
+        <option value="$PROJECT_DIR$/scripts/getUser.php" />
+        <option value="$PROJECT_DIR$/scripts/getUser.php" />
+        <option value="$PROJECT_DIR$/scripts/setUser.php" />
+        <option value="$PROJECT_DIR$/scripts/setUser.php" />
+        <option value="$PROJECT_DIR$/scripts/js_script.js" />
+        <option value="$PROJECT_DIR$/css/snackbar.css" />
         <option value="$PROJECT_DIR$/startup.html" />
+        <option value="$PROJECT_DIR$/scripts/startup.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
+        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
+        <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
       </list>
     </option>
   </component>
@@ -224,10 +251,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1678" />
-    <option name="y" value="-1890" />
-    <option name="width" value="3357" />
-    <option name="height" value="1818" />
+    <option name="x" value="1666" />
+    <option name="y" value="-1902" />
+    <option name="width" value="3384" />
+    <option name="height" value="1914" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -480,14 +507,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="35512000" />
-    </task>
-    <task id="LOCAL-00046" summary="check without user agent">
-      <created>1478256370046</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1478256370046</updated>
+      <workItem from="1478443991867" duration="51067000" />
     </task>
     <task id="LOCAL-00047" summary="debug">
       <created>1478256912109</created>
@@ -825,17 +845,24 @@
       <option name="project" value="LOCAL" />
       <updated>1478684006248</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="added startup page with consent form&#10;">
+      <created>1478712299455</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1478712299455</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169882000" />
+    <option name="totallyTimeSpent" value="185437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1678" y="-1890" width="3357" height="1818" extended-state="0" />
+    <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12995392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12888482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -905,7 +932,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test script for checking the referrers and cookies" />
     <MESSAGE value="added check for ip" />
     <MESSAGE value="test survey passthrough values" />
     <MESSAGE value="added passthrough values" />
@@ -930,7 +956,8 @@
     <MESSAGE value="deleted +" />
     <MESSAGE value="deleted var_dumps" />
     <MESSAGE value="changed sftp host name" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed sftp host name" />
+    <MESSAGE value="added startup page with consent form&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added startup page with consent form&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -939,46 +966,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/cryptography.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3090">
-          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1092,14 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpseclib/Math/BigInteger.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
@@ -1116,61 +1095,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/openssl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36259">
           <caret line="1186" column="8" selection-start-line="1186" selection-start-column="8" selection-end-line="1186" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="150" column="30" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
-          <folding>
-            <marker date="1478631781543" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-            <marker date="1478631781543" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-            <marker date="1478631781543" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-            <marker date="1478631781543" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-            <marker date="1478631781543" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-            <marker date="1478631781543" expanded="true" signature="4479:4529" ph="SELECT * FRO... subject" />
-            <marker date="1478631781543" expanded="true" signature="5581:5671" ph="UPDATE subje... " />
-            <marker date="1478631781543" expanded="true" signature="6159:6181" ph="SELECT * FRO... progress" />
-            <marker date="1478631781543" expanded="true" signature="10294:10351" ph="SELECT progr... subject" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,26 +1143,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/js_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/cryptography.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
           <caret line="118" column="80" selection-start-line="118" selection-start-column="80" selection-end-line="118" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1254,22 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
@@ -1278,10 +1175,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <marker date="1478780558458" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+            <marker date="1478780558458" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+            <marker date="1478780558458" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+            <marker date="1478780558458" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+            <marker date="1478780558458" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+            <marker date="1478780558458" expanded="true" signature="4932:4982" ph="SELECT * FRO... subject" />
+            <marker date="1478780558458" expanded="true" signature="6438:6528" ph="UPDATE subje... " />
+            <marker date="1478780558458" expanded="true" signature="7016:7038" ph="SELECT * FRO... progress" />
+            <marker date="1478780558458" expanded="true" signature="11151:11208" ph="SELECT progr... subject" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/snackbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="751" column="0" selection-start-line="751" selection-start-column="0" selection-end-line="751" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMEvents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/startup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="1136">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="211" column="30" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
