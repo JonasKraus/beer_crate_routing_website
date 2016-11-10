@@ -131,7 +131,7 @@ class databaseManager extends databaseConstants {
                 $cookieName = 'beercrate_routing_pseudonym';
 
                 if(!isset($_COOKIE[$cookieName])) {
-                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie"); // TODO zeit anpassen
                 } else if ($_COOKIE[$cookieName] != $pseudonym){
                     setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
                 }
@@ -382,31 +382,9 @@ class databaseManager extends databaseConstants {
                 ? databaseConstants::getVERSIONCOMICNAME()
                 : databaseConstants::getVERSIONSIMNAME();
 
-            $dirlist = $sft->scanFilesystem($pseudonym, $versionName);
+            $isCompleted = $sft->scanFilesForCompletion($pseudonym, $versionName);
 
-            self::writeLog("getProgressUpdate dirList: " . count($dirlist));
-
-            $containsTut = false;
-            $containsLevel = false;
-
-            foreach ($dirlist as $fileName) {
-
-                $this->writeLog($fileName);
-
-                if (strpos(strtoupper($fileName), 'LEVEL 1') !== false) {
-                    $containsLevel = true;
-
-                } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
-                    $containsTut = true;
-                }
-            }
-
-            if (!$containsTut || !$containsLevel) {
-                self::writeLog("getProgressUpdate logs available: false");
-                return false;
-            }
-
-            self::writeLog("getProgressUpdate logs available: true");
+            self::writeLog("getProgressUpdate is completed: " . $isCompleted);
 
             self::writeLog("version db: " . $version . " version request: " . $versionFromRequest);
             if ($version == $versionFromRequest) {
@@ -417,7 +395,7 @@ class databaseManager extends databaseConstants {
 
             return $this->updateUser($pseudonym, $nextProgress);
         } catch (Exception $exception) {
-            self::writeLog("getProgreeUpdate error sftp: " . $exception->getMessage());
+            self::writeLog("getProgressUpdate error sftp: " . $exception->getMessage());
         }
         return false;
 

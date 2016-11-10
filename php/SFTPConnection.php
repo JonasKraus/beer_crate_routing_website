@@ -26,7 +26,44 @@ class SFTPConnection
         $this->writeLog("logged in");
     }
 
-    public function scanFilesystem ($username, $version) {
+    public function scanFilesForCompletion ($username, $version) {
+
+        $this->sftp->chdir('surveylog');
+        $this->sftp->chdir($username);
+        $this->sftp->chdir($version);
+        $dirs = $this->sftp->rawlist();
+        $countTutorialCompletions=0;
+        $countLevelCompletions=0;
+        $fileNames = array();
+
+        foreach ($dirs as $dir) {
+            $fileNames[] = $dir['filename'];
+        }
+
+        foreach ($fileNames as $file) {
+
+            if (0 !== strpos($file, '.')) {
+
+                $path=''.$this->sftp->pwd.'/'.$file;
+
+                $content = $this->sftp->get($path);
+
+                if(mb_strpos($file, 'Tutorial') && mb_strpos($content,'Level Finished;')){
+                    $countTutorialCompletions++;
+                }
+
+                if(mb_strpos($file, 'Level') && mb_strpos($content,'Level Finished;')){
+                    $countLevelCompletions++;
+                }
+            }
+        }
+
+        $retval=($countTutorialCompletions+$countLevelCompletions)>=2;
+
+        return $retval;
+    }
+
+    public function scanFiles ($username, $version) {
         $this->writeLog("start scan");
         $this->sftp->chdir('surveylog');
         $this->writeLog("chdir 1");
@@ -38,12 +75,35 @@ class SFTPConnection
         $this->writeLog("rawlist");
 
         $fileNames = array();
+
         foreach ($dirs as $dir) {
             $this->writeLog('scan filename: ' . $dir['filename']);
             $fileNames[] = $dir['filename'];
         }
+
         $this->writeLog("filenames read. now return ");
-        return $fileNames;
+
+        $containsTut = false;
+        $containsLevel = false;
+
+        foreach ($fileNames as $fileName) {
+
+            $this->writeLog($fileName);
+
+            if (strpos(strtoupper($fileName), 'LEVEL 1') !== false) {
+                $containsLevel = true;
+
+            } else if (strpos(strtoupper($fileName), 'TUTORIAL') !== false) {
+                $containsTut = true;
+            }
+        }
+
+        if (!$containsTut || !$containsLevel) {
+
+            return false;
+        }
+
+        return true;
     }
 
     public function writeLog ($message, $fileLogging = true) {
