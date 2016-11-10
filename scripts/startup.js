@@ -40,7 +40,7 @@ function checkReturningUser () {
     if (cookie != undefined && cookie != '') {
         psdnym = getCookie("beercrate_routing_pseudonym");
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
-            location.href="/index.html";
+            window.location.href="index.html";
         }
     }
 }

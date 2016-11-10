@@ -98,7 +98,7 @@
             <entry file="file://$PROJECT_DIR$/scripts/startup.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="817">
-                  <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+                  <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -499,14 +499,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="51574000" />
-    </task>
-    <task id="LOCAL-00049" summary="debug">
-      <created>1478257717652</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1478257717652</updated>
+      <workItem from="1478443991867" duration="51678000" />
     </task>
     <task id="LOCAL-00050" summary="debug">
       <created>1478257943344</created>
@@ -844,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478793181414</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="fixed redirect">
+      <created>1478793480069</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1478793480069</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185944000" />
+    <option name="totallyTimeSpent" value="186048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -924,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added passthrough values" />
     <MESSAGE value="chnaged link of the survey to pass new params" />
     <MESSAGE value="added params and names to survey url" />
     <MESSAGE value="getting updatelink and sending it to limesurvey" />
@@ -949,7 +948,8 @@
     <MESSAGE value="added startup page with consent form&#10;" />
     <MESSAGE value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
     <MESSAGE value="added sftp file check script" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sftp file check script" />
+    <MESSAGE value="fixed redirect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed redirect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1301,7 +1301,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
