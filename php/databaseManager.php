@@ -385,7 +385,7 @@ class databaseManager extends databaseConstants {
             $isCompleted = $sft->scanFilesForCompletion($pseudonym, $versionName);
 
             if (!$isCompleted) {
-                array(
+                return array(
                     "success:" => false
                 );
             }
