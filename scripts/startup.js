@@ -100,7 +100,7 @@ function setUser () {
 
     request.addEventListener('load', function(event) {
         if (request.status >= 200 && request.status < 300) {
-            console.log(request.responseText);
+            //console.log(request.responseText);
             checkReturningUser();
         } else {
             console.warn(request.statusText, request.responseText);
