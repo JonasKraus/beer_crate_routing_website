@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/snackbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/startup.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/js_script.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/testSftpFileCheck.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generateUpdateLink.php" afterPath="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getUser.php" afterPath="$PROJECT_DIR$/scripts/getUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/setUser.php" afterPath="$PROJECT_DIR$/scripts/setUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.html" afterPath="$PROJECT_DIR$/startup.html" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,7 +114,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
@@ -132,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/styles.css">
+          <file leaf-file-name="testSftpFileCheck.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/testSftpFileCheck.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-224">
-                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                <state relative-caret-position="768">
+                  <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
                   <folding />
                 </state>
               </provider>
@@ -186,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/breadcrumb.css" />
         <option value="$PROJECT_DIR$/js/getCode.php" />
         <option value="$PROJECT_DIR$/error.html" />
         <option value="$PROJECT_DIR$/js/consts.php" />
@@ -237,6 +228,7 @@
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
+        <option value="$PROJECT_DIR$/scripts/testSftpFileCheck.php" />
       </list>
     </option>
   </component>
@@ -507,14 +499,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="51067000" />
-    </task>
-    <task id="LOCAL-00047" summary="debug">
-      <created>1478256912109</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1478256912109</updated>
+      <workItem from="1478443991867" duration="51273000" />
     </task>
     <task id="LOCAL-00048" summary="debug">
       <created>1478257044532</created>
@@ -852,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478712299455</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side">
+      <created>1478793054136</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1478793054136</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185437000" />
+    <option name="totallyTimeSpent" value="185643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -932,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added check for ip" />
     <MESSAGE value="test survey passthrough values" />
     <MESSAGE value="added passthrough values" />
     <MESSAGE value="chnaged link of the survey to pass new params" />
@@ -957,7 +948,8 @@
     <MESSAGE value="deleted var_dumps" />
     <MESSAGE value="changed sftp host name" />
     <MESSAGE value="added startup page with consent form&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added startup page with consent form&#10;" />
+    <MESSAGE value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
+    <option name="LAST_COMMIT_MESSAGE" value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -966,13 +958,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -1309,6 +1294,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/testSftpFileCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
           <folding />
         </state>
       </provider>
