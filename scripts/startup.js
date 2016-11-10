@@ -74,7 +74,7 @@ function checkboxChangeHandler () {
 }
 
 function validateForms () {
-    console.info('validate');
+
     checkConsentForm();
     checkInputForm();
 
