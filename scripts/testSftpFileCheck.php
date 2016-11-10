@@ -11,16 +11,16 @@ class SFTPConnection
      */
     public function __construct($host)
     {
-        echo("construct sftp<br/>");
+        //echo("construct sftp<br/>");
         $this->sftp = new Net_SFTP('127.0.0.1');
-        echo("construct connection<br/>");
+        //echo("construct connection<br/>");
     }
     public function login ($username, $password) {
-        echo("start login<br/>");
+        //echo("start login<br/>");
         if (!$this->sftp->login($username, $password)) {
             echo('Login Failed<br/>');
         }
-        echo("logged in<br/>");
+        //echo("logged in<br/>");
     }
     public function scanFilesForCompletion ($username, $version) {
         $this->sftp->chdir('surveylog');
@@ -33,16 +33,16 @@ class SFTPConnection
         foreach ($dirs as $dir) {
             $fileNames[] = $dir['filename'];
         }
-        echo($fileNames);
-        echo("filenames read. now return <br/><br/>listing files: <br/>");
+        //echo($fileNames);
+        //echo("filenames read. now return <br/><br/>listing files: <br/>");
         foreach ($fileNames as $file) {
             if (0 !== strpos($file, '.')) {
-                echo("file=".$file." | ". $this->sftp->pwd."<br/>");
+                //echo("file=".$file." | ". $this->sftp->pwd."<br/>");
                 $path=''.$this->sftp->pwd.'/'.$file;
-                echo("path=".$path."<br/>");
+                //echo("path=".$path."<br/>");
                 $content = $this->sftp->get($path);
-                echo("content=".$content);
-                echo("<br/><br/>");
+                //echo("content=".$content);
+                //echo("<br/><br/>");
                 if(mb_strpos($file, 'Tutorial') && mb_strpos($content,'Level Finished;')){
                     $countTutorialCompletions++;
                 }
@@ -51,11 +51,11 @@ class SFTPConnection
                 }
             }
         }
-        echo("countTutComplete=".$countTutorialCompletions."<br/>");
-        echo("countLvlComplete=".$countLevelCompletions."<br/>");
+        //echo("countTutComplete=".$countTutorialCompletions."<br/>");
+        //echo("countLvlComplete=".$countLevelCompletions."<br/>");
         $retval=($countTutorialCompletions+$countLevelCompletions)>=2;
-        echo("returning retval=");
-        var_dump($retval);
+        //echo("returning retval=");
+        //var_dump($retval);
         return $retval;
     }
 }
