@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="fixed redirect">
+    <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/SFTPConnection.php" afterPath="$PROJECT_DIR$/php/SFTPConnection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getProgressUpdate.php" afterPath="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,18 +37,18 @@
           <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="628">
-                  <caret line="381" column="10" selection-start-line="381" selection-start-column="10" selection-end-line="381" selection-end-column="10" />
+                <state relative-caret-position="1172">
+                  <caret line="404" column="12" selection-start-line="404" selection-start-column="12" selection-end-line="404" selection-end-column="12" />
                   <folding>
-                    <marker date="1478796345700" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-                    <marker date="1478796345700" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-                    <marker date="1478796345700" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-                    <marker date="1478796345700" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-                    <marker date="1478796345700" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-                    <marker date="1478796345700" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
-                    <marker date="1478796345700" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
-                    <marker date="1478796345700" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
-                    <marker date="1478796345700" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
+                    <marker date="1478797782546" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+                    <marker date="1478797782546" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+                    <marker date="1478797782546" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+                    <marker date="1478797782546" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+                    <marker date="1478797782546" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+                    <marker date="1478797782546" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
+                    <marker date="1478797782546" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
+                    <marker date="1478797782546" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
+                    <marker date="1478797782546" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
                   </folding>
                 </state>
               </provider>
@@ -59,7 +57,7 @@
           <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1118">
+                <state relative-caret-position="2078">
                   <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
                   <folding />
                 </state>
@@ -501,14 +499,7 @@
       <workItem from="1477658648396" duration="14997000" />
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
-      <workItem from="1478443991867" duration="54468000" />
-    </task>
-    <task id="LOCAL-00055" summary="added check for ip">
-      <created>1478441202473</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1478441202473</updated>
+      <workItem from="1478443991867" duration="55850000" />
     </task>
     <task id="LOCAL-00056" summary="test survey passthrough values">
       <created>1478443506568</created>
@@ -846,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478795324935</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="added function to scan files for completion">
+      <created>1478796471972</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1478796471972</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188838000" />
+    <option name="totallyTimeSpent" value="190220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -926,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added params and names to survey url" />
     <MESSAGE value="getting updatelink and sending it to limesurvey" />
     <MESSAGE value="fixed url" />
     <MESSAGE value="shorted method fro generation url" />
@@ -951,7 +948,8 @@
     <MESSAGE value="added sftp file check script" />
     <MESSAGE value="deleted echo" />
     <MESSAGE value="fixed redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed redirect" />
+    <MESSAGE value="added function to scan files for completion" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to scan files for completion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1284,7 +1282,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
+        <state relative-caret-position="2078">
           <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
           <folding />
         </state>
@@ -1292,18 +1290,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="381" column="10" selection-start-line="381" selection-start-column="10" selection-end-line="381" selection-end-column="10" />
+        <state relative-caret-position="1172">
+          <caret line="404" column="12" selection-start-line="404" selection-start-column="12" selection-end-line="404" selection-end-column="12" />
           <folding>
-            <marker date="1478796345700" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-            <marker date="1478796345700" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-            <marker date="1478796345700" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-            <marker date="1478796345700" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-            <marker date="1478796345700" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-            <marker date="1478796345700" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
-            <marker date="1478796345700" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
-            <marker date="1478796345700" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
-            <marker date="1478796345700" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
+            <marker date="1478797782546" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+            <marker date="1478797782546" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+            <marker date="1478797782546" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+            <marker date="1478797782546" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+            <marker date="1478797782546" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+            <marker date="1478797782546" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
+            <marker date="1478797782546" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
+            <marker date="1478797782546" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
+            <marker date="1478797782546" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
           </folding>
         </state>
       </provider>

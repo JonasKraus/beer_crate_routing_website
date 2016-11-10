@@ -384,9 +384,17 @@ class databaseManager extends databaseConstants {
 
             $isCompleted = $sft->scanFilesForCompletion($pseudonym, $versionName);
 
+            if (!$isCompleted) {
+                array(
+                    "success:" => false
+                );
+            }
+
             self::writeLog("getProgressUpdate is completed: " . $isCompleted);
 
             self::writeLog("version db: " . $version . " version request: " . $versionFromRequest);
+
+            // Check to which step to update
             if ($version == $versionFromRequest) {
                 $nextProgress = 2;
             } else {
@@ -394,10 +402,13 @@ class databaseManager extends databaseConstants {
             }
 
             return $this->updateUser($pseudonym, $nextProgress);
+
         } catch (Exception $exception) {
             self::writeLog("getProgressUpdate error sftp: " . $exception->getMessage());
         }
-        return false;
+        return array(
+            "success:" => false
+        );
 
     }
 
