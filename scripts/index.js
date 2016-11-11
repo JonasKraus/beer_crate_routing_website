@@ -48,6 +48,7 @@ function checkCookie () {
 
     } else {
         psdnym = getCookie("beercrate_routing_pseudonym").toUpperCase();
+        document.getElementById('loggedUser').innerHTML = psdnym.toUpperCase();
     }
 }
 

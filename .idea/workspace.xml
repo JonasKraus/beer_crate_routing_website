@@ -125,8 +125,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="114" column="90" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
+            <state relative-caret-position="955">
+              <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -225,10 +225,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1666" />
-    <option name="y" value="-1902" />
-    <option name="width" value="3384" />
-    <option name="height" value="1914" />
+    <option name="x" value="975" />
+    <option name="y" value="-2028" />
+    <option name="width" value="3608" />
+    <option name="height" value="2040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -505,14 +505,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="5642000" />
-    </task>
-    <task id="LOCAL-00065" summary="debug">
-      <created>1478452044715</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1478452044715</updated>
+      <workItem from="1478852565243" duration="6735000" />
     </task>
     <task id="LOCAL-00066" summary="debug">
       <created>1478452189335</created>
@@ -850,17 +843,24 @@
       <option name="project" value="LOCAL" />
       <updated>1478858054728</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="added correct file name to downloads">
+      <created>1478858257980</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1478858257980</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196486000" />
+    <option name="totallyTimeSpent" value="197579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
+    <frame x="975" y="-2028" width="3608" height="2040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13040829" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12207644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -930,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added debug messages" />
     <MESSAGE value="added more debug messages" />
     <MESSAGE value="debugged" />
     <MESSAGE value="added test file" />
@@ -955,7 +954,8 @@
     <MESSAGE value="changed user and pwd of sftp connection to constants file" />
     <MESSAGE value="add check to psdnym" />
     <MESSAGE value="added check and handler and test files for download" />
-    <option name="LAST_COMMIT_MESSAGE" value="added check and handler and test files for download" />
+    <MESSAGE value="added correct file name to downloads" />
+    <option name="LAST_COMMIT_MESSAGE" value="added correct file name to downloads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1111,6 +1111,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="114" column="90" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
+        <state relative-caret-position="955">
+          <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
           <folding />
         </state>
       </provider>
