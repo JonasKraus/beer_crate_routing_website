@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download/1/readme1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/download/readme.txt" afterPath="$PROJECT_DIR$/download/0/readme0.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,21 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+      <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+            <state relative-caret-position="1104">
+              <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/startup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="692">
+              <caret line="83" column="60" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -122,21 +125,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
+            <state relative-caret-position="707">
+              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
+      <file leaf-file-name="readme0.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/download/0/readme0.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,7 +206,6 @@
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
         <option value="$PROJECT_DIR$/startup.html" />
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/getProgress.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
@@ -211,6 +213,7 @@
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -358,6 +361,28 @@
               <option name="myItemId" value="download" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dijkstra-studie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dijkstra-studie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="download" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -402,16 +427,17 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\download\1" />
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\php" />
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\download\0" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\css" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\scripts" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\sftplib" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie" />
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\chart" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\php" />
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -482,14 +508,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="4617000" />
-    </task>
-    <task id="LOCAL-00063" summary="testing">
-      <created>1478451684087</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1478451684087</updated>
+      <workItem from="1478852565243" duration="5428000" />
     </task>
     <task id="LOCAL-00064" summary="debug">
       <created>1478451862860</created>
@@ -827,11 +846,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478856657687</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="add check to psdnym">
+      <created>1478857225076</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1478857225076</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195461000" />
+    <option name="totallyTimeSpent" value="196272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -907,7 +933,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added use database" />
     <MESSAGE value="added debug constant" />
     <MESSAGE value="added debug messages" />
     <MESSAGE value="added more debug messages" />
@@ -932,7 +957,8 @@
     <MESSAGE value="added Pseudonym to gui" />
     <MESSAGE value="changed cookie path to constants class" />
     <MESSAGE value="changed user and pwd of sftp connection to constants file" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed user and pwd of sftp connection to constants file" />
+    <MESSAGE value="add check to psdnym" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check to psdnym" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -941,15 +967,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/download/readme.txt">
+    <entry file="file://$PROJECT_DIR$/download/1/readme1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
@@ -1152,14 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1086">
-          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
@@ -1208,14 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2752">
@@ -1258,10 +1260,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/startup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/0/readme0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="692">
+          <caret line="83" column="60" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
           <folding />
         </state>
       </provider>
