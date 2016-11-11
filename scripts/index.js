@@ -34,8 +34,6 @@ function checkCookie () {
 
         request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-        //TODO check wenn abbrechen
-
         request.addEventListener('load', function(event) {
             if (request.status >= 200 && request.status < 300) {
                 document.getElementById('loggedUser').innerHTML = psdnym.toUpperCase();

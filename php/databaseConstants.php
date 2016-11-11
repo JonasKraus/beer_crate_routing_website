@@ -13,6 +13,8 @@ class databaseConstants {
     private static $VERSION_SIM_NAME = 'sim';
     private static $VERSION_COMIC_NAME = 'comic';
     public static $DEBUG = false;
+    public static $COOKIE_PATH= "/dijkstra-studie"; // LOCAL
+    //public static $COOKIE_PATH= "/dijkstra-studie"; // bwCloud
 
 
     /**

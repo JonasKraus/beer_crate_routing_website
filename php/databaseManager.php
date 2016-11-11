@@ -131,9 +131,9 @@ class databaseManager extends databaseConstants {
                 $cookieName = 'beercrate_routing_pseudonym';
 
                 if(!isset($_COOKIE[$cookieName])) {
-                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie"); // TODO zeit anpassen
+                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
                 } else if ($_COOKIE[$cookieName] != $pseudonym){
-                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+                    setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
                 }
 
                 return true;
@@ -181,9 +181,9 @@ class databaseManager extends databaseConstants {
         $cookieName = 'beercrate_routing_pseudonym';
 
         if(!isset($_COOKIE[$cookieName])) {
-            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
         } else if ($_COOKIE[$cookieName] != $pseudonym){
-            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, "/dijkstra-studie	"); // TODO zeit anpassen
+            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
         }
 
         return $user;

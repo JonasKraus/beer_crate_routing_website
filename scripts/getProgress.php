@@ -16,7 +16,7 @@ if (isset($_GET['pgr'])) {
     $pseudonym = $_COOKIE["beercrate_routing_pseudonym"];
 }
 
-setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/dijkstra-studie"); // Cookie for 7 days
+//setcookie("beercrate_routing_pseudonym", $pseudonym, time() + (86400 * 7), ";path=/dijkstra-studie"); // Cookie for 7 days
 
 $progress = null;
 

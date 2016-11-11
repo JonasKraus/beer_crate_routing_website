@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseConstants.php" afterPath="$PROJECT_DIR$/php/databaseConstants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/getProgress.php" afterPath="$PROJECT_DIR$/scripts/getProgress.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/updateUser.php" afterPath="$PROJECT_DIR$/scripts/updateUser.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,28 +39,48 @@
       <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12320">
-              <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+            <state relative-caret-position="547">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
-                <marker date="1478798540158" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-                <marker date="1478798540158" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-                <marker date="1478798540158" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-                <marker date="1478798540158" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-                <marker date="1478798540158" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-                <marker date="1478798540158" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
-                <marker date="1478798540158" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
-                <marker date="1478798540158" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
-                <marker date="1478798540158" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
+                <marker date="1478855417462" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+                <marker date="1478855417462" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+                <marker date="1478855417462" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+                <marker date="1478855417462" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+                <marker date="1478855417462" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+                <marker date="1478855417462" expanded="true" signature="4956:5006" ph="SELECT * FRO... subject" />
+                <marker date="1478855417462" expanded="true" signature="6486:6576" ph="UPDATE subje... " />
+                <marker date="1478855417462" expanded="true" signature="7064:7086" ph="SELECT * FRO... progress" />
+                <marker date="1478855417462" expanded="true" signature="11199:11256" ph="SELECT progr... subject" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
+      <file leaf-file-name="databaseConstants.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
-              <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="288">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getProgress.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -68,16 +91,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1086">
               <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/startup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="948">
-              <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -96,28 +109,38 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="133">
+              <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="40" column="87" selection-start-line="40" selection-start-column="87" selection-end-line="40" selection-end-column="87" />
+            <state relative-caret-position="931">
+              <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <file leaf-file-name="setUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="896">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -162,12 +185,10 @@
         <option value="$PROJECT_DIR$/chart.html" />
         <option value="$PROJECT_DIR$/chart.php" />
         <option value="$PROJECT_DIR$/chart/chart.html" />
-        <option value="$PROJECT_DIR$/scripts/getProgress.php" />
         <option value="$PROJECT_DIR$/scripts/testSftp.php" />
         <option value="$PROJECT_DIR$/scripts/updateLinkFromLimesurvey.php" />
         <option value="$PROJECT_DIR$/php/Encodings.php" />
         <option value="$PROJECT_DIR$/scripts/test.php" />
-        <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/scripts/testDb.php" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
@@ -181,17 +202,19 @@
         <option value="$PROJECT_DIR$/css/snackbar.css" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/scripts/generateUpdateLink.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
-        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/testSftpFileCheck.php" />
         <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
-        <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/startup.html" />
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/php/databaseConstants.php" />
+        <option value="$PROJECT_DIR$/php/databaseManager.php" />
+        <option value="$PROJECT_DIR$/scripts/getProgress.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
+        <option value="$PROJECT_DIR$/scripts/updateUser.php" />
       </list>
     </option>
   </component>
@@ -463,14 +486,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="2280000" />
-    </task>
-    <task id="LOCAL-00060" summary="getting updatelink and sending it to limesurvey">
-      <created>1478450871663</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1478450871663</updated>
+      <workItem from="1478852565243" duration="2931000" />
     </task>
     <task id="LOCAL-00061" summary="fixed url">
       <created>1478451068363</created>
@@ -808,11 +824,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478854295561</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="added Pseudonym to gui">
+      <created>1478854881255</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1478854881255</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193124000" />
+    <option name="totallyTimeSpent" value="193775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -823,6 +846,7 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39952436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321209" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498671" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -833,7 +857,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39952436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -888,7 +911,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed" />
     <MESSAGE value="debug" />
     <MESSAGE value="added new db creation file" />
     <MESSAGE value="added use database" />
@@ -913,7 +935,8 @@
     <MESSAGE value="added return array" />
     <MESSAGE value="added validation of the pseudonym" />
     <MESSAGE value="input only allows uppercase letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="input only allows uppercase letters" />
+    <MESSAGE value="added Pseudonym to gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Pseudonym to gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1081,14 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
@@ -1133,61 +1148,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/testSftpFileCheck.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1888">
           <caret line="59" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12320">
-          <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
-          <folding>
-            <marker date="1478798540158" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-            <marker date="1478798540158" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-            <marker date="1478798540158" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-            <marker date="1478798540158" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-            <marker date="1478798540158" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-            <marker date="1478798540158" expanded="true" signature="4931:4981" ph="SELECT * FRO... subject" />
-            <marker date="1478798540158" expanded="true" signature="6437:6527" ph="UPDATE subje... " />
-            <marker date="1478798540158" expanded="true" signature="7015:7037" ph="SELECT * FRO... progress" />
-            <marker date="1478798540158" expanded="true" signature="11150:11207" ph="SELECT progr... subject" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1233,16 +1198,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="133">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="40" column="87" selection-start-line="40" selection-start-column="87" selection-end-line="40" selection-end-column="87" />
+        <state relative-caret-position="931">
+          <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding>
+            <marker date="1478855417462" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+            <marker date="1478855417462" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+            <marker date="1478855417462" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+            <marker date="1478855417462" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+            <marker date="1478855417462" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+            <marker date="1478855417462" expanded="true" signature="4956:5006" ph="SELECT * FRO... subject" />
+            <marker date="1478855417462" expanded="true" signature="6486:6576" ph="UPDATE subje... " />
+            <marker date="1478855417462" expanded="true" signature="7064:7086" ph="SELECT * FRO... progress" />
+            <marker date="1478855417462" expanded="true" signature="11199:11256" ph="SELECT progr... subject" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
