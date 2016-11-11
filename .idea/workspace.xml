@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download/1/readme1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/download/readme.txt" afterPath="$PROJECT_DIR$/download/0/readme0.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="untitled1.iws" />
@@ -128,8 +125,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+            <state relative-caret-position="323">
+              <caret line="114" column="90" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -508,14 +505,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="5428000" />
-    </task>
-    <task id="LOCAL-00064" summary="debug">
-      <created>1478451862860</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1478451862860</updated>
+      <workItem from="1478852565243" duration="5642000" />
     </task>
     <task id="LOCAL-00065" summary="debug">
       <created>1478452044715</created>
@@ -853,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478857225076</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="added check and handler and test files for download">
+      <created>1478858054728</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1478858054728</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196272000" />
+    <option name="totallyTimeSpent" value="196486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -933,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added debug constant" />
     <MESSAGE value="added debug messages" />
     <MESSAGE value="added more debug messages" />
     <MESSAGE value="debugged" />
@@ -958,7 +954,8 @@
     <MESSAGE value="changed cookie path to constants class" />
     <MESSAGE value="changed user and pwd of sftp connection to constants file" />
     <MESSAGE value="add check to psdnym" />
-    <option name="LAST_COMMIT_MESSAGE" value="add check to psdnym" />
+    <MESSAGE value="added check and handler and test files for download" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check and handler and test files for download" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1286,8 +1283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+        <state relative-caret-position="323">
+          <caret line="114" column="90" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
           <folding />
         </state>
       </provider>

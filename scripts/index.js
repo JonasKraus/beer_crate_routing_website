@@ -112,7 +112,7 @@ function setBreadcrumps () {
                 case 1:
                     classesSurvey.add("hidden");
                     classesDownload.remove("hidden"); //TODO link tauschen und version checken
-                    var href1 = "download/" + user.version + "/readme" + user.version + "txt";
+                    var href1 = "download/" + user.version + "/readme" + user.version + ".txt";
                     buttonDownload.innerHTML = '<a href='+ href1 +' class="button" id="button_download">Download Spiel 1</a>';
                     break;
                 case 2:
@@ -123,7 +123,7 @@ function setBreadcrumps () {
                 case 3:
                     classesSurvey.add("hidden");
                     classesDownload.remove("hidden");//TODO link tauschen und version checken
-                    var href2 = "download/" + (user.version + 1)%2 + "/readme" + user.version + "txt";
+                    var href2 = "download/" + (user.version + 1)%2 + "/readme" + user.version + ".txt";
                     buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
                     break;
                 case 4:
