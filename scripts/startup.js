@@ -63,7 +63,7 @@ function inputChangeHandler () {
     var input = document.getElementById("pseudonymForm");
     var buttonStart = document.getElementById("buttonStart");
     isInputForm = !(input.value === ""); // TODO Check correct form
-    psdnym = input.value;
+    psdnym = input.value.toUpperCase() ;
 }
 
 function checkboxChangeHandler () {
@@ -77,6 +77,7 @@ function validateForms () {
 
     checkConsentForm();
     checkInputForm();
+    validatePseudonym(psdnym);
 
     if (isInputForm && isConsentForm) {
         setUser();
@@ -123,4 +124,29 @@ function showSnackbar (message) {
     x.className = "show";
 
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function validatePseudonym (pseudonym) {
+    if (pseudonym.length != 6) {
+        showSnackbar('Die Probanden-ID muss 6 Zeichen lang sein');
+        return false;
+    }
+
+    var letterPart = pseudonym.substring(0,4);
+    var letterRegex = /^[a-z]+$/i;
+    var numPart = pseudonym.substring(4,6);
+    var numRegex = /^\d+$/;
+
+    if (!letterRegex.test(letterPart)) {
+        showSnackbar('Die ersten 4 Zeichen der Probanden-ID sind Buchstaben');
+        return false;
+    }
+    if (!numRegex.test(numPart)) {
+        showSnackbar('Die letzten 2 Zeichen der Probanden-ID sind Zahlen');
+        return false;
+
+    }
+
+    return true;
+
 }
