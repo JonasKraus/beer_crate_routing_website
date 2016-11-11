@@ -38,7 +38,7 @@ function checkReturningUser () {
 
     // Check if returning participant
     if (cookie != undefined && cookie != '') {
-        psdnym = getCookie("beercrate_routing_pseudonym");
+        psdnym = getCookie("beercrate_routing_pseudonym").toUpperCase();
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
             window.location.href="index.html";
         }
@@ -77,17 +77,13 @@ function validateForms () {
 
     checkConsentForm();
     checkInputForm();
-    validatePseudonym(psdnym);
-
-    if (isInputForm && isConsentForm) {
-        setUser();
-    }
 
     if (!isConsentForm) {
         showSnackbar("Bitte akzeptiere die Vereinbarungen");
-    }
-    if (!isInputForm) {
+    } else if (!isInputForm) {
         showSnackbar("Btte geb eine gültige Probanden-ID ein")
+    } else if (isInputForm && isConsentForm && validatePseudonym(psdnym)) {
+        setUser();
     }
  }
 

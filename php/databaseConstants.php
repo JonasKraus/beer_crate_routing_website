@@ -14,7 +14,10 @@ class databaseConstants {
     private static $VERSION_COMIC_NAME = 'comic';
     public static $DEBUG = false;
     public static $COOKIE_PATH= "/dijkstra-studie"; // LOCAL
-    //public static $COOKIE_PATH= "/dijkstra-studie"; // bwCloud
+    //public static $COOKIE_PATH= "/"; // bwCloud
+    public static $SERVER_NAME_SFTP = "134.60.51.204";
+    public static $USER_NAME_SFTP = ""; // TODO
+    public static $USER_PASSWORD_SFTP = ""; // TODO
 
 
     /**

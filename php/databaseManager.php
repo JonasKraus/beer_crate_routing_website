@@ -369,15 +369,15 @@ class databaseManager extends databaseConstants {
 
     public function getProgressUpdate($pseudonym, $version, $versionFromRequest) {
 
-        $this->writeLog("strat getProgressUpdate");
+        $this->writeLog("start getProgressUpdate");
         $nextProgress = null;
 
         self::writeLog("start sftp");
 
         try {
-            $sft = new SFTPConnection("chernobog.dd-dns.de");
+            $sft = new SFTPConnection(databaseConstants::$SERVER_NAME_SFTP);
             self::writeLog("databaseManager ->start login");
-            $sft->login("beerrouting", "WaTrX5NF");
+            $sft->login(databaseConstants::$USER_NAME_SFTP, databaseConstants::$USER_PASSWORD_SFTP);
             $versionName = $version == databaseConstants::getVERSIONCOMIC()
                 ? databaseConstants::getVERSIONCOMICNAME()
                 : databaseConstants::getVERSIONSIMNAME();
