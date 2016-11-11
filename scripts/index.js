@@ -22,7 +22,7 @@ function checkCookie () {
     if (cookie == undefined || cookie == '') {
 
         // Ask for name till valid name is entered
-        psdnym = prompt('Bitte geb dein Kürzel ein');
+        psdnym = prompt('Bitte geb dein Kürzel ein').toUpperCase();
         while (psdnym == null || psdnym == '') {
             checkCookie();
         }
@@ -38,8 +38,8 @@ function checkCookie () {
 
         request.addEventListener('load', function(event) {
             if (request.status >= 200 && request.status < 300) {
-                console.log(request.responseText);
-                setFirstCookie(psdnym);
+                document.getElementById('loggedUser').innerHTML = psdnym.toUpperCase();
+                setFirstCookie(psdnym.toUpperCase());
             } else {
                 console.warn(request.statusText, request.responseText);
             }
@@ -49,7 +49,7 @@ function checkCookie () {
         // Set cookie
 
     } else {
-        psdnym = getCookie("beercrate_routing_pseudonym");
+        psdnym = getCookie("beercrate_routing_pseudonym").toUpperCase();
     }
 }
 
