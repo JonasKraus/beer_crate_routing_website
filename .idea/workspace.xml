@@ -126,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -505,14 +505,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="7135000" />
-    </task>
-    <task id="LOCAL-00067" summary="debug">
-      <created>1478452441348</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1478452441348</updated>
+      <workItem from="1478852565243" duration="7188000" />
     </task>
     <task id="LOCAL-00068" summary="debug">
       <created>1478452911223</created>
@@ -850,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478863166093</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="checked that document is loaded before executing js">
+      <created>1478863574383</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1478863574383</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197979000" />
+    <option name="totallyTimeSpent" value="198032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2028" width="3608" height="2040" extended-state="6" />
@@ -930,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debugged" />
     <MESSAGE value="added test file" />
     <MESSAGE value="added alter table in db creation file" />
     <MESSAGE value="added domain name param for sending to limesurvey" />
@@ -955,7 +954,8 @@
     <MESSAGE value="added check and handler and test files for download" />
     <MESSAGE value="added correct file name to downloads" />
     <MESSAGE value="added display pseudonym" />
-    <option name="LAST_COMMIT_MESSAGE" value="added display pseudonym" />
+    <MESSAGE value="checked that document is loaded before executing js" />
+    <option name="LAST_COMMIT_MESSAGE" value="checked that document is loaded before executing js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,7 +1285,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding />
         </state>
       </provider>

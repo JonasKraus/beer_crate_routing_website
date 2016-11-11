@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
     setScreenResCookie();
     setBreadcrumps();
-}
+});
 
 
 function setScreenResCookie () {
