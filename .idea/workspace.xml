@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/faq.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
     </list>
     <ignored path="untitled1.iws" />
@@ -31,125 +33,123 @@
     <favorites_list name="untitled1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="379" column="58" selection-start-line="379" selection-start-column="58" selection-end-line="379" selection-end-column="58" />
-              <folding>
-                <marker date="1478856593934" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
-                <marker date="1478856593934" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
-                <marker date="1478856593934" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
-                <marker date="1478856593934" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
-                <marker date="1478856593934" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
-                <marker date="1478856593934" expanded="true" signature="4956:5006" ph="SELECT * FRO... subject" />
-                <marker date="1478856593934" expanded="true" signature="6486:6576" ph="UPDATE subje... " />
-                <marker date="1478856593934" expanded="true" signature="7064:7086" ph="SELECT * FRO... progress" />
-                <marker date="1478856593934" expanded="true" signature="11199:11256" ph="SELECT progr... subject" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testSftp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2752">
-              <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="databaseConstants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getProgress.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/startup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="955">
-              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme0.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/download/0/readme0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+          <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="675">
+                  <caret line="379" column="58" selection-start-line="379" selection-start-column="58" selection-end-line="379" selection-end-column="58" />
+                  <folding>
+                    <marker date="1478856593934" expanded="true" signature="1396:1467" ph="INSERT INTO progress... " />
+                    <marker date="1478856593934" expanded="true" signature="1973:2012" ph="UPDATE subje... " />
+                    <marker date="1478856593934" expanded="true" signature="3301:3352" ph="INSERT INTO subject... " />
+                    <marker date="1478856593934" expanded="true" signature="3572:3613" ph="SELECT COUNT... subject" />
+                    <marker date="1478856593934" expanded="true" signature="3762:3828" ph="UPDATE subje... " />
+                    <marker date="1478856593934" expanded="true" signature="4956:5006" ph="SELECT * FRO... subject" />
+                    <marker date="1478856593934" expanded="true" signature="6486:6576" ph="UPDATE subje... " />
+                    <marker date="1478856593934" expanded="true" signature="7064:7086" ph="SELECT * FRO... progress" />
+                    <marker date="1478856593934" expanded="true" signature="11199:11256" ph="SELECT progr... subject" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="testSftp.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="608">
+                  <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SFTPConnection.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php/SFTPConnection.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2752">
+                  <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="databaseConstants.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php/databaseConstants.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="571">
+                  <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="571">
+                  <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="faq.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/faq.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1411">
+                  <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="readme0.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/download/0/readme0.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="startup.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/startup.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1596">
+                  <caret line="77" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="77" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -160,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/getCode.php" />
         <option value="$PROJECT_DIR$/error.html" />
         <option value="$PROJECT_DIR$/js/consts.php" />
         <option value="$PROJECT_DIR$/js/cryptography.php" />
@@ -209,8 +208,9 @@
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
+        <option value="$PROJECT_DIR$/faq.html" />
       </list>
     </option>
   </component>
@@ -505,14 +505,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="7711000" />
-    </task>
-    <task id="LOCAL-00070" summary="debug">
-      <created>1478453144604</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1478453144604</updated>
+      <workItem from="1478852565243" duration="8612000" />
     </task>
     <task id="LOCAL-00071" summary="debug">
       <created>1478453154157</created>
@@ -850,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478863757549</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="check validation">
+      <created>1478864157036</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1478864157036</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198555000" />
+    <option name="totallyTimeSpent" value="199456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2028" width="3608" height="2040" extended-state="6" />
@@ -930,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added domain name param for sending to limesurvey" />
     <MESSAGE value="added to string" />
     <MESSAGE value="deleted +" />
     <MESSAGE value="deleted var_dumps" />
@@ -955,7 +954,8 @@
     <MESSAGE value="checked that document is loaded before executing js" />
     <MESSAGE value="fixecd bug" />
     <MESSAGE value="add ddebug vor pseudonym check" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ddebug vor pseudonym check" />
+    <MESSAGE value="check validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="check validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,13 +964,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/download/1/readme1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/css/breadcrumb.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1258,14 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/download/0/readme0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1274,18 +1259,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="571">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="955">
-          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+        <state relative-caret-position="571">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="77" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="77" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding />
         </state>
       </provider>

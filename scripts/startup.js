@@ -38,9 +38,10 @@ function checkReturningUser () {
 
     // Check if returning participant
     if (cookie != undefined && cookie != '') {
-        psdnym = getCookie("beercrate_routing_pseudonym").toUpperCase();
+        psdnym = getCookie("beercrate_routing_pseudonym");
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
-           // window.location.href="index.html";
+            psdnym = psdnym.toUpperCase();
+           window.location.href="index.html";
         }
     }
 }
@@ -62,7 +63,7 @@ function checkInputForm () {
 function inputChangeHandler () {
     var input = document.getElementById("pseudonymForm");
     var buttonStart = document.getElementById("buttonStart");
-    isInputForm = !(input.value === ""); // TODO Check correct form
+    isInputForm = !(input.value === "");
     psdnym = input.value.toUpperCase() ;
 }
 
@@ -77,7 +78,6 @@ function validateForms () {
 
     checkConsentForm();
     checkInputForm();
-    console.info(psdnym);
     var validName = validatePseudonym(psdnym);
 
     if (!isConsentForm) {
@@ -85,7 +85,6 @@ function validateForms () {
     } else if (!isInputForm) {
         showSnackbar("Btte geb eine gültige Probanden-ID ein")
     } else if (isInputForm && isConsentForm && validName) {
-        console.info(validName);
         setUser();
     }
  }

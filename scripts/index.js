@@ -24,10 +24,12 @@ function checkCookie () {
     if (cookie == undefined || cookie == '') {
 
         // Ask for name till valid name is entered
-        psdnym = prompt('Bitte geb dein Kürzel ein').toUpperCase();
+        psdnym = prompt('Bitte geb deine Probanden-ID ein');
         while (psdnym == null || psdnym == '') {
             checkCookie();
         }
+
+        psdnym = psdnym.toUpperCase();
 
         var request = new XMLHttpRequest();
         var url = "scripts/setUser.php";
