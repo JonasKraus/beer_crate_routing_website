@@ -6,9 +6,11 @@ var psdnym = null;
 var user = null;
 var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
 
-checkCookie();
-setScreenResCookie();
-setBreadcrumps();
+document.addEventListener('DOMContentLoaded', function () {
+    checkCookie();
+    setScreenResCookie();
+    setBreadcrumps();
+}
 
 
 function setScreenResCookie () {
