@@ -105,8 +105,8 @@
       <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/startup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="914">
-              <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+            <state relative-caret-position="955">
+              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -505,14 +505,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="7321000" />
-    </task>
-    <task id="LOCAL-00069" summary="debug">
-      <created>1478452968121</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1478452968121</updated>
+      <workItem from="1478852565243" duration="7711000" />
     </task>
     <task id="LOCAL-00070" summary="debug">
       <created>1478453144604</created>
@@ -850,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478863618232</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="add ddebug vor pseudonym check">
+      <created>1478863757549</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1478863757549</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198165000" />
+    <option name="totallyTimeSpent" value="198555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="975" y="-2028" width="3608" height="2040" extended-state="6" />
@@ -930,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added alter table in db creation file" />
     <MESSAGE value="added domain name param for sending to limesurvey" />
     <MESSAGE value="added to string" />
     <MESSAGE value="deleted +" />
@@ -955,7 +954,8 @@
     <MESSAGE value="added display pseudonym" />
     <MESSAGE value="checked that document is loaded before executing js" />
     <MESSAGE value="fixecd bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixecd bug" />
+    <MESSAGE value="add ddebug vor pseudonym check" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ddebug vor pseudonym check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1284,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+        <state relative-caret-position="955">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding />
         </state>
       </provider>

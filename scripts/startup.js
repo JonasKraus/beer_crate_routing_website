@@ -78,13 +78,14 @@ function validateForms () {
     checkConsentForm();
     checkInputForm();
     console.info(psdnym);
-    validatePseudonym(psdnym);
+    var validName = validatePseudonym(psdnym);
 
     if (!isConsentForm) {
         showSnackbar("Bitte akzeptiere die Vereinbarungen");
     } else if (!isInputForm) {
         showSnackbar("Btte geb eine gültige Probanden-ID ein")
-    } else if (isInputForm && isConsentForm) {
+    } else if (isInputForm && isConsentForm && validName) {
+        console.info(validName);
         setUser();
     }
  }
