@@ -40,7 +40,7 @@ function checkReturningUser () {
     if (cookie != undefined && cookie != '') {
         psdnym = getCookie("beercrate_routing_pseudonym").toUpperCase();
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
-            window.location.href="index.html";
+           // window.location.href="index.html";
         }
     }
 }
@@ -125,6 +125,7 @@ function showSnackbar (message) {
 }
 
 function validatePseudonym (pseudonym) {
+    console.info("validate ", pseudonym);
     if (pseudonym.length != 6) {
         return showSnackbar('Die Probanden-ID muss 6 Zeichen lang sein');
     }
