@@ -77,12 +77,14 @@ function validateForms () {
 
     checkConsentForm();
     checkInputForm();
+    console.info(psdnym);
+    validatePseudonym(psdnym);
 
     if (!isConsentForm) {
         showSnackbar("Bitte akzeptiere die Vereinbarungen");
     } else if (!isInputForm) {
         showSnackbar("Btte geb eine gültige Probanden-ID ein")
-    } else if (isInputForm && isConsentForm && validatePseudonym(psdnym)) {
+    } else if (isInputForm && isConsentForm) {
         setUser();
     }
  }
@@ -124,8 +126,7 @@ function showSnackbar (message) {
 
 function validatePseudonym (pseudonym) {
     if (pseudonym.length != 6) {
-        showSnackbar('Die Probanden-ID muss 6 Zeichen lang sein');
-        return false;
+        return showSnackbar('Die Probanden-ID muss 6 Zeichen lang sein');
     }
 
     var letterPart = pseudonym.substring(0,4);
@@ -134,12 +135,10 @@ function validatePseudonym (pseudonym) {
     var numRegex = /^\d+$/;
 
     if (!letterRegex.test(letterPart)) {
-        showSnackbar('Die ersten 4 Zeichen der Probanden-ID sind Buchstaben');
-        return false;
+        return showSnackbar('Die ersten 4 Zeichen der Probanden-ID sind Buchstaben');
     }
     if (!numRegex.test(numPart)) {
-        showSnackbar('Die letzten 2 Zeichen der Probanden-ID sind Zahlen');
-        return false;
+        return showSnackbar('Die letzten 2 Zeichen der Probanden-ID sind Zahlen');
 
     }
 
