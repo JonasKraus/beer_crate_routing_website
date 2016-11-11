@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesStartup.css" afterPath="$PROJECT_DIR$/css/stylesStartup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.html" afterPath="$PROJECT_DIR$/startup.html" />
     </list>
     <ignored path="untitled1.iws" />
@@ -65,49 +65,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="getProgress.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/getProgress.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getProgressUpdate.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/getProgressUpdate.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1376">
-                  <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="generateUpdateLink.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/generateUpdateLink.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/startup.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1086">
-                  <caret line="69" column="87" selection-start-line="69" selection-start-column="87" selection-end-line="69" selection-end-column="87" />
-                  <folding>
-                    <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                  <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/startup.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="948">
@@ -117,31 +85,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/updateUser.php">
+          <file leaf-file-name="stylesStartup.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+                <state relative-caret-position="553">
+                  <caret line="134" column="15" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="testSftpFileCheck.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/testSftpFileCheck.php">
+          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1888">
-                  <caret line="59" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="setUser.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/setUser.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="896">
-                  <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+                <state relative-caret-position="515">
+                  <caret line="92" column="5" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -213,7 +171,6 @@
         <option value="$PROJECT_DIR$/sql/createDB.sql" />
         <option value="$PROJECT_DIR$/php/cryptography.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/css/stylesStartup.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/getUser.php" />
         <option value="$PROJECT_DIR$/scripts/getUser.php" />
@@ -230,8 +187,9 @@
         <option value="$PROJECT_DIR$/scripts/getProgressUpdate.php" />
         <option value="$PROJECT_DIR$/php/SFTPConnection.php" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
-        <option value="$PROJECT_DIR$/startup.html" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
+        <option value="$PROJECT_DIR$/startup.html" />
+        <option value="$PROJECT_DIR$/css/stylesStartup.css" />
       </list>
     </option>
   </component>
@@ -503,14 +461,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="1518000" />
-    </task>
-    <task id="LOCAL-00058" summary="chnaged link of the survey to pass new params">
-      <created>1478447925298</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1478447925298</updated>
+      <workItem from="1478852565243" duration="1705000" />
     </task>
     <task id="LOCAL-00059" summary="added params and names to survey url">
       <created>1478448483119</created>
@@ -848,11 +799,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478798673968</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="added validation of the pseudonym">
+      <created>1478854111435</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1478854111435</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192362000" />
+    <option name="totallyTimeSpent" value="192549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -928,7 +886,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="shorted method fro generation url" />
     <MESSAGE value="testing" />
     <MESSAGE value="fixed" />
     <MESSAGE value="debug" />
@@ -953,7 +910,8 @@
     <MESSAGE value="added function to scan files for completion" />
     <MESSAGE value="added check for file names" />
     <MESSAGE value="added return array" />
-    <option name="LAST_COMMIT_MESSAGE" value="added return array" />
+    <MESSAGE value="added validation of the pseudonym" />
+    <option name="LAST_COMMIT_MESSAGE" value="added validation of the pseudonym" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,13 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="139" column="23" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/testSftp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
@@ -1148,13 +1099,6 @@
         <state relative-caret-position="192">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1268,20 +1212,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1086">
-          <caret line="69" column="87" selection-start-line="69" selection-start-column="87" selection-end-line="69" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="948">
           <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="134" column="15" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="15" />
           <folding />
         </state>
       </provider>

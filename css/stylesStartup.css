@@ -132,7 +132,8 @@ a#button_download {
 input {
     padding: .1em;
     font-size: 1.5em;
-    width: 3.3em;
+    width: 5em;
+    text-transform:uppercase;
 }
 
 input.checkbox {
