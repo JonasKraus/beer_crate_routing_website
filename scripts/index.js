@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
     setScreenResCookie();
     setBreadcrumps();
+    setBreadcrumpListeners();
 });
 
 
@@ -71,14 +72,9 @@ function setBreadcrumps () {
             try {
                 user = JSON.parse(request.responseText);
             } catch (errr) {
-                console.warn("get User:" + request.responseText );
+                //console.warn("get User:" + request.responseText );
                 return;
             }
-
-            //deleteCookies();
-            //setCookie(user.pseudonym, user.progress, user.version);
-
-            console.info(user);
 
             for (var i = 0; i <= user.progress; i++) {
 
@@ -249,6 +245,87 @@ function getRandomString (length) {
 
     return text;
 }
+
+function showSnackbar (message) {
+
+    var x = document.getElementById("snackbar");
+    x.innerHTML=message;
+
+    x.className = "show";
+
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function setBreadcrumpListeners () {
+    document.getElementById("breadcrump0").onclick = handleBreadcrump0;
+    document.getElementById("breadcrump1").onclick = handleBreadcrump1;
+    document.getElementById("breadcrump2").onclick = handleBreadcrump2;
+    document.getElementById("breadcrump3").onclick = handleBreadcrump3;
+    document.getElementById("breadcrump4").onclick = handleBreadcrump4;
+    document.getElementById("breadcrump5").onclick = handleBreadcrump5;
+}
+
+function handleBreadcrump0 () {
+
+    if (user != null && user.progress <= 0) {
+        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
+    } else {
+        showSnackbarStandard();
+    }
+}
+
+function handleBreadcrump1 () {
+
+    if (user != null && user.progress <= 1) {
+        showSnackbar("Bitte spiele zunächst das Speil.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
+    } else {
+        showSnackbarStandard();
+    }
+}
+
+function handleBreadcrump2 () {
+
+    if (user != null && user.progress <= 2) {
+        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
+    } else {
+        showSnackbarStandard();
+    }
+}
+
+function handleBreadcrump3 () {
+
+    if (user != null && user.progress <= 3) {
+        showSnackbar("Bitte spiele zunächst das Speil.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
+    } else {
+        showSnackbarStandard();
+    }
+}
+
+function handleBreadcrump4 () {
+
+    if (user != null && user.progress <= 4) {
+        showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
+    } else {
+        showSnackbarStandard();
+    }
+
+}
+
+function handleBreadcrump5 () {
+
+    if (user != null && user.progress <= 5) {
+        showSnackbar("Du hast bereits alle Aufgaben gemeistert.<br>Lade nun den angezeigten Code in deinen Moodle-Account");
+    } else {
+        showSnackbarStandard();
+    }
+}
+
+function showSnackbarStandard () {
+    showSnackbar("Du hast bereits den Fragebogen ausgefüllt.<br>Arbeite an Schritt " + (user.progress + 1) + " weiter.");
+}
+
+
+
 
 
 

@@ -125,7 +125,7 @@ function showSnackbar (message) {
 }
 
 function validatePseudonym (pseudonym) {
-    console.info("validate ", pseudonym);
+
     if (pseudonym.length != 6) {
         return showSnackbar('Die Probanden-ID muss 6 Zeichen lang sein');
     }
