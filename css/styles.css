@@ -12,7 +12,21 @@
 
 html, body {min-height: 100%;}
 
-body>a.buttonRound {
+div#fixed_upper_right {
+    position: fixed;
+    padding-top: 2em;
+    padding-right: 2em;
+    top: 1em; !important;
+    right: 1em; !important;
+}
+
+div#fixed_upper_right>a.buttonRound#buttonImpressum {
+    padding-left: .65em;
+    padding-right: .65em;
+}
+
+
+div#fixed_upper_right>a.buttonRound {
     height: 3em;
     width: 3em;
     border-radius: 3em;
@@ -29,20 +43,19 @@ body>a.buttonRound {
     box-shadow: inset 0 -2px #0D4D4D;
 }
 
-body>a.buttonRound:active {
+div#fixed_upper_right>a.buttonRound:active {
     top: 1px;
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-body>a.buttonRound:hover{
+div#fixed_upper_right>a.buttonRound:hover {
     background: #0D4D4D;
 }
 
-
 body {
     text-align: center;
-    padding-top: 3em;
+    padding-top: 2em;
     color: #0D4D4D;
     background: #eee;
     //background: linear-gradient(#689976, #ACDACC);
