@@ -253,7 +253,7 @@ function showSnackbar (message) {
 
     x.className = "show";
 
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
 }
 
 function setBreadcrumpListeners () {
@@ -267,19 +267,23 @@ function setBreadcrumpListeners () {
 
 function handleBreadcrump0 () {
 
-    if (user != null && user.progress <= 0) {
+    if (user != null && user.progress == 0) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else {
-        showSnackbarStandard();
+    } else if (user.progress < 5) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 5) {
+        showSnackbarStandard(true);
     }
 }
 
 function handleBreadcrump1 () {
 
-    if (user != null && user.progress <= 1) {
-        showSnackbar("Bitte spiele zunächst das Speil.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else {
-        showSnackbarStandard();
+    if (user != null && user.progress == 1) {
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
+    } else if (user.progress < 5) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 5) {
+        showSnackbarStandard(true);
     }
 }
 
@@ -294,34 +298,47 @@ function handleBreadcrump2 () {
 
 function handleBreadcrump3 () {
 
-    if (user != null && user.progress <= 3) {
-        showSnackbar("Bitte spiele zunächst das Speil.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else {
-        showSnackbarStandard();
+    if (user != null && user.progress == 3) {
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
+    } else if (user.progress < 5) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 5) {
+        showSnackbarStandard(true);
     }
 }
 
 function handleBreadcrump4 () {
 
-    if (user != null && user.progress <= 4) {
+    if (user != null && user.progress == 4) {
         showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else {
-        showSnackbarStandard();
+    } else if (user.progress < 5) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 5) {
+        showSnackbarStandard(true);
     }
 
 }
 
 function handleBreadcrump5 () {
 
-    if (user != null && user.progress <= 5) {
+    if (user != null && user.progress == 5) {
         showSnackbar("Du hast bereits alle Aufgaben gemeistert.<br>Lade nun den angezeigten Code in deinen Moodle-Account");
-    } else {
-        showSnackbarStandard();
+    } else if (user.progress < 5) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 5) {
+        showSnackbarStandard(true);
     }
 }
 
-function showSnackbarStandard () {
-    showSnackbar("Du hast bereits den Fragebogen ausgefüllt.<br>Arbeite an Schritt " + (user.progress + 1) + " weiter.");
+function showSnackbarStandard (isFinished) {
+
+    if (!isFinished) {
+
+        showSnackbar("Um diesen Schritt bearbeiten zu können, <br>beende zunächsr Schritt " + (user.progress + 1) + ".");
+    } else {
+        showSnackbar("Diesen Schritt hast du bereits bearbeitet.<br>Arbeite an Schritt " + (user.progress + 1) + " weiter.");
+    }
+
 }
 
 

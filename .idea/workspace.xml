@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +77,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1275">
-                  <caret line="323" column="64" selection-start-line="323" selection-start-column="64" selection-end-line="323" selection-end-column="64" />
+                <state relative-caret-position="667">
+                  <caret line="269" column="39" selection-start-line="269" selection-start-column="39" selection-end-line="269" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -525,14 +523,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="17789000" />
-    </task>
-    <task id="LOCAL-00075" summary="fixed">
-      <created>1478456421476</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1478456421476</updated>
+      <workItem from="1478852565243" duration="18471000" />
     </task>
     <task id="LOCAL-00076" summary="fixed">
       <created>1478456513662</created>
@@ -870,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478952351098</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="added tooltips and toasts to breadcrumps">
+      <created>1478954662394</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1478954662394</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208633000" />
+    <option name="totallyTimeSpent" value="209315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -950,7 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added startup page with consent form&#10;" />
     <MESSAGE value="added startup js&#10;added snackbar&#10;changed ajax requests&#10;fixed post vars&#10;encrypted update form data and decrpted on server side" />
     <MESSAGE value="added sftp file check script" />
     <MESSAGE value="deleted echo" />
@@ -975,7 +972,8 @@
     <MESSAGE value="added imptessum and links for mailto" />
     <MESSAGE value="added real link to download games" />
     <MESSAGE value="edit css to get the round buttons to the right upper corner&#10;added mailinglist mailto" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit css to get the round buttons to the right upper corner&#10;added mailinglist mailto" />
+    <MESSAGE value="added tooltips and toasts to breadcrumps" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tooltips and toasts to breadcrumps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,6 +1066,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="2550" column="38" selection-start-line="2550" selection-start-column="38" selection-end-line="2550" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,8 +1312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="323" column="64" selection-start-line="323" selection-start-column="64" selection-end-line="323" selection-end-column="64" />
+        <state relative-caret-position="667">
+          <caret line="269" column="39" selection-start-line="269" selection-start-column="39" selection-end-line="269" selection-end-column="39" />
           <folding />
         </state>
       </provider>
