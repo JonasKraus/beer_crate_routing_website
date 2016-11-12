@@ -280,9 +280,9 @@ function handleBreadcrump1 () {
 
     if (user != null && user.progress == 1) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else if (user.progress < 5) {
+    } else if (user.progress < 1) {
         showSnackbarStandard(false);
-    } else if (user.progress > 5) {
+    } else if (user.progress > 1) {
         showSnackbarStandard(true);
     }
 }
@@ -291,8 +291,10 @@ function handleBreadcrump2 () {
 
     if (user != null && user.progress <= 2) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else {
-        showSnackbarStandard();
+    } else if (user.progress < 2) {
+        showSnackbarStandard(false);
+    } else if (user.progress > 2) {
+        showSnackbarStandard(true);
     }
 }
 
@@ -300,9 +302,9 @@ function handleBreadcrump3 () {
 
     if (user != null && user.progress == 3) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else if (user.progress < 5) {
+    } else if (user.progress < 3) {
         showSnackbarStandard(false);
-    } else if (user.progress > 5) {
+    } else if (user.progress > 3) {
         showSnackbarStandard(true);
     }
 }
@@ -311,9 +313,9 @@ function handleBreadcrump4 () {
 
     if (user != null && user.progress == 4) {
         showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else if (user.progress < 5) {
+    } else if (user.progress < 4) {
         showSnackbarStandard(false);
-    } else if (user.progress > 5) {
+    } else if (user.progress > 4) {
         showSnackbarStandard(true);
     }
 
