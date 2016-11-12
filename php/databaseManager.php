@@ -26,7 +26,7 @@ class databaseManager extends databaseConstants {
 
 
         try {
-            $this->writeLog("try to connect");
+            $this->writeLog("try to connect " + date());
             // Create connection
             $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $this->writeLog("conn " . ($this->conn == null));
