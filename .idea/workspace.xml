@@ -77,8 +77,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1083">
-                  <caret line="317" column="32" selection-start-line="317" selection-start-column="32" selection-end-line="317" selection-end-column="32" />
+                <state relative-caret-position="731">
+                  <caret line="306" column="112" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
                   <folding />
                 </state>
               </provider>
@@ -523,14 +523,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="19330000" />
-    </task>
-    <task id="LOCAL-00079" summary="debug">
-      <created>1478457111885</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1478457111885</updated>
+      <workItem from="1478852565243" duration="19545000" />
     </task>
     <task id="LOCAL-00080" summary="added new db creation file">
       <created>1478623719555</created>
@@ -868,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478955923346</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="fixed toast bug">
+      <created>1478956193001</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1478956193001</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210174000" />
+    <option name="totallyTimeSpent" value="210389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -948,7 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed redirect" />
     <MESSAGE value="added function to scan files for completion" />
     <MESSAGE value="added check for file names" />
     <MESSAGE value="added return array" />
@@ -973,7 +972,8 @@
     <MESSAGE value="added more cases to breadcrump toasts" />
     <MESSAGE value="debug breadcrump toast" />
     <MESSAGE value="test getUser and log" />
-    <option name="LAST_COMMIT_MESSAGE" value="test getUser and log" />
+    <MESSAGE value="fixed toast bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed toast bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="317" column="32" selection-start-line="317" selection-start-column="32" selection-end-line="317" selection-end-column="32" />
+        <state relative-caret-position="731">
+          <caret line="306" column="112" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
           <folding />
         </state>
       </provider>

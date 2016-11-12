@@ -267,68 +267,56 @@ function setBreadcrumpListeners () {
 
 function handleBreadcrump0 () {
 
-    if (user != null && user.progress == 0) {
-        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else if (user.progress < 5) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 5) {
-        showSnackbarStandard(true);
+    if (user.progress == 0) {
+        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
+    } else {
+        showSnackbarStandard(user.progress < 0);
     }
 }
 
 function handleBreadcrump1 () {
 
-    if (user != null && user.progress == 1) {
-        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else if (user.progress < 1) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 1) {
-        showSnackbarStandard(true);
+    if (progress == 1) {
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
+    } else {
+        showSnackbarStandard(user.progress < 1);
     }
 }
 
 function handleBreadcrump2 () {
 
-    if (user != null && user.progress <= 2) {
-        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else if (user.progress < 2) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 2) {
-        showSnackbarStandard(true);
+    if (user.progress == 2) {
+        showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
+    } else {
+        showSnackbarStandard(user.progress < 2);
     }
 }
 
 function handleBreadcrump3 () {
 
-    if (user != null && user.progress == 3) {
-        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.")
-    } else if (user.progress < 3) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 3) {
-        showSnackbarStandard(true);
+    if (user.progress == 3) {
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
+    } else {
+        showSnackbarStandard(user.progress < 3);
     }
 }
 
 function handleBreadcrump4 () {
 
-    if (user != null && user.progress == 4) {
-        showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.")
-    } else if (user.progress < 4) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 4) {
-        showSnackbarStandard(true);
+    if (user.progress == 4) {
+        showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
+    } else {
+        showSnackbarStandard(user.progress < 4);
     }
 
 }
 
 function handleBreadcrump5 () {
 
-    if (user != null && user.progress == 5) {
+    if (user.progress == 5) {
         showSnackbar("Du hast bereits alle Aufgaben gemeistert.<br>Lade nun den angezeigten Code in deinen Moodle-Account");
-    } else if (user.progress < 5) {
-        showSnackbarStandard(false);
-    } else if (user.progress > 5) {
-        showSnackbarStandard(true);
+    } else {
+        showSnackbarStandard(user.progress < 5);
     }
 }
 
