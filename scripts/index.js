@@ -267,7 +267,6 @@ function setBreadcrumpListeners () {
 
 function handleBreadcrump0 () {
 
-    console.info(user.progress);
     if (user.progress == 0) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
@@ -277,8 +276,7 @@ function handleBreadcrump0 () {
 
 function handleBreadcrump1 () {
 
-    console.info(user.progress);
-    if (progress == 1) {
+    if (user.progress == 1) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
     } else {
         showSnackbarStandard(user.progress > 1);
@@ -297,7 +295,6 @@ function handleBreadcrump2 () {
 
 function handleBreadcrump3 () {
 
-    console.info(user.progress);
     if (user.progress == 3) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
     } else {
@@ -307,7 +304,6 @@ function handleBreadcrump3 () {
 
 function handleBreadcrump4 () {
 
-    console.info(user.progress);
     if (user.progress == 4) {
         showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
@@ -318,7 +314,6 @@ function handleBreadcrump4 () {
 
 function handleBreadcrump5 () {
 
-    console.info(user.progress);
     if (user.progress == 5) {
         showSnackbar("Du hast bereits alle Aufgaben gemeistert.<br>Lade nun den angezeigten Code in deinen Moodle-Account");
     } else {
