@@ -253,7 +253,7 @@ function showSnackbar (message) {
 
     x.className = "show";
 
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
 function setBreadcrumpListeners () {
@@ -334,7 +334,7 @@ function showSnackbarStandard (isFinished) {
 
     if (!isFinished) {
 
-        showSnackbar("Um diesen Schritt bearbeiten zu können, <br>beende zunächsr Schritt " + (user.progress + 1) + ".");
+        showSnackbar("Um diesen Schritt bearbeiten zu können, <br>beende zunächst Schritt " + (user.progress + 1) + ".");
     } else {
         showSnackbar("Diesen Schritt hast du bereits bearbeitet.<br>Arbeite an Schritt " + (user.progress + 1) + " weiter.");
     }
