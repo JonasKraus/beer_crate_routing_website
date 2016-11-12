@@ -277,7 +277,7 @@ function handleBreadcrump0 () {
 function handleBreadcrump1 () {
 
     if (user.progress == 1) {
-        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den Download-Button um es herunter zuladen.");
     } else {
         showSnackbarStandard(user.progress > 1);
     }
@@ -285,7 +285,6 @@ function handleBreadcrump1 () {
 
 function handleBreadcrump2 () {
 
-    console.info(user.progress);
     if (user.progress == 2) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
@@ -296,7 +295,7 @@ function handleBreadcrump2 () {
 function handleBreadcrump3 () {
 
     if (user.progress == 3) {
-        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
+        showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den Download-Button um es herunter zuladen.");
     } else {
         showSnackbarStandard(user.progress > 3);
     }
