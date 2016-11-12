@@ -267,63 +267,68 @@ function setBreadcrumpListeners () {
 
 function handleBreadcrump0 () {
 
+    console.info(user.progress);
     if (user.progress == 0) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
-        showSnackbarStandard(user.progress < 0);
+        showSnackbarStandard(user.progress > 0);
     }
 }
 
 function handleBreadcrump1 () {
 
+    console.info(user.progress);
     if (progress == 1) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
     } else {
-        showSnackbarStandard(user.progress < 1);
+        showSnackbarStandard(user.progress > 1);
     }
 }
 
 function handleBreadcrump2 () {
 
+    console.info(user.progress);
     if (user.progress == 2) {
         showSnackbar("Bitte fülle den Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
-        showSnackbarStandard(user.progress < 2);
+        showSnackbarStandard(user.progress > 2);
     }
 }
 
 function handleBreadcrump3 () {
 
+    console.info(user.progress);
     if (user.progress == 3) {
         showSnackbar("Bitte spiele zunächst das Spiel.<br>Klicke dazu auf den angezeigten Link um es herunter zuladen.");
     } else {
-        showSnackbarStandard(user.progress < 3);
+        showSnackbarStandard(user.progress > 3);
     }
 }
 
 function handleBreadcrump4 () {
 
+    console.info(user.progress);
     if (user.progress == 4) {
         showSnackbar("Bitte fülle den abschließenden Fragebogen aus.<br>Klicke dazu auf den angezeigten Link.");
     } else {
-        showSnackbarStandard(user.progress < 4);
+        showSnackbarStandard(user.progress > 4);
     }
 
 }
 
 function handleBreadcrump5 () {
 
+    console.info(user.progress);
     if (user.progress == 5) {
         showSnackbar("Du hast bereits alle Aufgaben gemeistert.<br>Lade nun den angezeigten Code in deinen Moodle-Account");
     } else {
-        showSnackbarStandard(user.progress < 5);
+        showSnackbarStandard(user.progress > 5);
     }
 }
 
 function showSnackbarStandard (isFinished) {
 
     if (!isFinished) {
-
         showSnackbar("Um diesen Schritt bearbeiten zu können, <br>beende zunächst Schritt " + (user.progress + 1) + ".");
     } else {
         showSnackbar("Diesen Schritt hast du bereits bearbeitet.<br>Arbeite an Schritt " + (user.progress + 1) + " weiter.");

@@ -77,8 +77,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="306" column="112" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
+                <state relative-caret-position="1147">
+                  <caret line="330" column="22" selection-start-line="330" selection-start-column="22" selection-end-line="330" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -523,14 +523,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="19545000" />
-    </task>
-    <task id="LOCAL-00080" summary="added new db creation file">
-      <created>1478623719555</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1478623719555</updated>
+      <workItem from="1478852565243" duration="19671000" />
     </task>
     <task id="LOCAL-00081" summary="added use database">
       <created>1478624447019</created>
@@ -868,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478956193001</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="fixed toast bug">
+      <created>1478956402900</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1478956402900</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210389000" />
+    <option name="totallyTimeSpent" value="210515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -1314,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="306" column="112" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
+        <state relative-caret-position="1147">
+          <caret line="330" column="22" selection-start-line="330" selection-start-column="22" selection-end-line="330" selection-end-column="22" />
           <folding />
         </state>
       </provider>
