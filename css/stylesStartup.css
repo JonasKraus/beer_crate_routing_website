@@ -21,15 +21,26 @@ body {
     font-family: 'Merriweather Sans', arial, verdana;
 }
 
+
+
 body>div#fixed_upper_right {
     position: fixed;
     top: 1em;
     right: 1em;
 }
 
+div#fixed_upper_right>a.buttonRound.active {
+    background: #0D4D4D;
+}
+
 div#fixed_upper_right>a.buttonRound#buttonImpressum {
     padding-left: .65em;
     padding-right: .65em;
+}
+
+div#fixed_upper_right>a.buttonRound#buttonBack {
+    padding-left: .47em;
+    padding-right: .47em;
 }
 
 
