@@ -5,6 +5,7 @@ var cookie = document.cookie;
 var psdnym = null;
 var user = null;
 var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
+var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
 
 document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
@@ -122,10 +123,20 @@ function setBreadcrumps () {
                     setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
                     break;
                 case 3:
-                    classesSurvey.add("hidden");
-                    classesDownload.remove("hidden");//TODO link tauschen und version checken
-                    var href2 = "download/" + (user.version + 1)%2 + "/game.zip";
-                    buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
+                    if (Date.parse(pause_survey_till) > Date.parse(new Date())) {
+                        showSnackbar("Du kannst erst ab dem " + pause_survey_till + " weiter machen.");
+                        buttonDownload.innerHTML = '<h1>Bitte warte bis zum '
+                            + pause_survey_till.getDate() + "."
+                            + (pause_survey_till.getMonth() + 1) + "."
+                            + pause_survey_till.getYear()
+                            + " um fortzufahren.";
+                    } else {
+                        classesSurvey.add("hidden");
+                        classesDownload.remove("hidden");//TODO link tauschen und version checken
+                        var href2 = "download/" + (user.version + 1)%2 + "/game.zip";
+                        buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
+                    }
+
                     break;
                 case 4:
                     classesSurvey.remove("hidden");
