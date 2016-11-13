@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesStartup.css" afterPath="$PROJECT_DIR$/css/stylesStartup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impressum.html" afterPath="$PROJECT_DIR$/impressum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +95,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="faq.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/faq.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+                <state relative-caret-position="542">
+                  <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
                   <folding />
                 </state>
               </provider>
@@ -121,20 +118,20 @@
           <file leaf-file-name="impressum.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/impressum.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="741">
-                  <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+                <state relative-caret-position="512">
+                  <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
                   <folding>
-                    <element signature="e#2675#2681#0" expanded="true" />
+                    <element signature="e#2693#2699#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="stylesStartup.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="stylesStartup.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1054">
-                  <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+                <state relative-caret-position="1086">
+                  <caret line="213" column="11" selection-start-line="213" selection-start-column="2" selection-end-line="213" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -231,10 +228,10 @@
         <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
-        <option value="$PROJECT_DIR$/impressum.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/impressum.html" />
+        <option value="$PROJECT_DIR$/faq.html" />
       </list>
     </option>
   </component>
@@ -530,14 +527,7 @@
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
-      <workItem from="1479049187035" duration="1100000" />
-    </task>
-    <task id="LOCAL-00091" summary="deleted +">
-      <created>1478677759453</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1478677759453</updated>
+      <workItem from="1479049187035" duration="1337000" />
     </task>
     <task id="LOCAL-00092" summary="deleted var_dumps">
       <created>1478678213891</created>
@@ -875,11 +865,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479041820294</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="added some info to impressum and styled link tags">
+      <created>1479050314112</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1479050314112</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216019000" />
+    <option name="totallyTimeSpent" value="216256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -955,7 +952,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added display pseudonym" />
     <MESSAGE value="checked that document is loaded before executing js" />
     <MESSAGE value="fixecd bug" />
     <MESSAGE value="add ddebug vor pseudonym check" />
@@ -980,7 +976,8 @@
     <MESSAGE value="date issue" />
     <MESSAGE value="fixed date display" />
     <MESSAGE value="fixed full year format" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed full year format" />
+    <MESSAGE value="added some info to impressum and styled link tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some info to impressum and styled link tags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,24 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impressum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-          <folding>
-            <element signature="e#2675#2681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -1318,8 +1297,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+        <state relative-caret-position="1086">
+          <caret line="213" column="11" selection-start-line="213" selection-start-column="2" selection-end-line="213" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impressum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="e#2693#2699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
           <folding />
         </state>
       </provider>
