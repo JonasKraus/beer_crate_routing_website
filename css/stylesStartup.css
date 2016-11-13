@@ -208,9 +208,17 @@ div.middle>img#logo {
 }
 
 p b a {
-    color: #0D4D4D;
+    color: #0D4D4D; !important;
+}
+
+a.linkstyle {
+    color: #0D4D4D; !important;
+}
+
+a.linkstyle:hover {
+    color: #226666; !important;
 }
 
 p b a:hover {
-    color: #226666;
+    color: #226666; !important;
 }

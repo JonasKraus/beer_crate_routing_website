@@ -166,3 +166,12 @@ p b a {
 p b a:hover {
     color: #226666;
 }
+
+
+a.linkstyle {
+    color: #0D4D4D; !important;
+}
+
+a.linkstyle:hover {
+    color: #226666; !important;
+}
