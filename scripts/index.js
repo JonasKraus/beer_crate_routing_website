@@ -124,13 +124,17 @@ function setBreadcrumps () {
                     break;
                 case 3:
                     if (Date.parse(pause_survey_till) > Date.parse(new Date())) {
-                        showSnackbar("Du kannst erst ab dem " + pause_survey_till + " weiter machen.");
+                        var dateFormatted =
+                            pause_survey_till.getDate() + "."
+                            + (pause_survey_till.getMonth() + 1) + "."
+                            + pause_survey_till.getYear();
+
+                        showSnackbar("Du kannst erst ab dem " + dateFormatted + " weiter machen.");
                         classesSurvey.add("hidden");
                         classesDownload.remove("hidden");
-                        buttonDownload.innerHTML = '<p>Bitte warte bis zum <b>'
-                            + pause_survey_till.getDate() + "."
-                            + (pause_survey_till.getMonth() + 1) + "."
-                            + pause_survey_till.getYear()
+                        buttonDownload.outerHTML =
+                            '<p>Bitte warte bis zum <b>'
+                            + dateFormatted
                             + "</b> um fortzufahren.</p>";
                     } else {
                         classesSurvey.add("hidden");
