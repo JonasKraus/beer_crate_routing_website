@@ -126,7 +126,7 @@ function setBreadcrumps () {
                     if (Date.parse(pause_survey_till) > Date.parse(new Date())) {
                         var dateFormatted =
                             new Date(pause_survey_till).getDate() + "."
-                            + (new Date(pause_survey_till).getMonth() + 1) + "."
+                            + new Date(pause_survey_till).getMonth() + "."
                             + new Date(pause_survey_till).getYear();
 
                         showSnackbar("Du kannst erst ab dem " + dateFormatted + " weiter machen.");
