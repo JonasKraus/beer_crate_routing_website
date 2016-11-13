@@ -127,7 +127,7 @@ function setBreadcrumps () {
                         var dateFormatted =
                             new Date(pause_survey_till).getDate() + "."
                             + new Date(pause_survey_till).getMonth() + "."
-                            + new Date(pause_survey_till).getYear();
+                            + new Date(pause_survey_till).getFullYear();
 
                         showSnackbar("Du kannst erst ab dem " + dateFormatted + " weiter machen.");
                         classesSurvey.add("hidden");
