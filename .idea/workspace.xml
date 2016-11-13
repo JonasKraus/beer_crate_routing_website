@@ -67,8 +67,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="827">
-                  <caret line="127" column="57" selection-start-line="127" selection-start-column="57" selection-end-line="127" selection-end-column="57" />
+                <state relative-caret-position="891">
+                  <caret line="129" column="34" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -523,14 +523,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="23231000" />
-    </task>
-    <task id="LOCAL-00087" summary="added test file">
-      <created>1478632078070</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1478632078070</updated>
+      <workItem from="1478852565243" duration="23306000" />
     </task>
     <task id="LOCAL-00088" summary="added alter table in db creation file">
       <created>1478632861885</created>
@@ -868,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479041476756</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="fixed date parse">
+      <created>1479041583852</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1479041583852</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214075000" />
+    <option name="totallyTimeSpent" value="214150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -948,7 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed user and pwd of sftp connection to constants file" />
     <MESSAGE value="add check to psdnym" />
     <MESSAGE value="added check and handler and test files for download" />
     <MESSAGE value="added correct file name to downloads" />
@@ -973,7 +972,8 @@
     <MESSAGE value="added html notice" />
     <MESSAGE value="added date formatted" />
     <MESSAGE value="added date formatted date" />
-    <option name="LAST_COMMIT_MESSAGE" value="added date formatted date" />
+    <MESSAGE value="fixed date parse" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed date parse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="127" column="57" selection-start-line="127" selection-start-column="57" selection-end-line="127" selection-end-column="57" />
+        <state relative-caret-position="891">
+          <caret line="129" column="34" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
           <folding />
         </state>
       </provider>
