@@ -67,8 +67,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="955">
-                  <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+                <state relative-caret-position="859">
+                  <caret line="128" column="57" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -523,14 +523,7 @@
       <workItem from="1477760100973" duration="39252000" />
       <workItem from="1478438017070" duration="4002000" />
       <workItem from="1478443991867" duration="56474000" />
-      <workItem from="1478852565243" duration="22622000" />
-    </task>
-    <task id="LOCAL-00084" summary="added debug messages">
-      <created>1478629984614</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1478629984614</updated>
+      <workItem from="1478852565243" duration="22868000" />
     </task>
     <task id="LOCAL-00085" summary="added more debug messages">
       <created>1478630960702</created>
@@ -868,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478956753683</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="addecd pase time for survey">
+      <created>1479040967438</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1479040967438</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213466000" />
+    <option name="totallyTimeSpent" value="213712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1588" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -948,7 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added validation of the pseudonym" />
     <MESSAGE value="input only allows uppercase letters" />
     <MESSAGE value="added Pseudonym to gui" />
     <MESSAGE value="changed cookie path to constants class" />
@@ -973,7 +972,8 @@
     <MESSAGE value="debug on server" />
     <MESSAGE value="fixed toasts" />
     <MESSAGE value="added new text to toasts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new text to toasts" />
+    <MESSAGE value="addecd pase time for survey" />
+    <option name="LAST_COMMIT_MESSAGE" value="addecd pase time for survey" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="955">
-          <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+        <state relative-caret-position="859">
+          <caret line="128" column="57" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
           <folding />
         </state>
       </provider>
