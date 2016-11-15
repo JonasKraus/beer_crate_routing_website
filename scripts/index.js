@@ -104,6 +104,7 @@ function setBreadcrumps () {
             var classesParaForms = document.getElementById("para_forms").classList;
 
             var classesDownload = document.getElementById("button_download").classList;
+            var classesDownloadPara = document.getElementById("para_download_explanation").classList;
             var buttonDownload = document.getElementById("button_download");
 
             switch (user.progress) {
@@ -116,13 +117,14 @@ function setBreadcrumps () {
                 case 1:
                     classesSurvey.add("hidden");
                     classesDownload.remove("hidden"); //TODO link tauschen und version checken
+                    classesDownloadPara.remove("hidden");
                     var href1 = "download/" + user.version + "/game.zip";
-                    var explanation = '<br><p>Lade die .zip Datei herunter, entpacke diese und führe die .exe Datei aus.</p>';
-                    buttonDownload.innerHTML = '<a href='+ href1 +' class="button" id="button_download">Download Spiel 1</a>' + explanation;
+                    buttonDownload.innerHTML = '<a href='+ href1 +' class="button" id="button_download">Download Spiel 1</a>';
                     break;
                 case 2:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
+                    classesDownloadPara.add("hidden");
                     setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
                     break;
                 case 3:
@@ -135,6 +137,7 @@ function setBreadcrumps () {
                         showSnackbar("Du kannst erst ab dem " + dateFormatted + " weiter machen.");
                         classesSurvey.add("hidden");
                         classesDownload.remove("hidden");
+                        classesDownloadPara.remove("hidden");
                         buttonDownload.outerHTML =
                             '<p>Bitte warte bis zum <b>'
                             + dateFormatted
@@ -143,14 +146,15 @@ function setBreadcrumps () {
                         classesSurvey.add("hidden");
                         classesDownload.remove("hidden");//TODO link tauschen und version checken
                         var href2 = "download/" + (user.version + 1)%2 + "/game.zip";
-                        var explanation = '<br><p>Lade die .zip Datei herunter, entpacke diese und führe die .exe Datei aus.</p>';
-                        buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>' + explanation;
+                        buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
                     }
 
                     break;
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
+
+                    classesDownloadPara.add("hidden");
                     setSurveyLink(user.pseudonym, (user.progress + 1), lastSurveyURL);
                     break;
                 case 5:
