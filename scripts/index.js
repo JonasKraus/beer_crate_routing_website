@@ -81,7 +81,8 @@ function setBreadcrumps () {
             }
 
             setScreenResCookie();
-            setFirstCookie(psdnym);
+            document.getElementById('loggedUser').innerHTML = psdnym.toUpperCase();
+            setFirstCookie(psdnym.toUpperCase());
 
             for (var i = 0; i <= user.progress; i++) {
 
