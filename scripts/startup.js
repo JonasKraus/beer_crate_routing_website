@@ -39,8 +39,7 @@ function checkReturningUser () {
     // Check if returning participant
     if (cookie != undefined && cookie != '') {
         psdnym = getCookie("beercrate_routing_pseudonym");
-        if (psdnym != undefined && psdnym != '' && psdnym != null ) {
-            psdnym = psdnym.toUpperCase();
+        if (psdnym != undefined || psdnym != '' || psdnym != null ) {
            window.location.href="index.html";
         }
     }

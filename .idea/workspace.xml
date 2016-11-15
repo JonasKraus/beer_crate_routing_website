@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/databaseManager.php" afterPath="$PROJECT_DIR$/php/databaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="databaseManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1283">
-              <caret line="186" column="13" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
+            <state relative-caret-position="1091">
+              <caret line="180" column="54" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="54" />
               <folding>
                 <marker date="1479240444718" expanded="true" signature="1406:1477" ph="INSERT INTO progress... " />
                 <marker date="1479240444718" expanded="true" signature="1983:2022" ph="UPDATE subje... " />
@@ -53,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/startup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+            <state relative-caret-position="1312">
+              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -208,7 +207,6 @@
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/scripts/updateUser.php" />
         <option value="$PROJECT_DIR$/php/databaseConstants.php" />
-        <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/impressum.html" />
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
@@ -217,6 +215,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
+        <option value="$PROJECT_DIR$/scripts/startup.js" />
       </list>
     </option>
   </component>
@@ -513,14 +512,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="2628000" />
-    </task>
-    <task id="LOCAL-00099" summary="fixed redirect">
-      <created>1478793578221</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1478793578221</updated>
+      <workItem from="1479203913585" duration="2822000" />
     </task>
     <task id="LOCAL-00100" summary="fixed redirect">
       <created>1478793799758</created>
@@ -858,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479239879921</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="edit when to set cookie">
+      <created>1479240466369</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1479240466369</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221413000" />
+    <option name="totallyTimeSpent" value="221607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1679" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -938,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit css to get the round buttons to the right upper corner&#10;added mailinglist mailto" />
     <MESSAGE value="added tooltips and toasts to breadcrumps" />
     <MESSAGE value="added more cases to breadcrump toasts" />
     <MESSAGE value="debug breadcrump toast" />
@@ -963,7 +961,8 @@
     <MESSAGE value="added br" />
     <MESSAGE value="added fix for non returning user on index" />
     <MESSAGE value="had wrong returning page" />
-    <option name="LAST_COMMIT_MESSAGE" value="had wrong returning page" />
+    <MESSAGE value="edit when to set cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit when to set cookie" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1267,14 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1293,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/databaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1283">
-          <caret line="186" column="13" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
+        <state relative-caret-position="1091">
+          <caret line="180" column="54" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="54" />
           <folding>
             <marker date="1479240444718" expanded="true" signature="1406:1477" ph="INSERT INTO progress... " />
             <marker date="1479240444718" expanded="true" signature="1983:2022" ph="UPDATE subje... " />
@@ -1306,6 +1297,14 @@
             <marker date="1479240444718" expanded="true" signature="7140:7162" ph="SELECT * FRO... progress" />
             <marker date="1479240444718" expanded="true" signature="11275:11332" ph="SELECT progr... subject" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1312">
+          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
