@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
     setBreadcrumps();
     setBreadcrumpListeners();
-    setScreenResCookie();
 });
 
 
@@ -25,7 +24,7 @@ function setScreenResCookie () {
 
 function checkCookie () {
 
-    if (cookie == undefined || cookie == '') {
+    if (getCookie("beercrate_routing_pseudonym") == undefined || getCookie("beercrate_routing_pseudonym") == '' || getCookie("beercrate_routing_pseudonym") == null) {
 
         // Ask for name till valid name is entered
         psdnym = prompt('Bitte geb deine Probanden-ID ein');
@@ -80,6 +79,8 @@ function setBreadcrumps () {
                 window.location.href = 'startup.html';
                 return;
             }
+
+            setScreenResCookie();
 
             for (var i = 0; i <= user.progress; i++) {
 

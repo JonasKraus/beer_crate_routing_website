@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/startup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+            <state relative-caret-position="1280">
+              <caret line="40" column="57" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+            <state relative-caret-position="288">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -213,9 +213,9 @@
         <option value="$PROJECT_DIR$/startup.html" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -512,14 +512,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="2822000" />
-    </task>
-    <task id="LOCAL-00100" summary="fixed redirect">
-      <created>1478793799758</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1478793799758</updated>
+      <workItem from="1479203913585" duration="3122000" />
     </task>
     <task id="LOCAL-00101" summary="fixed redirect">
       <created>1478793886667</created>
@@ -857,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479240466369</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="fix check for cookie&#10;">
+      <created>1479240654766</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1479240654766</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221607000" />
+    <option name="totallyTimeSpent" value="221907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1679" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -937,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added tooltips and toasts to breadcrumps" />
     <MESSAGE value="added more cases to breadcrump toasts" />
     <MESSAGE value="debug breadcrump toast" />
     <MESSAGE value="test getUser and log" />
@@ -962,7 +961,8 @@
     <MESSAGE value="added fix for non returning user on index" />
     <MESSAGE value="had wrong returning page" />
     <MESSAGE value="edit when to set cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit when to set cookie" />
+    <MESSAGE value="fix check for cookie&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix check for cookie&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1266,14 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -1302,8 +1294,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/startup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+        <state relative-caret-position="1280">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding />
         </state>
       </provider>
