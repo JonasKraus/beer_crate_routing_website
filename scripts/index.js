@@ -35,6 +35,7 @@ function checkCookie () {
 
         psdnym = psdnym.toUpperCase();
 
+        /*
         var request = new XMLHttpRequest();
         var url = "scripts/setUser.php";
         var params = "pseudonym=" + psdnym;
@@ -51,7 +52,7 @@ function checkCookie () {
             }
         });
         request.send(params);
-
+*/
         // Set cookie
 
     } else {
@@ -76,6 +77,7 @@ function setBreadcrumps () {
                 user = JSON.parse(request.responseText);
             } catch (errr) {
                 //console.warn("get User:" + request.responseText );
+                window.location.href = 'index.html';
                 return;
             }
 
@@ -183,7 +185,8 @@ function setBreadcrumps () {
 
             }
         } else {
-            console.warn(request.statusText, request.responseText);
+            window.location.href = 'startup.html';
+            //console.warn(request.statusText, request.responseText);
         }
     });
     request.send(params);
