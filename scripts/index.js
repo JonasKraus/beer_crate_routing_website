@@ -5,6 +5,8 @@ var cookie = document.cookie;
 var psdnym = null;
 var user = null;
 var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
+var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php
+var middleSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
 var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -115,7 +117,8 @@ function setBreadcrumps () {
                     classesSurvey.add("hidden");
                     classesDownload.remove("hidden"); //TODO link tauschen und version checken
                     var href1 = "download/" + user.version + "/game.zip";
-                    buttonDownload.innerHTML = '<a href='+ href1 +' class="button" id="button_download">Download Spiel 1</a>';
+                    var explanation = '<br><p>Lade die .zip Datei herunter, entpacke diese und führe die .exe Datei aus.</p>';
+                    buttonDownload.innerHTML = '<a href='+ href1 +' class="button" id="button_download">Download Spiel 1</a>' + explanation;
                     break;
                 case 2:
                     classesSurvey.remove("hidden");
@@ -140,14 +143,15 @@ function setBreadcrumps () {
                         classesSurvey.add("hidden");
                         classesDownload.remove("hidden");//TODO link tauschen und version checken
                         var href2 = "download/" + (user.version + 1)%2 + "/game.zip";
-                        buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
+                        var explanation = '<br><p>Lade die .zip Datei herunter, entpacke diese und führe die .exe Datei aus.</p>';
+                        buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>' + explanation;
                     }
 
                     break;
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-                    setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
+                    setSurveyLink(user.pseudonym, (user.progress + 1), lastSurveyURL);
                     break;
                 case 5:
                     classesSurvey.add("hidden");
