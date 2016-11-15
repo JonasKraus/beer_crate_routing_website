@@ -77,7 +77,7 @@ function setBreadcrumps () {
                 user = JSON.parse(request.responseText);
             } catch (errr) {
                 //console.warn("get User:" + request.responseText );
-                window.location.href = 'index.html';
+                window.location.href = 'startup.html';
                 return;
             }
 
