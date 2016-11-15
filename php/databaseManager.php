@@ -174,17 +174,22 @@ class databaseManager extends databaseConstants {
             }
         } else {
             self::writeLog("getUser resultset length: " . count($results));
+
+        }
+
+        if ($user != null) {
+            $cookieName = 'beercrate_routing_pseudonym';
+
+            if(!isset($_COOKIE[$cookieName])) {
+                setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
+            } else if ($_COOKIE[$cookieName] != $pseudonym){
+                setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
+            }
         }
 
         self::writeLog("getUser user found: " . $user);
 
-        $cookieName = 'beercrate_routing_pseudonym';
 
-        if(!isset($_COOKIE[$cookieName])) {
-            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
-        } else if ($_COOKIE[$cookieName] != $pseudonym){
-            setcookie($cookieName, $pseudonym, time() + (86400 * 30) * 15, databaseConstants::$COOKIE_PATH); // TODO zeit anpassen
-        }
 
         return $user;
     }

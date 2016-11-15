@@ -11,9 +11,9 @@ var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Z
 
 document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
-    setScreenResCookie();
     setBreadcrumps();
     setBreadcrumpListeners();
+    setScreenResCookie();
 });
 
 
