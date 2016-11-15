@@ -65,8 +65,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="928">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -512,14 +512,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="3122000" />
-    </task>
-    <task id="LOCAL-00101" summary="fixed redirect">
-      <created>1478793886667</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1478793886668</updated>
+      <workItem from="1479203913585" duration="3295000" />
     </task>
     <task id="LOCAL-00102" summary="deleted echo">
       <created>1478795188869</created>
@@ -857,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479240654766</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="added more precise check for cookies">
+      <created>1479240964662</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1479240964662</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221907000" />
+    <option name="totallyTimeSpent" value="222080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1679" y="-1902" width="3384" height="1914" extended-state="6" />
@@ -937,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added more cases to breadcrump toasts" />
     <MESSAGE value="debug breadcrump toast" />
     <MESSAGE value="test getUser and log" />
     <MESSAGE value="fixed toast bug" />
@@ -962,7 +961,8 @@
     <MESSAGE value="had wrong returning page" />
     <MESSAGE value="edit when to set cookie" />
     <MESSAGE value="fix check for cookie&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix check for cookie&#10;" />
+    <MESSAGE value="added more precise check for cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more precise check for cookies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1302,8 +1302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="928">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
           <folding />
         </state>
       </provider>

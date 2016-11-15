@@ -81,6 +81,7 @@ function setBreadcrumps () {
             }
 
             setScreenResCookie();
+            setFirstCookie(psdnym);
 
             for (var i = 0; i <= user.progress; i++) {
 
