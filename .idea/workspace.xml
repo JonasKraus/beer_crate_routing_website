@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pix/SAM/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pix/SAM/image2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pix/SAM/image3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="977">
@@ -82,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
+            <state relative-caret-position="992">
+              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -212,10 +215,10 @@
         <option value="$PROJECT_DIR$/css/stylesStartup.css" />
         <option value="$PROJECT_DIR$/startup.html" />
         <option value="$PROJECT_DIR$/faq.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -230,10 +233,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1679" />
-    <option name="y" value="-1902" />
-    <option name="width" value="3384" />
-    <option name="height" value="1914" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="3864" />
+    <option name="height" value="2132" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -319,6 +322,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pix" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dijkstra-studie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dijkstra-studie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pix" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SAM" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,17 +450,17 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\download\1" />
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\php" />
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\pix" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\download\0" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\css" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\scripts" />
       <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\sftplib" />
-      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\dijkstra-studie\download\1" />
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\php" />
+      <recent name="C:\Users\jonas-uni\PhpstormProjects\untitled1\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -512,14 +533,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="3527000" />
-    </task>
-    <task id="LOCAL-00103" summary="fixed redirect">
-      <created>1478795324935</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1478795324935</updated>
+      <workItem from="1479203913585" duration="4327000" />
     </task>
     <task id="LOCAL-00104" summary="added function to scan files for completion">
       <created>1478796471972</created>
@@ -857,17 +871,24 @@
       <option name="project" value="LOCAL" />
       <updated>1479241139058</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="display pseudonym on index page">
+      <created>1479241362707</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1479241362707</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222312000" />
+    <option name="totallyTimeSpent" value="223112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1679" y="-1902" width="3384" height="1914" extended-state="6" />
-    <editor active="true" />
+    <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13315052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116161615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -937,7 +958,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test getUser and log" />
     <MESSAGE value="fixed toast bug" />
     <MESSAGE value="debug on server" />
     <MESSAGE value="fixed toasts" />
@@ -962,7 +982,8 @@
     <MESSAGE value="fix check for cookie&#10;" />
     <MESSAGE value="added more precise check for cookies" />
     <MESSAGE value="added one time more when a cookie is placed" />
-    <option name="LAST_COMMIT_MESSAGE" value="added one time more when a cookie is placed" />
+    <MESSAGE value="display pseudonym on index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="display pseudonym on index page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1258,14 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/getUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -1304,6 +1317,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="977">
           <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
           <folding />
         </state>
       </provider>
