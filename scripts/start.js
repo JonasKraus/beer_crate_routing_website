@@ -39,7 +39,7 @@ function checkReturningUser () {
     // Check if returning participant
     if (cookie != undefined && cookie != '') {
         psdnym = getCookie("beercrate_routing_pseudonym");
-        console.info('hier', psdnym);
+
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
             console.info('hier2', psdnym);
            window.location.href="index.html";
@@ -103,7 +103,7 @@ function setUser () {
             //console.log(request.responseText);
             checkReturningUser();
         } else {
-            console.warn(request.statusText, request.responseText);
+            //console.warn(request.statusText, request.responseText);
         }
     });
     request.send(params);
