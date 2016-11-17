@@ -28,7 +28,7 @@ function checkCookie () {
     if (getCookie("beercrate_routing_pseudonym") == undefined || getCookie("beercrate_routing_pseudonym") == '' || getCookie("beercrate_routing_pseudonym") == null) {
 
         // Ask for name till valid name is entered
-        psdnym = prompt('Bitte geb deine Probanden-ID ein');
+        psdnym = prompt('Hallo,<br>Bitte geb deine Probanden-ID ein, falls du bereits eine hast, ansonste wähle Abbrechen');
         while (psdnym == '') {
             checkCookie();
         }
