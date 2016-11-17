@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/startup.html" afterPath="$PROJECT_DIR$/start.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pix/SAM/image1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pix/SAM/image2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pix/SAM/image3.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/stylesStartup.css" afterPath="$PROJECT_DIR$/css/stylesOthers.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/startup.js" afterPath="$PROJECT_DIR$/scripts/start.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impressum.html" afterPath="$PROJECT_DIR$/impressum.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.html" afterPath="$PROJECT_DIR$/start.html" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,21 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/startup.js">
+      <file leaf-file-name="start.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/start.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
-              <caret line="40" column="57" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="57" />
+            <state relative-caret-position="1120">
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+            <state relative-caret-position="602">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -101,7 +106,7 @@
             <state relative-caret-position="951">
               <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
-                <element signature="e#518#524#0" expanded="true" />
+                <element signature="e#517#523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,15 +138,15 @@
             <state relative-caret-position="864">
               <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
-                <element signature="e#523#529#0" expanded="true" />
-                <element signature="e#2959#2965#0" expanded="true" />
+                <element signature="e#522#528#0" expanded="true" />
+                <element signature="e#2958#2964#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylesStartup.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
+      <file leaf-file-name="stylesOthers.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/stylesOthers.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
               <caret line="86" column="1" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
@@ -168,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/consts.php" />
         <option value="$PROJECT_DIR$/js/cryptography.php" />
         <option value="$PROJECT_DIR$/js/generateUpdateLink.php" />
         <option value="$PROJECT_DIR$/yourFileName.php" />
@@ -219,6 +223,7 @@
         <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
+        <option value="$PROJECT_DIR$/scripts/start.js" />
       </list>
     </option>
   </component>
@@ -322,24 +327,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pix" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dijkstra-studie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dijkstra-studie" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pix" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SAM" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,21 +520,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="6941000" />
-    </task>
-    <task id="LOCAL-00105" summary="added check for file names">
-      <created>1478798378894</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1478798378895</updated>
-    </task>
-    <task id="LOCAL-00106" summary="added return array">
-      <created>1478798673968</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1478798673968</updated>
+      <workItem from="1479203913585" duration="7623000" />
     </task>
     <task id="LOCAL-00107" summary="added validation of the pseudonym">
       <created>1478854111435</created>
@@ -878,11 +851,25 @@
       <option name="project" value="LOCAL" />
       <updated>1479315130225</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="added all limesurvey links and changed name of startup to start">
+      <created>1479413282120</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1479413282120</updated>
+    </task>
+    <task id="LOCAL-00155" summary="edit prompt">
+      <created>1479413360210</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1479413360210</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225726000" />
+    <option name="totallyTimeSpent" value="226408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -958,8 +945,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debug on server" />
-    <MESSAGE value="fixed toasts" />
     <MESSAGE value="added new text to toasts" />
     <MESSAGE value="addecd pase time for survey" />
     <MESSAGE value="added html notice" />
@@ -983,7 +968,9 @@
     <MESSAGE value="added one time more when a cookie is placed" />
     <MESSAGE value="display pseudonym on index page" />
     <MESSAGE value="added SAM survey images to host them" />
-    <option name="LAST_COMMIT_MESSAGE" value="added SAM survey images to host them" />
+    <MESSAGE value="added all limesurvey links and changed name of startup to start" />
+    <MESSAGE value="edit prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit prompt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1247,13 +1234,13 @@
         <state relative-caret-position="864">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
-            <element signature="e#523#529#0" expanded="true" />
-            <element signature="e#2959#2965#0" expanded="true" />
+            <element signature="e#522#528#0" expanded="true" />
+            <element signature="e#2958#2964#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/stylesStartup.css">
+    <entry file="file://$PROJECT_DIR$/css/stylesOthers.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="86" column="1" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
@@ -1266,7 +1253,7 @@
         <state relative-caret-position="951">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="e#518#524#0" expanded="true" />
+            <element signature="e#517#523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1305,14 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/startup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1024">
@@ -1323,8 +1302,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+        <state relative-caret-position="602">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding />
         </state>
       </provider>

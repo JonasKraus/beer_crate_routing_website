@@ -4,7 +4,8 @@ var cookie = document.cookie;
 
 var psdnym = null;
 var user = null;
-var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
+var testSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
+var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/895276"; //TODO get Survey url from db or php
 var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php
 var middleSurveyURL1 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
 var middleSurveyURL2 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php - change to correct one
@@ -28,7 +29,7 @@ function checkCookie () {
     if (getCookie("beercrate_routing_pseudonym") == undefined || getCookie("beercrate_routing_pseudonym") == '' || getCookie("beercrate_routing_pseudonym") == null) {
 
         // Ask for name till valid name is entered
-        psdnym = prompt('Hallo,<br>Bitte geb deine Probanden-ID ein, falls du bereits eine hast, ansonste wähle Abbrechen');
+        psdnym = prompt('Hallo, falls du bereits eine Probanden-ID angelegt hast geb sie hier ein. Sonst klicke auf Abbrechen um eine anzulegen.');
         while (psdnym == '') {
             checkCookie();
         }
