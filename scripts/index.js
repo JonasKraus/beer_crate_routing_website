@@ -5,8 +5,9 @@ var cookie = document.cookie;
 var psdnym = null;
 var user = null;
 var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/617829"; //TODO get Survey url from db or php
-var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php
-var middleSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
+var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php
+var middleSurveyURL1 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
+var middleSurveyURL2 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php - change to correct one
 var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,8 +29,12 @@ function checkCookie () {
 
         // Ask for name till valid name is entered
         psdnym = prompt('Bitte geb deine Probanden-ID ein');
-        while (psdnym == null || psdnym == '') {
+        while (psdnym == '') {
             checkCookie();
+        }
+
+        if (psdnym == null) {
+            window.location.href = '../start.html';
         }
 
         psdnym = psdnym.toUpperCase();
@@ -76,7 +81,7 @@ function setBreadcrumps () {
                 user = JSON.parse(request.responseText);
             } catch (errr) {
                 //console.warn("get User:" + request.responseText );
-                window.location.href = 'startup.html';
+                window.location.href = '../start.html';
                 return;
             }
 
@@ -130,7 +135,7 @@ function setBreadcrumps () {
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
                     classesDownloadPara.add("hidden");
-                    setSurveyLink(user.pseudonym, (user.progress + 1), firstSurveyURL);
+                    setSurveyLink(user.pseudonym, (user.progress + 1), middleSurveyURL1);
                     break;
                 case 3:
                     if (Date.parse(pause_survey_till) > Date.parse(new Date())) {
@@ -160,7 +165,7 @@ function setBreadcrumps () {
                     classesDownload.add("hidden");
 
                     classesDownloadPara.add("hidden");
-                    setSurveyLink(user.pseudonym, (user.progress + 1), lastSurveyURL);
+                    setSurveyLink(user.pseudonym, (user.progress + 1), middleSurveyURL2); // TODO oder last..
                     break;
                 case 5:
                     classesSurvey.add("hidden");
@@ -188,7 +193,7 @@ function setBreadcrumps () {
 
             }
         } else {
-            window.location.href = 'startup.html';
+            window.location.href = '../start.html';
             //console.warn(request.statusText, request.responseText);
         }
     });
