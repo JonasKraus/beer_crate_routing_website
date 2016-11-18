@@ -65,8 +65,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+            <state relative-caret-position="1408">
+              <caret line="155" column="57" selection-start-line="155" selection-start-column="57" selection-end-line="155" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -512,14 +512,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="10707000" />
-    </task>
-    <task id="LOCAL-00110" summary="changed cookie path to constants class">
-      <created>1478855534878</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1478855534878</updated>
+      <workItem from="1479203913585" duration="11539000" />
     </task>
     <task id="LOCAL-00111" summary="changed user and pwd of sftp connection to constants file">
       <created>1478856657687</created>
@@ -857,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479414528026</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="new link for last survey">
+      <created>1479485226921</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1479485226921</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229492000" />
+    <option name="totallyTimeSpent" value="230324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -937,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added date formatted" />
     <MESSAGE value="added date formatted date" />
     <MESSAGE value="fixed date parse" />
     <MESSAGE value="date issue" />
@@ -962,7 +961,8 @@
     <MESSAGE value="refactored names and added first survey link" />
     <MESSAGE value="debug coockie check" />
     <MESSAGE value="deleted console logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted console logs" />
+    <MESSAGE value="new link for last survey" />
+    <option name="LAST_COMMIT_MESSAGE" value="new link for last survey" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1302,8 +1302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+        <state relative-caret-position="1408">
+          <caret line="155" column="57" selection-start-line="155" selection-start-column="57" selection-end-line="155" selection-end-column="57" />
           <folding />
         </state>
       </provider>

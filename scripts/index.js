@@ -9,7 +9,7 @@ var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php
 var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php
 var middleSurveyURL1 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
 var middleSurveyURL2 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/11326"; //TODO get Survey url from db or php - change to correct one
-var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
+var pause_survey_till = 'Mon Nov 19 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
 
 document.addEventListener('DOMContentLoaded', function () {
     checkCookie();
@@ -147,14 +147,13 @@ function setBreadcrumps () {
 
                         showSnackbar("Du kannst erst ab dem " + dateFormatted + " weiter machen.");
                         classesSurvey.add("hidden");
-                        classesDownload.remove("hidden");
-                        classesDownloadPara.remove("hidden");
                         buttonDownload.outerHTML =
                             '<p>Bitte warte bis zum <b>'
                             + dateFormatted
                             + "</b> um fortzufahren.</p>";
                     } else {
                         classesSurvey.add("hidden");
+                        classesDownload.remove("hidden");
                         classesDownload.remove("hidden");//TODO link tauschen und version checken
                         var href2 = "download/" + (user.version + 1)%2 + "/game.zip";
                         buttonDownload.innerHTML = '<a href='+ href2 +' class="button" id="button_download">Download Spiel 2</a>';
@@ -164,7 +163,6 @@ function setBreadcrumps () {
                 case 4:
                     classesSurvey.remove("hidden");
                     classesDownload.add("hidden");
-
                     classesDownloadPara.add("hidden");
                     setSurveyLink(user.pseudonym, (user.progress + 1), middleSurveyURL2); // TODO oder last..
                     break;
