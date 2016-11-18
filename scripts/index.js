@@ -8,7 +8,7 @@ var testSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/
 var firstSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/895276"; //TODO get Survey url from db or php
 var lastSurveyURL = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php
 var middleSurveyURL1 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/588674"; //TODO get Survey url from db or php - change to correct one
-var middleSurveyURL2 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/254738"; //TODO get Survey url from db or php - change to correct one
+var middleSurveyURL2 = "https://surveys.informatik.uni-ulm.de/limesurvey/index.php/11326"; //TODO get Survey url from db or php - change to correct one
 var pause_survey_till = 'Mon Nov 14 2016 13:35:19 GMT+0100 (Mitteleuropäische Zeit)'; // TODO
 
 document.addEventListener('DOMContentLoaded', function () {

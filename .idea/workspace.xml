@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5932bbe-3745-43d3-9e5f-0925119d9afe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/start.js" afterPath="$PROJECT_DIR$/scripts/start.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/start.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+            <state relative-caret-position="3488">
+              <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="197" column="19" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="19" />
+            <state relative-caret-position="320">
+              <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -214,8 +214,8 @@
         <option value="$PROJECT_DIR$/php/databaseManager.php" />
         <option value="$PROJECT_DIR$/scripts/startup.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/scripts/start.js" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -512,14 +512,7 @@
       <workItem from="1478443991867" duration="56474000" />
       <workItem from="1478852565243" duration="24075000" />
       <workItem from="1479049187035" duration="3866000" />
-      <workItem from="1479203913585" duration="8209000" />
-    </task>
-    <task id="LOCAL-00109" summary="added Pseudonym to gui">
-      <created>1478854881255</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1478854881255</updated>
+      <workItem from="1479203913585" duration="10707000" />
     </task>
     <task id="LOCAL-00110" summary="changed cookie path to constants class">
       <created>1478855534878</created>
@@ -857,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479414302553</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="deleted console logs">
+      <created>1479414528026</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1479414528026</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226994000" />
+    <option name="totallyTimeSpent" value="229492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -937,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added html notice" />
     <MESSAGE value="added date formatted" />
     <MESSAGE value="added date formatted date" />
     <MESSAGE value="fixed date parse" />
@@ -962,7 +961,8 @@
     <MESSAGE value="edit prompt" />
     <MESSAGE value="refactored names and added first survey link" />
     <MESSAGE value="debug coockie check" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug coockie check" />
+    <MESSAGE value="deleted console logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted console logs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1292,18 +1292,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+    <entry file="file://$PROJECT_DIR$/scripts/start.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="197" column="19" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="19" />
+        <state relative-caret-position="3488">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/start.js">
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+        <state relative-caret-position="320">
+          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
           <folding />
         </state>
       </provider>
