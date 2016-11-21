@@ -41,7 +41,6 @@ function checkReturningUser () {
         psdnym = getCookie("beercrate_routing_pseudonym");
 
         if (psdnym != undefined && psdnym != '' && psdnym != null ) {
-            console.info('hier2', psdnym);
            window.location.href="index.html";
         }
     }

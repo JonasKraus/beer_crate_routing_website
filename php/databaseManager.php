@@ -110,6 +110,11 @@ class databaseManager extends databaseConstants {
      * @return bool
      */
     public function setUser($pseudonym) {
+
+        $existingUser = $this->getUser($pseudonym);
+        if ($existingUser != null && $existingUser != '') {
+            return true;
+        }
         $this->writeLog("start set user");
         $sqlPrepared = $this->conn->prepare("INSERT INTO subject (pseudonym) VALUES (:pseudonym)");
         $sqlPrepared->bindParam(":pseudonym", $pseudonym);
