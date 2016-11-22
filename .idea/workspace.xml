@@ -95,8 +95,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
-              <caret line="40" column="105" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
+            <state relative-caret-position="1312">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -524,14 +524,7 @@
       <workItem from="1479203913585" duration="16734000" />
       <workItem from="1479740423553" duration="2825000" />
       <workItem from="1479814198062" duration="8000" />
-      <workItem from="1479820983420" duration="732000" />
-    </task>
-    <task id="LOCAL-00117" summary="fixecd bug">
-      <created>1478863618232</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1478863618232</updated>
+      <workItem from="1479820983420" duration="828000" />
     </task>
     <task id="LOCAL-00118" summary="add ddebug vor pseudonym check">
       <created>1478863757549</created>
@@ -869,11 +862,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479821521117</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="fixed typo">
+      <created>1479821726081</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1479821726081</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239084000" />
+    <option name="totallyTimeSpent" value="239180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -949,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored style name" />
     <MESSAGE value="added new navigation buttons" />
     <MESSAGE value="edit text&#10;added explantion to download" />
     <MESSAGE value="added explanation as single tag" />
@@ -974,7 +973,8 @@
     <MESSAGE value="added check for returning user un start" />
     <MESSAGE value="added information for pool computers" />
     <MESSAGE value="added break in paragraf of information" />
-    <option name="LAST_COMMIT_MESSAGE" value="added break in paragraf of information" />
+    <MESSAGE value="fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1313,8 +1313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="40" column="105" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
+        <state relative-caret-position="1312">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding />
         </state>
       </provider>
