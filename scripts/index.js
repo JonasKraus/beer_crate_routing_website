@@ -1,3 +1,4 @@
+(function(){
 
 // at first check the cookie
 
@@ -365,6 +366,8 @@ function showSnackbarStandard (isFinished) {
     }
 
 }
+
+})()
 
 
 

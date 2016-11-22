@@ -1,3 +1,4 @@
+(function () {
 
     isConsentForm = false;
     isInputForm = false;
@@ -146,3 +147,5 @@ function validatePseudonym (pseudonym) {
     return true;
 
 }
+
+})()
