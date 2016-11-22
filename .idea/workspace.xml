@@ -96,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1216">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -524,14 +524,7 @@
       <workItem from="1479203913585" duration="16734000" />
       <workItem from="1479740423553" duration="2825000" />
       <workItem from="1479814198062" duration="8000" />
-      <workItem from="1479820983420" duration="1180000" />
-    </task>
-    <task id="LOCAL-00120" summary="added faqs html">
-      <created>1478865055047</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1478865055047</updated>
+      <workItem from="1479820983420" duration="1230000" />
     </task>
     <task id="LOCAL-00121" summary="added imptessum and links for mailto">
       <created>1478868246015</created>
@@ -869,11 +862,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479822075861</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="added br for b">
+      <created>1479822176262</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1479822176262</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239532000" />
+    <option name="totallyTimeSpent" value="239582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -949,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit text&#10;added explantion to download" />
     <MESSAGE value="added explanation as single tag" />
     <MESSAGE value="added br" />
     <MESSAGE value="added fix for non returning user on index" />
@@ -974,7 +973,8 @@
     <MESSAGE value="added break in paragraf of information" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="changed h2 to b" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed h2 to b" />
+    <MESSAGE value="added br for b" />
+    <option name="LAST_COMMIT_MESSAGE" value="added br for b" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,7 +1314,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding />
         </state>
       </provider>
