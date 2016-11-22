@@ -95,8 +95,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="1280">
+              <caret line="40" column="105" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -120,19 +120,6 @@
             <state relative-caret-position="1376">
               <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="64" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="impressum.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impressum.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding>
-                <element signature="e#522#528#0" expanded="true" />
-                <element signature="e#2958#2964#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -537,14 +524,7 @@
       <workItem from="1479203913585" duration="16734000" />
       <workItem from="1479740423553" duration="2825000" />
       <workItem from="1479814198062" duration="8000" />
-      <workItem from="1479820983420" duration="520000" />
-    </task>
-    <task id="LOCAL-00116" summary="checked that document is loaded before executing js">
-      <created>1478863574383</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1478863574383</updated>
+      <workItem from="1479820983420" duration="732000" />
     </task>
     <task id="LOCAL-00117" summary="fixecd bug">
       <created>1478863618232</created>
@@ -882,11 +862,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479821419092</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="added break in paragraf of information">
+      <created>1479821521117</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1479821521117</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238872000" />
+    <option name="totallyTimeSpent" value="239084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -962,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added some info to impressum and styled link tags" />
     <MESSAGE value="refactored style name" />
     <MESSAGE value="added new navigation buttons" />
     <MESSAGE value="edit text&#10;added explantion to download" />
@@ -987,7 +973,8 @@
     <MESSAGE value="added link" />
     <MESSAGE value="added check for returning user un start" />
     <MESSAGE value="added information for pool computers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added information for pool computers" />
+    <MESSAGE value="added break in paragraf of information" />
+    <option name="LAST_COMMIT_MESSAGE" value="added break in paragraf of information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,13 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1323,10 +1303,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="1280">
+          <caret line="40" column="105" selection-start-line="40" selection-start-column="105" selection-end-line="40" selection-end-column="105" />
           <folding />
         </state>
       </provider>
