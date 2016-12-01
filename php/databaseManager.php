@@ -383,17 +383,17 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->execute();
         $results = $sqlPrepared->fetchAll();
 
-        $str = "In welchen Fortschritt befinden sich wiviele Teilnehmer:<br><br><table style='border-collapse: collapse; border: 1px solid black'>";
+        $str = "<br>Diese Tabelle zeigt in welchem Zustand sich aktuell wiviele Teilnehmer befinden:<br><br><table style='border-collapse: collapse; border: 1px solid black' cellpadding='10' width='20%'>";
 
-        $str .= '<tr><th style="border: 1px solid black">Fortschritt</th><th style="border: 1px solid black">Anzahl</th></tr>';
-        $str .= '<tr><td colspan="2" style="border: 1px solid black"><b>Erster Teil</b></td>' . " </tr>";
-        $str .= '<tr><td style="border: 1px solid black">Pseudonym angelegt:</td>' .            "<td style=\"border: 1px solid black\">" . $results[0]['p0'] . "</td></tr>";
-        $str .= '<tr><td style="border: 1px solid black">Eingangsfragebogen ausgefüllt:</td>' . "<td style=\"border: 1px solid black\">" . $results[0]['p1'] . "</td></tr>";
-        $str .= '<tr><td style="border: 1px solid black">Spiel 1 gespeilt:</td>' .              "<td style=\"border: 1px solid black\">" . $results[0]['p2'] . "</td></tr>";
-        $str .= '<tr><td style="border: 1px solid black">Spielfragebogen ausgefüllt:</td>' .    "<td style=\"border: 1px solid black\">" . $results[0]['p3'] . "</td></tr>";
-        $str .= '<tr><td colspan="2" style="border: 1px solid black"><b>Zweiter Teil</b></td>' . " </tr>";
-        $str .= '<tr><td style="border: 1px solid black">Spiel 2 gespielt:</td>' .              "<td style=\"border: 1px solid black\">" . $results[0]['p4'] . "</td></tr>";
-        $str .= '<tr><td style="border: 1px solid black">Abschlussfragebogen ausgefüllt:</td>' ."<td style=\"border: 1px solid black\">" . $results[0]['p5'] . "</td></tr>";
+        $str .= '<tr><th style="border: 1px solid black;padding: 1em;">Fortschritt</th>                  <th style="border: 1px solid black;padding: 1em;">Anzahl</th></tr>';
+        $str .= '<tr><td colspan="2" style="border: 1px solid black;padding: .5em;"><b>Erster Teil</b></td>' .  " </tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Pseudonym angelegt:</td>' .             "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p0'] . "</td></tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Eingangsfragebogen ausgefüllt:</td>' .  "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p1'] . "</td></tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Spiel 1 gespeilt:</td>' .               "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p2'] . "</td></tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Spielfragebogen ausgefüllt:</td>' .     "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p3'] . "</td></tr>";
+        $str .= '<tr><td colspan="2" style="border: 1px solid black;padding: .5em;"><b>Zweiter Teil</b></td>' .  " </tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Spiel 2 gespielt:</td>' .               "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p4'] . "</td></tr>";
+        $str .= '<tr><td style="border: 1px solid black;padding: .5em;">Abschlussfragebogen ausgefüllt:</td>' . "<td style=\"border: 1px solid black;padding: .5em;\">" . $results[0]['p5'] . "</td></tr>";
 
         $str .="</table>";
 
