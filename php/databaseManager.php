@@ -383,7 +383,7 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->execute();
         $results = $sqlPrepared->fetchAll();
 
-        $str = "<br>Diese Tabelle zeigt die Anzahl an Teilnehmer und deren aktuellen Fortschritt:<br><br><table style='border-collapse: collapse; border: 1px solid black' cellpadding='10' width='50em'>";
+        $str = "<br>Diese Tabelle zeigt die Anzahl an Teilnehmer und deren aktuellen Fortschritt:<br><br><table style='border-collapse: collapse; border: 1px solid black' cellpadding='10' width='25%'>";
 
         $str .= '<tr><th style="border: 1px solid black;padding: 1em;">Fortschritt</th>                  <th style="border: 1px solid black;padding: 1em;">Anzahl</th></tr>';
         $str .= '<tr><td colspan="2" style="border: 1px solid black;padding: .5em;"><b>Erster Teil</b></td>' .  " </tr>";
