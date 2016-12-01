@@ -384,12 +384,12 @@ class databaseManager extends databaseConstants {
         $results = $sqlPrepared->fetchAll();
 
         $str = "";
-        foreach ($results as $key=>$record) {
+        foreach ($results[0] as $key=>$record) {
             $str .= '<span>' . $key . " " . $record . "</span><br>";
         }
 
-        echo json_encode($results[0]);
-        echo array_keys($results[0]['Array']);
+
+        echo $str;
         //return json_encode($results);
     }
 
