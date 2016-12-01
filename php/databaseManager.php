@@ -383,20 +383,21 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->execute();
         $results = $sqlPrepared->fetchAll();
 
-        $str = "In welchen Fortschritt befinden sich wiviele Teilnehmer:<br><br><table>";
+        $str = "In welchen Fortschritt befinden sich wiviele Teilnehmer:<br><br><table style='border-collapse: collapse; border: 1px solid black'>";
 
         $str .= '<tr><th>Fortschritt</th><th>Anzahl</th></tr>';
-        $str .= '<tr><td>Teilnehmer gesamt:</td>' . "<td>" . $results[0]['Teilnehmer_Gesamt'] . "</td></tr>";
-        $str .= '<tr><td>Erster Teil</td>' . " </tr>";
+        $str .= '<tr><td><b>Erster Teil</b></td>' . " </tr>";
         $str .= '<tr><td>Pseudonym angelegt:</td>' . "<td>" . $results[0]['p0'] . "</td></tr>";
         $str .= '<tr><td>Eingangsfragebogen ausgefüllt:</td>' . "<td>" . $results[0]['p1'] . "</td></tr>";
         $str .= '<tr><td>Spiel 1 gespeilt:</td>' . "<td>" . $results[0]['p2'] . "</td></tr>";
         $str .= '<tr><td>Spielfragebogen ausgefüllt:</td>' . "<td>" . $results[0]['p3'] . "</td></tr>";
-        $str .= '<tr><td>Zweiter Teil</td>' . " </tr>";
+        $str .= '<tr><td><b>Zweiter Teil</b></td>' . " </tr>";
         $str .= '<tr><td>Spiel 2 gespielt:</td>' . "<td>" . $results[0]['p4'] . "</td></tr>";
         $str .= '<tr><td>Abschlussfragebogen ausgefüllt:</td>' . "<td>" . $results[0]['p5'] . "</td></tr>";
 
         $str .="</table>";
+
+        $str .= '<br><span>Teilnehmer gesamt: ' . " " . $results[0]['Teilnehmer_Gesamt'] . "</span>";
 
         echo $str;
         //return json_encode($results);
