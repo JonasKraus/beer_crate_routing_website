@@ -388,7 +388,7 @@ class databaseManager extends databaseConstants {
             $str .= '<span>' . $key . " " . $record . "</span><br>";
         }
 
-        echo $str;
+        echo array_keys($results);
         //return json_encode($results);
     }
 
