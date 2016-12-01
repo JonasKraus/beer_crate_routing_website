@@ -383,7 +383,7 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->execute();
         $results = $sqlPrepared->fetchAll();
 
-        echo $results;
+        return json_encode($results);
     }
 
     public function getProgressUpdate($pseudonym, $version, $versionFromRequest) {
