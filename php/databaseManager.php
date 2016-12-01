@@ -377,6 +377,15 @@ class databaseManager extends databaseConstants {
         return $progress;
     }
 
+    public function getUsersProgress () {
+        $sqlPrepared = $this->conn->prepare("SELECT DISTINCT(select count(progress) from subject where progress = 0) AS p0, (select count(progress) from subject where progress = 1) AS p1, (select count(progress) from subject where progress = 2) AS p2, (select count(progress) from subject where progress = 3) AS p3, (select count(progress) from subject where progress = 4) AS p4, (select count(progress) from subject where progress = 5) AS p5, (select count(*) from subject) AS Teilnehmer_Gesamt FROM subject;");
+
+        $sqlPrepared->execute();
+        $results = $sqlPrepared->fetchAll();
+
+        echo json_encode($results);
+    }
+
     public function getProgressUpdate($pseudonym, $version, $versionFromRequest) {
 
         $this->writeLog("start getProgressUpdate");
