@@ -385,8 +385,8 @@ class databaseManager extends databaseConstants {
 
         $str = "In welchen Fortschritt befinden sich wiviele Teilnehmer:<br><br><table style='border-collapse: collapse; border: 1px solid black'>";
 
-        $str .= '<tr><th>Fortschritt</th><th>Anzahl</th></tr>';
-        $str .= '<tr><td><b>Erster Teil</b></td>' . " </tr>";
+        $str .= '<tr><th style="border: 1px solid black">Fortschritt</th><th>Anzahl</th></tr>';
+        $str .= '<tr><td style="border: 1px solid black"><b>Erster Teil</b></td>' . " </tr>";
         $str .= '<tr><td>Pseudonym angelegt:</td>' . "<td>" . $results[0]['p0'] . "</td></tr>";
         $str .= '<tr><td>Eingangsfragebogen ausgefüllt:</td>' . "<td>" . $results[0]['p1'] . "</td></tr>";
         $str .= '<tr><td>Spiel 1 gespeilt:</td>' . "<td>" . $results[0]['p2'] . "</td></tr>";
