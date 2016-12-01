@@ -387,13 +387,13 @@ class databaseManager extends databaseConstants {
 
         $str .= '<span>Teilnehmer gesamt:' . " " . $results[0]['Teilnehmer_Gesamt'] . "</span><br><br>";
         $str .= '<span><b>Erster Teil</b>' . " </span><br>";
-        $str .= '<span>Progress 0:' . " " . $results[0]['p0'] . "</span><br>";
-        $str .= '<span>Progress 1:' . " " . $results[0]['p1'] . "</span><br>";
-        $str .= '<span>Progress 2:' . " " . $results[0]['p2'] . "</span><br>";
-        $str .= '<span>Progress 3:' . " " . $results[0]['p3'] . "</span><br><br>";
+        $str .= '<span>Pseudonym angelegt:' . " " . $results[0]['p0'] . "</span><br>";
+        $str .= '<span>Eingangsfragebogen ausgefüllt:' . " " . $results[0]['p1'] . "</span><br>";
+        $str .= '<span>Spiel 1 gespeilt:' . " " . $results[0]['p2'] . "</span><br>";
+        $str .= '<span>Spielfragebogen ausgefüllt:' . " " . $results[0]['p3'] . "</span><br><br>";
         $str .= '<span><b>Zweiter Teil</b>' . " </span><br>";
-        $str .= '<span>Progress 4:' . " " . $results[0]['p4'] . "</span><br>";
-        $str .= '<span>Progress 5:' . " " . $results[0]['p5'] . "</span><br>";
+        $str .= '<span>Spiel 2 gespielt:' . " " . $results[0]['p4'] . "</span><br>";
+        $str .= '<span>Abschlussfragebogen ausgefüllt:' . " " . $results[0]['p5'] . "</span><br>";
 
 
         echo $str;
