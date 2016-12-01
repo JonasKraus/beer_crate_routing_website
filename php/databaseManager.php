@@ -385,11 +385,13 @@ class databaseManager extends databaseConstants {
 
         $str = "";
 
-        $str .= '<span>Teilnehmer gesamt:' . " " . $results[0]['Teilnehmer_Gesamt'] . "</span><br>";
+        $str .= '<span>Teilnehmer gesamt:' . " " . $results[0]['Teilnehmer_Gesamt'] . "</span><br><br>";
+        $str .= '<span><b>Erster Teil</b>' . " </span><br>";
         $str .= '<span>Progress 0:' . " " . $results[0]['p0'] . "</span><br>";
         $str .= '<span>Progress 1:' . " " . $results[0]['p1'] . "</span><br>";
         $str .= '<span>Progress 2:' . " " . $results[0]['p2'] . "</span><br>";
-        $str .= '<span>Progress 3:' . " " . $results[0]['p3'] . "</span><br>";
+        $str .= '<span>Progress 3:' . " " . $results[0]['p3'] . "</span><br><br>";
+        $str .= '<span><b>Zweiter Teil</b>' . " </span><br>";
         $str .= '<span>Progress 4:' . " " . $results[0]['p4'] . "</span><br>";
         $str .= '<span>Progress 5:' . " " . $results[0]['p5'] . "</span><br>";
 
