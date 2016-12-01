@@ -384,9 +384,9 @@ class databaseManager extends databaseConstants {
         $results = $sqlPrepared->fetchAll();
 
         $str = "";
-        foreach ($results[0] as $key=>$record) {
-            $str .= '<span>' . $key . " " . $record . "</span><br>";
-        }
+
+        $str .= '<span>Teilnehmer gesamt:' . " " . $results[0]['Teilnehmer_Gesamt'] . "</span><br>";
+        $str .= '<span>p0:' . " " . $results[0]['p0'] . "</span><br>";
 
 
         echo $str;
