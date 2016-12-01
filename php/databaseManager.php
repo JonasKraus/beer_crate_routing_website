@@ -383,9 +383,7 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->execute();
         $results = $sqlPrepared->fetchAll();
 
-        foreach ($results as $key=>$record) {
-            echo '<span>' . $key . " " . $record . "</span><br>";
-        }
+        echo $results;
 
         //return json_encode($results);
     }
