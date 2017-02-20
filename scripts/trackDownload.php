@@ -24,12 +24,12 @@ switch ($version) {
 
     case 'zuox02z0weq':
 
-        $version = 'sim';
+        $versionName = 'sim';
         break;
 
     case 'zuox02z1weq':
 
-        $version = 'comic';
+        $versionName = 'comic';
         break;
 }
 
@@ -37,9 +37,9 @@ try {
 
     $database = new databaseManager();
 
-    var_dump("heri");die;
-    $database->trackDownload($version, $location, $userAgent, $referrer, $requestTime);
+    $database->trackDownload($versionName, $location, $userAgent, $referrer, $requestTime);
 
+    var_dump("heri");die;
 } catch (PDOException $e) {
 
     var_dump("herixxx");die;
