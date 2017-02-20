@@ -6,8 +6,13 @@
  * Time: 22:22
  */
 
+var_dump(getLocationInfoByIp());
 var_dump($_POST);
 var_dump($_SERVER);die;
+
+$requestTime = $_SERVER['REQUEST_TIME'];
+$remoteAddress = $_SERVER['REMOTE_ADDR'];
+$userAgent= $_POST['HTTP_USER_AGENT'];
 
 $fileName = "game.zip";
 $file = "../download/zuox02z0weq/game.zip";
@@ -27,3 +32,24 @@ header('Expires: 0');
 // Send the file contents.
 set_time_limit(0);
 readfile($file);
+
+function getLocationInfoByIp(){
+    $client  = @$_SERVER['HTTP_CLIENT_IP'];
+    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+    $remote  = @$_SERVER['REMOTE_ADDR'];
+    $result  = array('country'=>'', 'city'=>'');
+    if(filter_var($client, FILTER_VALIDATE_IP)){
+        $ip = $client;
+    }elseif(filter_var($forward, FILTER_VALIDATE_IP)){
+        $ip = $forward;
+    }else{
+        $ip = $remote;
+    }
+    $ip_data = @json_decode
+    (file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip));
+    if($ip_data && $ip_data->geoplugin_countryName != null){
+        $result['country'] = $ip_data->geoplugin_countryCode;
+        $result['city'] = $ip_data->geoplugin_city;
+    }
+    return $result;
+}
