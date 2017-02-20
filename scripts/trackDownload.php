@@ -7,6 +7,7 @@
  */
 
 var_dump($_POST);
+var_dump($_SERVER);die;
 
 $fileName = "game.zip";
 $file = "../download/zuox02z0weq/game.zip";
