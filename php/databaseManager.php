@@ -467,15 +467,20 @@ class databaseManager extends databaseConstants {
 
     public function trackDownload($version, $location, $userAgent, $referrer, $requestTime) {
 
-        $sqlPrepared = $this->conn->prepare("INSERT INTO trackDownload (version,country,city,userAgent,referrer,requestTime) VALUES (:version,:country,:city,:userAgent,:referrer,:requestTime)");
-        $sqlPrepared->bindParam(":version", $version);
-        $sqlPrepared->bindParam(":country", $location['country']);
-        $sqlPrepared->bindParam(":city", $location['city']);
-        $sqlPrepared->bindParam(":userAgent", $userAgent);
-        $sqlPrepared->bindParam(":referrer", $referrer);
-        $sqlPrepared->bindParam(":requestTime", $requestTime);
+        try {
+            $sqlPrepared = $this->conn->prepare("INSERT INTO trackDownload (version,country,city,userAgent,referrer,requestTime) VALUES (:version,:country,:city,:userAgent,:referrer,:requestTime)");
+            $sqlPrepared->bindParam(":version", $version);
+            $sqlPrepared->bindParam(":country", $location['country']);
+            $sqlPrepared->bindParam(":city", $location['city']);
+            $sqlPrepared->bindParam(":userAgent", $userAgent);
+            $sqlPrepared->bindParam(":referrer", $referrer);
+            $sqlPrepared->bindParam(":requestTime", $requestTime);
 
-        var_dump($sqlPrepared->debugDumpParams());die;
+        } catch (Exception $exception) {
+
+            var_dump($exception);die;
+        }
+
 
         if ($sqlPrepared->execute() === TRUE) {
 
