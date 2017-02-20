@@ -5,20 +5,45 @@
  * Date: 20.02.2017
  * Time: 22:22
  */
+include("../php/databaseManager.php");
 
-var_dump(getLocationInfoByIp());
-var_dump($_GET);
-var_dump($_SERVER);die;
-
-
+$version = $_GET['version'];
 $requestTime = $_SERVER['REQUEST_TIME'];
+$referrer = $_SERVER['HTTP_REFERER'];
 $location = getLocationInfoByIp();
 $userAgent= $_POST['HTTP_USER_AGENT'];
 
 $fileName = "game.zip";
-$file = "../download/zuox02z0weq/game.zip";
+$file = "../download/" . $version . "/game.zip";
 
-if(!file_exists($file)) die("I'm sorry, the file doesn't seem to exist.");
+
+// Check which version
+switch ($version) {
+
+    case 'zuox02z0weq':
+
+        $version = 'sim';
+        break;
+
+    case 'zuox02z1weq':
+
+        $version = 'comic';
+        break;
+}
+
+try {
+
+    $database = new databaseManager();
+
+    $database->trackDownload($version, $location, $userAgent, $referrer, $requestTime);
+
+} catch (PDOException $e) {
+
+    header("Location: ../error.html");
+    exit();
+}
+
+if(!file_exists($file)) die("file doesn't exist.");
 
 $type = filetype($file);
 // Get a date and timestamp
