@@ -479,12 +479,10 @@ class databaseManager extends databaseConstants {
 
         if ($sqlPrepared->execute() === TRUE) {
 
-            var_dump("heri true");die;
-            //return true;
+            return true;
         } else {
 
-            var_dump("heri false");die;
-            //return false;
+            return false;
         }
 
     }
