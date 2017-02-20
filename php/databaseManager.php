@@ -467,14 +467,15 @@ class databaseManager extends databaseConstants {
 
     public function trackDownload($version, $location, $userAgent, $referrer, $requestTime) {
 
-        var_dump("test");die;
-        $sqlPrepared = $this->conn->prepare("INSERT INTO trackDownload (version, country, city, userAgent, referrer, requestTime) VALUES (:version, :country, :city, :userAgent, :referrer, :requestTime)");
+        $sqlPrepared = $this->conn->prepare("INSERT INTO trackDownload (version,country,city,userAgent,referrer,requestTime) VALUES (:version,:country,:city,:userAgent,:referrer,:requestTime)");
         $sqlPrepared->bindParam(":version", $version);
         $sqlPrepared->bindParam(":country", $location['country']);
         $sqlPrepared->bindParam(":city", $location['city']);
         $sqlPrepared->bindParam(":userAgent", $userAgent);
         $sqlPrepared->bindParam(":referrer", $referrer);
         $sqlPrepared->bindParam(":requestTime", $requestTime);
+
+        var_dump($sqlPrepared->debugDumpParams());die;
 
         if ($sqlPrepared->execute() === TRUE) {
 
