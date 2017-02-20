@@ -476,9 +476,13 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->bindParam(":requestTime", $requestTime);
 
         if ($sqlPrepared->execute() === TRUE) {
-            return true;
+
+            var_dump("heri true");die;
+            //return true;
         } else {
-            return false;
+
+            var_dump("heri false");die;
+            //return false;
         }
 
     }
