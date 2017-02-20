@@ -477,7 +477,8 @@ class databaseManager extends databaseConstants {
         $sqlPrepared->bindParam(":referrer", $referrer);
         $sqlPrepared->bindParam(":requestTime", $requestTime);
 
-        var_dump($sqlPrepared);die;
+        var_dump($sqlPrepared);
+        var_dump($sqlPrepared->debugDumpParams());die;
 
         if ($sqlPrepared->execute() === TRUE) {
 
