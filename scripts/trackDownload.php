@@ -35,13 +35,14 @@ switch ($version) {
 
 try {
 
+    var_dump("heri");
     $database = new databaseManager();
 
     $database->trackDownload($version, $location, $userAgent, $referrer, $requestTime);
 
 } catch (PDOException $e) {
 
-    header("Location: ../error.html");
+    header("Location: error.html");
     exit();
 }
 
