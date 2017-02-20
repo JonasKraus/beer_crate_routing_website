@@ -35,7 +35,7 @@ switch ($version) {
 
 try {
 
-    var_dump("heri");
+    var_dump("heri");die;
     $database = new databaseManager();
 
     $database->trackDownload($version, $location, $userAgent, $referrer, $requestTime);
