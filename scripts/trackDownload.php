@@ -39,10 +39,8 @@ try {
 
     $database->trackDownload($versionName, $location, $userAgent, $referrer, $requestTime);
 
-    var_dump("heri");die;
 } catch (PDOException $e) {
 
-    var_dump("herixxx");die;
     header("Location: error.html");
     exit();
 }
