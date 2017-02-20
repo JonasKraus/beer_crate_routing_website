@@ -7,11 +7,12 @@
  */
 
 var_dump(getLocationInfoByIp());
-var_dump($_POST);
+var_dump($_GET);
 var_dump($_SERVER);die;
 
+
 $requestTime = $_SERVER['REQUEST_TIME'];
-$remoteAddress = $_SERVER['REMOTE_ADDR'];
+$location = getLocationInfoByIp();
 $userAgent= $_POST['HTTP_USER_AGENT'];
 
 $fileName = "game.zip";
