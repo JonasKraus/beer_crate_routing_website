@@ -41,7 +41,7 @@ try {
 
 } catch (PDOException $e) {
 
-    header("Location: error.html");
+    header("Location: ../error.html");
     exit();
 }
 
