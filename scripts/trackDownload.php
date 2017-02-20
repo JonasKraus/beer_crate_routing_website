@@ -7,6 +7,8 @@
  */
 include("../php/databaseManager.php");
 
+error_reporting(E_ALL);
+
 $version = $_GET['version'];
 $requestTime = $_SERVER['REQUEST_TIME'];
 $referrer = $_SERVER['HTTP_REFERER'];
